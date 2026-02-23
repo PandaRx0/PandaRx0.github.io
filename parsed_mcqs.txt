@@ -1,0 +1,675 @@
+  'adrenal_gland': [
+
+  ],
+  'cushing': [
+    {
+      id: 'q1',
+      question: "Which of the following medical illnesses Associated with Anxiety Symptoms?",
+      options: [
+        { id: 'a', text: "Angina" },
+        { id: 'b', text: "Cushing disease" },
+        { id: 'c', text: "irritable bowel syndrome" },
+        { id: 'd', text: "stroke" },
+        { id: 'e', text: "all of the above" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q2',
+      question: "What is the most common finding in Cushing syndrome?",
+      options: [
+        { id: 'a', text: "Peripheral obesity" },
+        { id: 'b', text: "Central obesity and facial rounding" },
+        { id: 'c', text: "Hypertension" },
+        { id: 'd', text: "Myopathy or muscular weakness" },
+        { id: 'e', text: "Gonadal dysfunction" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q4',
+      question: "Secondary adrenal insufficiency is a condition where the pituitary gland doesn't make enough of the hormone ACTH, which stimulates the adrenal glands to produce cortisol. Secondary adrenal insufficiency results from:",
+      options: [
+        { id: 'a', text: "ketoconazole." },
+        { id: 'b', text: "medroxyprogesterone acetate" },
+        { id: 'c', text: "autoimmune destruction." },
+        { id: 'd', text: "tuberculosis" },
+        { id: 'e', text: "phenytoin" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q6',
+      question: "M.S, a 50-year-old female on metformin and Metyrapone, now she prepared to Transsphenoidal resection of the pituitary tumor. Which medication is/are most optimal to be used at this time to control patient symptoms regarding the elevated cortisol level?",
+      options: [
+        { id: 'a', text: "Add Ketoconazole to Metyrapone" },
+        { id: 'b', text: "Switch to Etomidate" },
+        { id: 'c', text: "Switch to Ketoconazole" },
+        { id: 'd', text: "Switch to Mifepristone" },
+        { id: 'e', text: "Switch to Pasireotide" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q8',
+      question: "Adrenal insufficiency produced by Autoimmune dysfunction or drugs, which drug was reported to induce secondary adrenal insufficiency?",
+      options: [
+        { id: 'a', text: "ketoconazole" },
+        { id: 'b', text: "medroxyprogesterone" },
+        { id: 'c', text: "phenytoin" },
+        { id: 'd', text: "rifampin" },
+        { id: 'e', text: "phenobarbital" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q10',
+      question: "Pasireotide is approved for use in Cushing disease primarily because:",
+      options: [
+        { id: 'a', text: "It has fewer side effects than other therapies" },
+        { id: 'b', text: "It directly stimulates cortisol breakdown" },
+        { id: 'c', text: "It can be used as a first-line treatment" },
+        { id: 'd', text: "it is effective in patients who cannot have surgery" },
+        { id: 'e', text: "It promotes adrenal gland regeneration" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q12',
+      question: "An adult woman patient with classic Cushing's disease (caused by a pituitary adenoma) referred to surgery, Laparoscopic adrenalectomy is her current treatment according to her physician mostly because?",
+      options: [
+        { id: 'a', text: "Transsphenoidal surgery and pituitary radiotherapy have failed or cannot be used." },
+        { id: 'b', text: "Preferred for bilateral adrenal adenomas." },
+        { id: 'c', text: "Preferred for tumors invading the dura or cavernous sinus" },
+        { id: 'd', text: "Treatment of choice for both ACTH dependent and ACTH independent Cushing syndrome" },
+        { id: 'e', text: "Pharmacotherapy failed to be used as first line treatment" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q14',
+      question: ".",
+      options: [
+        { id: 'a', text: "Cushing's Disease" },
+        { id: 'b', text: "Ectopic corticotropin-producing tumor" },
+        { id: 'c', text: "Secondary renal insufficiency" },
+        { id: 'd', text: "Congenital adrenal hyperplasia" },
+        { id: 'e', text: "Addison's Disease" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q15',
+      question: "The main advantage of etomidate over other steroidogenic inhibitors is:",
+      options: [
+        { id: 'a', text: "Long-term control of cortisol levels" },
+        { id: 'b', text: "Reversible androgenic side effects" },
+        { id: 'c', text: "Ease of administration (oral)" },
+        { id: 'd', text: "Effectiveness in acute hypercortisolemia" },
+        { id: 'e', text: "Lower risk of neurological side effects" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q18',
+      question: "ACTH-independent Cushing syndr is usually caused by:",
+      options: [
+        { id: 'a', text: "Adrenal adenomas & carcinomas." },
+        { id: 'b', text: "Thyroid ectopic ACTH secretion" },
+        { id: 'c', text: "Pituitary adenoma" },
+        { id: 'd', text: "Endocrine ectopic ACTH syndrome" },
+        { id: 'e', text: "Non-Endocrine ectopic ACTH syndrome" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q20',
+      question: "Mr. Hassan illustrates the presentation of Cushing's syndrome as he has unilateral adrenal adenomas. In your opinion, what is the preferred strategy for therapy that should be started with for this patient?",
+      options: [
+        { id: 'a', text: "Adrenolytic Agents." },
+        { id: 'b', text: "Radiotherapy." },
+        { id: 'c', text: "Steroidogenesis Inhibitors." },
+        { id: 'd', text: "Laparoscopic adrenalectomy." },
+        { id: 'e', text: "Transsphenoidal resection.." }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q21',
+      question: "Regarding Cushing Syndrome, treatment of choice for both acth-dependent and acth-independent Cushing Syndrome is",
+      options: [
+        { id: 'a', text: "surgical resection of offending tumors" },
+        { id: 'b', text: "mifepristone" },
+        { id: 'c', text: "ketoconazole" },
+        { id: 'd', text: "cyproheptadine" },
+        { id: 'e', text: "None of the above" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q23',
+      question: "Steroidogenesis inhibitors indicated for treatment of Cushing Syndrome. Which of the followings not correct regarding Etomidate",
+      options: [
+        { id: 'a', text: "Administered parenterally." },
+        { id: 'b', text: "Used in emergency to treat acute hypercortisolism" },
+        { id: 'c', text: "Serum cortisol monitoring recommended to follow hypercortisolism" },
+        { id: 'd', text: "Administered to patient with acute hypercortisolism going to surgery" },
+        { id: 'e', text: "It causes hypertension" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q25',
+      question: "Cushing Syndrome has several clinical presentations. One of the followings is not a clinical presentation of Cushing Syndrome",
+      options: [
+        { id: 'a', text: "Glucose intolerance" },
+        { id: 'b', text: "Psychiatric changes" },
+        { id: 'c', text: "Amenorrhea" },
+        { id: 'd', text: "Bilirubin elevation" },
+        { id: 'e', text: "Muscular weakness" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q27',
+      question: "Regarding endogenous Cushing's syndrome accompanied by type 2 DM, the best treatment is.",
+      options: [
+        { id: 'a', text: "Metyrapone" },
+        { id: 'b', text: "Ketoconazole" },
+        { id: 'c', text: "Etomidate" },
+        { id: 'd', text: "Mifepristone" },
+        { id: 'e', text: "Mitotane" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q28',
+      question: "The pharmacological therapy of Cushing's Syndrome involves different agents. A glucocorticoid-receptor blocking agent used as part of the pharmacologic therapy of Cushing's syndrome is:",
+      options: [
+        { id: 'a', text: "Mitotane" },
+        { id: 'b', text: "Mifepristone" },
+        { id: 'c', text: "Methimazole" },
+        { id: 'd', text: "Metformin" },
+        { id: 'e', text: "Miglitol" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q31',
+      question: "Mitotane is a cytotoxic drug. All the followings are true about Mitotane EXCEPT",
+      options: [
+        { id: 'a', text: "Causes reversible hypercholesterolemia" },
+        { id: 'b', text: "Causes significant neurologic side effects" },
+        { id: 'c', text: "Causes prolonged bleeding times." },
+        { id: 'd', text: "Reduces synthesis of cortisol" },
+        { id: 'e', text: "It is considered as first line therapy for Cushing Syndrome" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q32',
+      question: "Steroidogenic inhibitors that used in preparation for surgery for patients with Cushing's syndrome is:",
+      options: [
+        { id: 'a', text: "Metyrapone" },
+        { id: 'b', text: "Cyproheptadine" },
+        { id: 'c', text: "Tretinoin" },
+        { id: 'd', text: "Mifepristone" },
+        { id: 'e', text: "Fludrocortisone" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q33',
+      question: "Clinical presentation of Cushing syndrome includes the following EXCEPT",
+      options: [
+        { id: 'a', text: "Oedema" },
+        { id: 'b', text: "Hypotension" },
+        { id: 'c', text: "Osteoporosis" },
+        { id: 'd', text: "Hirsutism in women" },
+        { id: 'e', text: "Central obesity" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q34',
+      question: "Regarding Cushing syndrome. Mifepristone is one of the pharmacological therapies for Cushing syndrome, for which all of the following are false EXCEPT:",
+      options: [
+        { id: 'a', text: "It is glucocorticoid-receptor agonist" },
+        { id: 'b', text: "It increases endogenous cortisol and ACTH levels in Cushing patients" },
+        { id: 'c', text: "It is effective in reversing the manifestations of hypocortisolism" },
+        { id: 'd', text: "It can be used for endogenous Cushing syndrome in patients who have type 2 diabetes" },
+        { id: 'e', text: "May result in endometrial hyperplasia and hyperkalemia" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q38',
+      question: "In the Cushing disease, the lab data that may confirm its diagnosis are",
+      options: [
+        { id: 'a', text: "Probably normal or High ACTH" },
+        { id: 'b', text: "Low or normal ACTH" },
+        { id: 'c', text: "Low serum cortisol" },
+        { id: 'd', text: "Serum cortisol normal" },
+        { id: 'e', text: "CRH test no response" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q39',
+      question: "A 45 years old man suffering from Cushing syndrome due to unilateral adrenal adenoma Treatment of choice for this patient is",
+      options: [
+        { id: 'a', text: "Transsphenoidal resection of adrenal adenoma" },
+        { id: 'b', text: "Radiotherapy of adrenal adenoma" },
+        { id: 'c', text: "Laparoscopic adrenalectomy" },
+        { id: 'd', text: "Chronic drug therapy." },
+        { id: 'e', text: "Open surgery of adrenals" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q42',
+      question: "The most common initial findings in Cushing's syndrome are:",
+      options: [
+        { id: 'a', text: "Diabetes and hypertension" },
+        { id: 'b', text: "Central obesity and facial rounding" },
+        { id: 'c', text: "Myopathies and muscular weakness" },
+        { id: 'd', text: "Striae along the lower abdomen, that take on a red to purple color" },
+        { id: 'e', text: "Lemon on stick appearance" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q43',
+      question: "Drugs that inhibits cortisol synthesis include the followings EXCEPT:",
+      options: [
+        { id: 'a', text: "Metyrapone" },
+        { id: 'b', text: "Aminoglutethimide" },
+        { id: 'c', text: "Ketoconazole" },
+        { id: 'd', text: "Cyproheptadine" },
+        { id: 'e', text: "Mitotane" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q46',
+      question: "Treatment plans in Cushing syndrome are based on etiology. Treatment of choice for both ACTH-dependent and ACTH-independent cushing syndrome is:",
+      options: [
+        { id: 'a', text: "Ketoconazole" },
+        { id: 'b', text: "Mitotane" },
+        { id: 'c', text: "Surgical resection of offending tumors." },
+        { id: 'd', text: "Mifepristone" },
+        { id: 'e', text: "Radiotherapy" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q47',
+      question: "Steroidogenesis Inhibitors drugs are used for treating Cushing disease as second-line treatments in patients who are not surgical candidates. Drug with antiandrogenic activity and beneficial in women but can cause gynecomastia and hypogonadism in men?",
+      options: [
+        { id: 'a', text: "Metyrapone" },
+        { id: 'b', text: "Etomidate" },
+        { id: 'c', text: "Both of answer A and B" },
+        { id: 'd', text: "Ketoconazole" },
+        { id: 'e', text: "Both of Answer B and D" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    }
+  ],
+  'hyperaldosteronism': [
+    {
+      id: 'q5',
+      question: "Lubna is a 20 years old female, a known of hyperaldosteronism on treatment. However, she stated that after starting the treatment she developed irregular menses. Which drug that could be prescribed for hyperaldosteronism that potentially cause this effect",
+      options: [
+        { id: 'a', text: "Spironolactone" },
+        { id: 'b', text: "Eplerenone" },
+        { id: 'c', text: "Amiloride" },
+        { id: 'd', text: "Chlorthalidone" },
+        { id: 'e', text: "Triamterene" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q16',
+      question: "Eplerenone exhibits advantages over spironolactone for managing bilateral adrenal hyperplasia due to its:",
+      options: [
+        { id: 'a', text: "Lower cost" },
+        { id: 'b', text: "longer half-life" },
+        { id: 'c', text: "Fewer side effects" },
+        { id: 'd', text: "Greater potassium lowering effect" },
+        { id: 'e', text: "Improved blood pressure control" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q17',
+      question: "adrenal insufficiency, which additional medication might be needed if hyperkalemia persists after hydrocortisone therapy?",
+      options: [
+        { id: 'a', text: "Dextrose 25% solution" },
+        { id: 'b', text: "Dextrose 5% in normal saline" },
+        { id: 'c', text: "Insulin" },
+        { id: 'd', text: "Fludrocortisone acetate" },
+        { id: 'e', text: "Spironolactone" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q19',
+      question: "In hyperaldosteronism, if ARR is positive, confirmatory tests to exclude false positives. are the following, Except:",
+      options: [
+        { id: 'a', text: "oral sodium-loading test" },
+        { id: 'b', text: "saline infusion test" },
+        { id: 'c', text: "Glucose tolerance test" },
+        { id: 'd', text: "fludrocortisone suppression test (FST)" },
+        { id: 'e', text: "captopril challenge test" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q22',
+      question: "Regarding adrenal gland disorders, Conn syndrome is...........",
+      options: [
+        { id: 'a', text: "an ACTH-producing adenoma" },
+        { id: 'b', text: "a cortisol-producing adenoma" },
+        { id: 'c', text: "an aldosterone-producing adenoma" },
+        { id: 'd', text: "a prolactin-producing adenoma" },
+        { id: 'e', text: "None of the above" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q30',
+      question: "Hyperaldosteronism can cause several disturbances. One of the following is not a Clinical Presentation of hyperaldosteronism:",
+      options: [
+        { id: 'a', text: "Hypernatremia" },
+        { id: 'b', text: "Polydipsia" },
+        { id: 'c', text: "Nocturnal polyuria" },
+        { id: 'd', text: "Hypertension" },
+        { id: 'e', text: "Hypermagnesemia" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q40',
+      question: "Hyperaldosteronism causes a variety of clinical manifestations. Adult manifestations of hyperaldosteronism include the followings EXCEPT:",
+      options: [
+        { id: 'a', text: "Tetany" },
+        { id: 'b', text: "Polydipsia" },
+        { id: 'c', text: "Edema" },
+        { id: 'd', text: "Hypokalemia" },
+        { id: 'e', text: "Hypertension" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q49',
+      question: "A 21 years old female has both hyperaldosteronism and menstrual irregularities. The most appropriate treatment for this female is",
+      options: [
+        { id: 'a', text: "Amiloride" },
+        { id: 'b', text: "Chlortalidone" },
+        { id: 'c', text: "Eplerenone" },
+        { id: 'd', text: "Spironolactone" },
+        { id: 'e', text: "All are appropriate" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    }
+  ],
+  'adrenal_insuffi': [
+    {
+      id: 'q7',
+      question: "",
+      options: [
+        { id: 'a', text: "A is 23 years old male with primary adrenal insufficiency, is stable on 15 mg hydrocortisone 3 times daily, now he has upper respiratory tract infection and fever of 39 C. what is your action about hydrocortisone dose
+- a Decrease to 10 mg *3" },
+        { id: 'b', text: "Remain as 15mg*3" },
+        { id: 'c', text: "Increase to 30mg*3" },
+        { id: 'd', text: "increase to 40 mg 3" },
+        { id: 'e', text: "Decrease to 5 mg 3" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q9',
+      question: "Adrenal insufficiency is caused  by multiple etiologies. The most common cause of secondary adrenal insufficiency in countries like Iraq and Egypt is",
+      options: [
+        { id: 'a', text: "Autoimmune disorder" },
+        { id: 'b', text: "Tuberculosis" },
+        { id: 'c', text: "air pollution" },
+        { id: 'd', text: "rifamicin" },
+        { id: 'e', text: "long term administration of exogenous corticosteroids" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q11',
+      question: "How should patients with Addison's disease using corticosteroid replacement manage their doses during stressful situations?",
+      options: [
+        { id: 'a', text: "No need for adjustments, the body compensates automatically.." },
+        { id: 'b', text: "Reduce the dose slightly to avoid overexposure" },
+        { id: 'c', text: "Maintain regular dosage regardless of stress levels." },
+        { id: 'd', text: "Temporarily double their daily dose until the stressful event subsides." },
+        { id: 'e', text: "Stop taking medication until the stressful situation resolves." }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q24',
+      question: "Addison Disease is associated with several biomedical disturbances. All the followings are associated with Addison Disease EXCEPT:",
+      options: [
+        { id: 'a', text: "Low level of ACTH" },
+        { id: 'b', text: "Low level of cortisol" },
+        { id: 'c', text: "Low level of aldosterone" },
+        { id: 'd', text: "High level of ACTH" },
+        { id: 'e', text: "High level of CRH" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q26',
+      question: "Lifelong glucocorticoid replacement therapy may be necessary for patients with adrenal insufficiency. Hydrocortisone is often prescribed because it has the following characteristic EXCEPT:",
+      options: [
+        { id: 'a', text: "It is closely resembles endogenous cortisol" },
+        { id: 'b', text: "It has relatively high mineralocorticoid activity" },
+        { id: 'c', text: "It has short half-life" },
+        { id: 'd', text: "It allows the design of regimens that simulates the normal circadian cycle" },
+        { id: 'e', text: "It has relatively low mineralocorticoid activity" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q35',
+      question: "Regarding the treatment of adrenal insufficiency, the corticosteroid agent of choice is",
+      options: [
+        { id: 'a', text: "deoxycorticosterone trimethylacetate" },
+        { id: 'b', text: "fludrocortisone acetate" },
+        { id: 'c', text: "prednisolone" },
+        { id: 'd', text: "prednisone" },
+        { id: 'e', text: "hydrocortisone" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q36',
+      question: "Regarding Addison disease. All of the following are true EXCEPT:",
+      options: [
+        { id: 'a', text: "Skin hyperpigmentation is a characteristic feature" },
+        { id: 'b', text: "The short cosyntropin stimulation test is used to confirm the diagnosis" },
+        { id: 'c', text: "Hydrocortisone + fludrocortisone acetate is the treatment of choice" },
+        { id: 'd', text: "Hyperkalemia + hyponatremia are common" },
+        { id: 'e', text: "Laparoscopic adrenalectomy is the non-pharmacological treatment of choice" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q44',
+      question: "Clinical manifestations of Addison's disease include the following EXCEPT:",
+      options: [
+        { id: 'a', text: "Weight loss" },
+        { id: 'b', text: "Dehydration" },
+        { id: 'c', text: "Hyponatremia" },
+        { id: 'd', text: "Hypokalemia" },
+        { id: 'e', text: "Hyperpigmentation" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q48',
+      question: "Regarding adrenal insufficiency there are many clinical symptoms will associate with it. The following are the major clinical symptoms associated with 90% destruction of adrenal gland cortex, EXCEPT :",
+      options: [
+        { id: 'a', text: "Hyperpigmentation" },
+        { id: 'b', text: "Weight lost" },
+        { id: 'c', text: "Hypernatremia" },
+        { id: 'd', text: "Dehydration" },
+        { id: 'e', text: "Hyperkalemia" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q51',
+      question: "Regarding Addison disease: Which of the following is incorrect statement? is incorre",
+      options: [
+        { id: 'a', text: "Addison disease is characterized by destruction of all regions of the adrenal cortex." },
+        { id: 'b', text: "Addison disease is characterized by very low or undetectable serum cortisol and aldosterone levels." },
+        { id: 'c', text: "Addison disease is characterized by increased skin pigmentation especially on the face, oral mucosa, palmar creases and knuckles." },
+        { id: 'd', text: "Addison disease is characterized by high levels of serum CRH and ACTH." },
+        { id: 'e', text: "Addison disease is characterized by high blood pressure especially on standin" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    }
+  ],
+  'adrenal_crisis': [
+    {
+      id: 'q3',
+      question: "A 40-year-old woman is diagnosed with Primary adrenal insufficiency (Addison disease). Which of the following patient education recommendations should be addressed to avoid an acute adrenal crisis EXCEPT:",
+      options: [
+        { id: 'a', text: "Always carry identification (eg, medical alert bracelet) listing the diagnosis." },
+        { id: 'b', text: "Take corticosteroid supplementation as directed and do not abruptly stop treatment." },
+        { id: 'c', text: "Advice all treating health care professionals that he has a diagnosis of chronic adrenal insufficiency" },
+        { id: 'd', text: "Supplemental dosing of glucocorticoid as may be required during an acute illness, including infections, surgery, even fever" },
+        { id: 'e', text: "The reduction in excess pigmentation is the only clinical marker" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q13',
+      question: "Persistent hyperkalemia is one complication of adrenal crisis. The preferred treatment for persistent hyperkalemia in adrenal crisis is",
+      options: [
+        { id: 'a', text: "Spironolactone" },
+        { id: 'b', text: "Furosemide" },
+        { id: 'c', text: "Fludrocortisone" },
+        { id: 'd', text: "Amlodipine" },
+        { id: 'e', text: "Chiortalidone" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q29',
+      question: "50-year-old man with advanced tuberculosis has developed signs of severe acute adrenal insufficiency. The patient should be treated immediately with a combination of",
+      options: [
+        { id: 'a', text: "Aldosterone and fludrocortisone" },
+        { id: 'b', text: "Triamcinolone and dexamethasone" },
+        { id: 'c', text: "Cortisol and fludrocortisone" },
+        { id: 'd', text: "Dexamethasone and metyrapone" },
+        { id: 'e', text: "None of the above" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q37',
+      question: "Hyperpigmentation of the skin is a catachrestic feature of",
+      options: [
+        { id: 'a', text: "primary acute adrenal insufficiency" },
+        { id: 'b', text: "primary chronic adrenal insufficiency" },
+        { id: 'c', text: "Cushing syndrome" },
+        { id: 'd', text: "Conn's syndrome" },
+        { id: 'e', text: "Hyperthyroidism" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q41',
+      question: "Treatment of adrenal crisis should include a suitable initial first line IV fluid. for patients with adrenal crisis is",
+      options: [
+        { id: 'a', text: "Normal saline" },
+        { id: 'b', text: "Dextrose 5% in normal saline" },
+        { id: 'c', text: "Lactated ringer" },
+        { id: 'd', text: "Mannitol 20%" },
+        { id: 'e', text: "Dextrose 25% in water" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q45',
+      question: "The most common cause of adrenal crisis is",
+      options: [
+        { id: 'a', text: "Adrenal surgery" },
+        { id: 'b', text: "Severe Adrenal trauma." },
+        { id: 'c', text: "Acute Pituitary insufficiency." },
+        { id: 'd', text: "Abrupt withdrawal of exogenous glucocorticoids in patients receiving chronic treatment." },
+        { id: 'e', text: "Acute stressful conditions" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    },
+    {
+      id: 'q50',
+      question: "Acute adrenal Insufficiency (adrenal crisis) represents a true endocrine emergency. The glucocorticoid of choice for treatment",
+      options: [
+        { id: 'a', text: "Mometasone" },
+        { id: 'b', text: "Hydrocortisone" },
+        { id: 'c', text: "Dexamethasone" },
+        { id: 'd', text: "Prednisolone" },
+        { id: 'e', text: "Betamethasone" }
+      ],
+      correctId: 'a', // Note: Placeholder, options were from polls
+      explanation: 'Answer imported from Telegram channel polls.'
+    }
+  ],

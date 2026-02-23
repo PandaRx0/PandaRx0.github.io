@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  font-family: 'Inter', 'Cairo', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #eeeeee;
+  background-color: #060606;
+  /* Deep dark background */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+}
+
+/* Base layout for the app */
+.app-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Video Header Style */
+.video-header-container {
+  width: 100%;
+  height: 300px;
+  /* Adjust as needed */
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.video-header-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.video-header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(6, 6, 6, 1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 2rem;
+  align-items: center;
+}
+
+.header-title {
+  font-family: 'Aref Ruqaa', serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #fafafa;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 4px 15px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  animation: elegantFadeUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation-delay: 0.2s;
+  padding: 0 1rem;
+}
+
+.header-subtitle {
+  font-family: 'Cairo', sans-serif;
+  color: #d4af37;
+  font-size: 1.5rem;
+  font-weight: 600;
+  opacity: 0;
+  animation: elegantFadeUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation-delay: 0.5s;
+  text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes elegantFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+    filter: blur(4px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+/* Promo Banner */
+.promo-banner {
+  width: calc(100% - 2rem);
+  max-width: 1000px;
+  margin: 0 auto 3rem auto;
+  background: linear-gradient(135deg, #111, #161616);
+  border: 1px solid #333;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  /* Removing padding to allow video to attach to the edge */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* Moving the gold line to the right (RTL context) */
+  width: 4px;
+  height: 100%;
+  background: #d4af37;
+  z-index: 10;
+}
+
+.promo-video-wrapper {
+  width: 250px;
+  height: 180px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  /* Blend the video into the background gradient elegantly */
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%);
+}
+
+.promo-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  /* Scale up by 25% to completely hide the watermark in the corner */
+  transform: scale(1.25);
+  transform-origin: center center;
+}
+
+.promo-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  gap: 1rem;
+  padding: 2rem 3rem 2rem 2rem;
+  z-index: 5;
+}
+
+.promo-text {
+  font-family: 'Cairo', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.telegram-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(46, 163, 222, 0.1);
+  /* Telegram Blue with opacity */
+  border: 1px solid rgba(46, 163, 222, 0.4);
+  color: #2ea3de;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.telegram-btn:hover {
+  background: rgba(46, 163, 222, 0.2);
+  border-color: #2ea3de;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(46, 163, 222, 0.2);
+}
+
+.telegram-icon {
+  transform: translateY(-1px);
+}
+
+/* Main Content Area */
+.content-area {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem 4rem 2rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .content-area {
+    padding: 0 1rem 2rem 1rem;
+  }
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.section-header p {
+  color: #888;
+  font-size: 1.1rem;
+}
+
+/* Breadcrumbs / Back button */
+.nav-controls {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #a1a1aa;
+}
+
+.nav-button {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+/* Grid Layout for Cards */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+@media (max-width: 400px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card Styling matching the screenshot */
+.feature-card {
+  background-color: #151413;
+  border: 1px solid #2a2622;
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  text-align: left;
+}
+
+.feature-card:hover {
+  background-color: #1a1817;
+  border-color: #3b342b;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.feature-card.selected {
+  border-color: #d4af37;
+  /* Gold/brown highlight */
+  background-color: #211d18;
+}
+
+.icon-wrapper {
+  background-color: #211e1b;
+  border: 1px solid #322d28;
+  border-radius: 10px;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d1c8bd;
+  flex-shrink: 0;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ebe5df;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  font-size: 0.9rem;
+  color: #9c958d;
+  line-height: 1.5;
+}
+
+/* MCQs Section */
+.mcq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mcq-card {
+  background-color: #121212;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mcq-question {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.option-button {
+  width: 100%;
+  text-align: left;
+  padding: 1rem 1.25rem;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #ddd;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option-button:hover:not(:disabled) {
+  background-color: #252525;
+  border-color: #555;
+}
+
+.option-button.correct {
+  background-color: rgba(34, 197, 94, 0.1);
+  border-color: #22c55e;
+  color: #4ade80;
+}
+
+.option-button.incorrect {
+  background-color: rgba(239, 68, 68, 0.1);
+  border-color: #ef4444;
+  color: #f87171;
+}
+
+.option-button:disabled {
+  cursor: default;
+}
+
+.feedback-msg {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.feedback-msg.success {
+  background-color: rgba(34, 197, 94, 0.1);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.2);
+}
+
+.feedback-msg.error {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.completion-message {
+  text-align: center;
+  padding: 3rem;
+  background: #111;
+  border-radius: 12px;
+  border: 1px solid #222;
+}
+
+.completion-message h3 {
+  color: #d4af37;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* MCQ Navigation */
+.mcq-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #333;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background-color: #222;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: #ddd;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover:not(:disabled) {
+  background-color: #333;
+  color: #fff;
+}
+
+.nav-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.nav-btn.primary {
+  background-color: #d4af37;
+  border-color: #d4af37;
+  color: #111;
+}
+
+.nav-btn.primary:hover:not(:disabled) {
+  background-color: #e5b927;
+}
+
+/* Mobile Responsiveness for Banner and Headers */
+@media (max-width: 768px) {
+  .promo-banner {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  
+  .promo-content {
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .promo-video-wrapper {
+    width: 100%;
+    height: 150px;
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+  }
+  
+  .promo-video-wrapper video {
+    transform: scale(1.1) translateY(-10px);
+  }
+  
+  .header-title {
+    font-size: 2.5rem;
+  }
+  
+  .header-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .nav-controls {
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+  }
+  
+  .mcq-navigation {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  
+  .nav-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
