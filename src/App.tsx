@@ -630,7 +630,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "Propylthiouracil (PTU) is the preferred antithyroid drug during the first trimester of pregnancy..."
+      "explanation": "Propylthiouracil (PTU) is the preferred antithyroid drug during the first trimester of pregnancy due to a lower risk of teratogenic effects compared to methimazole."
     },
     {
       "id": "q74",
@@ -658,7 +658,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "In primary hypothyroidism, the pituitary gland's secretion of TSH..."
+      "explanation": "In primary hypothyroidism, the pituitary gland's secretion of TSH best reflects the tissue response to thyroid hormones and is the most sensitive parameter for dose adjustment."
     },
     {
       "id": "q98",
@@ -686,7 +686,7 @@ const MCQS = {
         }
       ],
       "correctId": "c",
-      "explanation": "Subacute granulomatous (or De Quervain's) thyroiditis is typically *painful*..."
+      "explanation": "Subacute granulomatous (or De Quervain's) thyroiditis is typically painful and often develops after a viral respiratory illness."
     },
     {
       "id": "q100",
@@ -714,7 +714,7 @@ const MCQS = {
         }
       ],
       "correctId": "d",
-      "explanation": "For a non-pregnant patient with Graves' disease choosing oral pharmacotherapy..."
+      "explanation": "For a non-pregnant patient with Graves' disease choosing oral pharmacotherapy, methimazole is preferred due to a much lower risk of severe hepatotoxicity compared to PTU."
     },
 
     {
@@ -823,7 +823,7 @@ const MCQS = {
         }
       ],
       "correctId": "c",
-      "explanation": "Memantine is an uncompetitive antagonist of the NMDA..."
+      "explanation": "Memantine is an uncompetitive antagonist of the NMDA receptor and blocks pathological glutamatergic neurotransmission which contributes to neuronal damage."
     },
     {
       "id": "q67",
@@ -851,7 +851,7 @@ const MCQS = {
         }
       ],
       "correctId": "e",
-      "explanation": "Alzheimer's disease is a progressive neurodegenerative disorder..."
+      "explanation": "Alzheimer's disease is a progressive neurodegenerative disorder where social withdrawal, depression, and delusions can all occur as part of the behavioral changes."
     },
     {
       "id": "q69",
@@ -879,7 +879,7 @@ const MCQS = {
         }
       ],
       "correctId": "e",
-      "explanation": "The pathophysiology of Alzheimer's disease is complex..."
+      "explanation": "The pathophysiology of Alzheimer's disease is complex and involves multiple neurotransmitter systems including acetylcholine, serotonin, and glutamate."
     },
     {
       "id": "q90",
@@ -907,7 +907,7 @@ const MCQS = {
         }
       ],
       "correctId": "e",
-      "explanation": "Donepezil, an acetylcholinesterase inhibitor..."
+      "explanation": "Donepezil, an acetylcholinesterase inhibitor, is indicated and effective across all stages of Alzheimer's disease, including mild, moderate, and severe cases."
     },
     {
       "id": "q97",
@@ -935,7 +935,7 @@ const MCQS = {
         }
       ],
       "correctId": "e",
-      "explanation": "The classic pathological hallmarks of Alzheimer's disease..."
+      "explanation": "The classic pathological hallmarks of Alzheimer's disease include neuritic plaques (amyloid beta), neurofibrillary tangles (tau protein), and prominent loss of acetylcholine activity."
     },
 
     {
@@ -1057,7 +1057,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "For the *acute* management of anxiety..."
+      "explanation": "For the acute management of anxiety and panic attacks, benzodiazepines provide the most rapid and effective relief."
     },
     {
       "id": "q94",
@@ -1085,7 +1085,7 @@ const MCQS = {
         }
       ],
       "correctId": "e",
-      "explanation": "Benzodiazepines like lorazepam are CNS depressants..."
+      "explanation": "Benzodiazepines like lorazepam are CNS depressants that can cause sedation, slowed reaction time, anterograde amnesia, and carry a risk of physical dependence and withdrawal symptoms."
     },
     {
       "id": "q95",
@@ -1113,7 +1113,7 @@ const MCQS = {
         }
       ],
       "correctId": "c",
-      "explanation": "Selective Serotonin Reuptake Inhibitors (SSRIs)..."
+      "explanation": "Selective Serotonin Reuptake Inhibitors (SSRIs) like citalopram are considered the first-line pharmacotherapy for the long-term management of generalized anxiety disorder."
     },
     {
       "id": "q102",
@@ -1141,7 +1141,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "While anxiety and depression are highly comorbid..."
+      "explanation": "While anxiety and depression are highly comorbid, depression is a primary psychiatric disorder, not a general medical illness that secondarily causes anxiety symptoms like the others listed."
     },
 
     {
@@ -1263,7 +1263,7 @@ const MCQS = {
         }
       ],
       "correctId": "b",
-      "explanation": "Amitriptyline is a tricyclic antidepressant (TCA)..."
+      "explanation": "Amitriptyline is a tricyclic antidepressant (TCA) known for significant anticholinergic and sedative side effects compared to newer SSRIs."
     },
     {
       "id": "q6",
@@ -1291,7 +1291,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "Sertraline is generally considered the preferred..."
+      "explanation": "Sertraline is generally considered the preferred SSRI for breastfeeding women because it has very low excretion into breast milk relative to other antidepressants."
     },
     {
       "id": "q16",
@@ -1319,7 +1319,7 @@ const MCQS = {
         }
       ],
       "correctId": "c",
-      "explanation": "Bupropion is associated with a dose-related risk of seizures..."
+      "explanation": "Bupropion is associated with a dose-related risk of seizures and is strictly contraindicated in patients with eating disorders like anorexia or bulimia due to electrolyte imbalances."
     },
     {
       "id": "q20",
@@ -1347,7 +1347,7 @@ const MCQS = {
         }
       ],
       "correctId": "c",
-      "explanation": "Given the patient's history of arrhythmia..."
+      "explanation": "Given the patient's history of arrhythmia and uncontrolled hypertension, adding psychotherapy is the safest and most effective option to augment therapy without adding cardiovascular risks."
     },
     {
       "id": "q21",
@@ -1375,7 +1375,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "Tricyclic antidepressants (TCAs) like imipramine..."
+      "explanation": "Tricyclic antidepressants (TCAs) like imipramine can cause severe cardiac conduction delays and arrhythmias, making a baseline ECG highly recommended."
     },
     {
       "id": "q28",
@@ -1403,7 +1403,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "Depression can manifest with a variety of physical..."
+      "explanation": "Depression can manifest with a variety of physical symptoms, including unexplained headaches, chronic pain, and severe fatigue."
     },
     {
       "id": "q46",
@@ -1431,7 +1431,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "According to the DSM-5 criteria..."
+      "explanation": "According to the DSM-5 criteria, diagnosing a major depressive episode requires the consistent presence of at least five symptoms over a two-week period."
     },
     {
       "id": "q50",
@@ -1459,7 +1459,7 @@ const MCQS = {
         }
       ],
       "correctId": "b",
-      "explanation": "While SSRIs can cause a range of side effects..."
+      "explanation": "While SSRIs can cause a range of side effects, sexual dysfunction (including decreased libido and anorgasmia) is one of the most common and persistent complaints."
     },
 
     {
@@ -1607,7 +1607,7 @@ const MCQS = {
         }
       ],
       "correctId": "c",
-      "explanation": "For a severely agitated and aggressive patient..."
+      "explanation": "For a severely agitated and aggressive patient in the emergency department, IM haloperidol provides rapid and effective tranquilization with an established safety profile."
     },
     {
       "id": "q10",
@@ -1635,7 +1635,7 @@ const MCQS = {
         }
       ],
       "correctId": "e",
-      "explanation": "Clozapine is the only antipsychotic medication..."
+      "explanation": "Clozapine is the only antipsychotic medication with an FDA indication for reducing the risk of recurrent suicidal behavior in patients with schizophrenia."
     },
     {
       "id": "q12",
@@ -1663,7 +1663,7 @@ const MCQS = {
         }
       ],
       "correctId": "b",
-      "explanation": "The pathophysiology of schizophrenia is complex..."
+      "explanation": "The pathophysiology of schizophrenia is complex but primarily involves alterations in dopaminergic and glutamatergic neurotransmission, not epinephrine receptor defects."
     },
     {
       "id": "q15",
@@ -1691,7 +1691,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "The presentation of fever and severe neutropenia..."
+      "explanation": "The presentation of severe fever and profound neutropenia in a patient taking an antipsychotic is a hallmark of clozapine-induced agranulocytosis, a life-threatening emergency."
     },
     {
       "id": "q33",
@@ -1719,7 +1719,7 @@ const MCQS = {
         }
       ],
       "correctId": "b",
-      "explanation": "Schizophrenia is characterized by positive symptoms..."
+      "explanation": "Schizophrenia is characterized by positive symptoms (hallucinations), negative symptoms (social isolation), and cognitive impairment, but primary musculoskeletal problems are not inherently part of the diagnosis."
     },
     {
       "id": "q34",
@@ -1747,7 +1747,7 @@ const MCQS = {
         }
       ],
       "correctId": "d",
-      "explanation": "For a first psychotic break, guidelines recommend..."
+      "explanation": "For a first psychotic break, guidelines recommend avoiding clozapine or combinations initially; risperidone is a standard, appropriate first-line atypical antipsychotic."
     },
     {
       "id": "q39",
@@ -1775,7 +1775,7 @@ const MCQS = {
         }
       ],
       "correctId": "b",
-      "explanation": "Clozapine is the gold-standard..."
+      "explanation": "Clozapine is the gold-standard and most effective drug for treatment-resistant schizophrenia after sequential trials of typical and atypical agents have failed."
     },
     {
       "id": "q40",
@@ -1803,7 +1803,7 @@ const MCQS = {
         }
       ],
       "correctId": "d",
-      "explanation": "Clozapine is generally contraindicated..."
+      "explanation": "Clozapine is generally contraindicated during breastfeeding due to the severe risk of drug-induced agranulocytosis and excessive sedation in the nursing infant."
     },
 
     {
@@ -2114,7 +2114,7 @@ const MCQS = {
         }
       ],
       "correctId": "d",
-      "explanation": "Modafinil is a wakefulness-promoting agent..."
+      "explanation": "Modafinil is a wakefulness-promoting agent approved to treat residual excessive daytime sleepiness in OSA patients who are already optimally treated with positive airway pressure (PAP)."
     },
     {
       "id": "q11",
@@ -2142,7 +2142,7 @@ const MCQS = {
         }
       ],
       "correctId": "b",
-      "explanation": "For an elderly patient with a history of depression..."
+      "explanation": "For an elderly patient with a history of depression, arrhythmia, and substance abuse, trazodone is heavily favored off-label for insomnia because it possesses sedating properties, combats depression, and avoids benzodiazepine abuse liability."
     },
     {
       "id": "q29",
@@ -2170,7 +2170,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "For an elderly patient with difficulty maintaining sleep..."
+      "explanation": "For an elderly patient with difficulty maintaining sleep, short-acting agents like zaleplon are often favored as they help initiate sleep rapidly with less risk of morning hangover and falls."
     },
     {
       "id": "q42",
@@ -2198,7 +2198,7 @@ const MCQS = {
         }
       ],
       "correctId": "c",
-      "explanation": "For difficulty *initiating* sleep, a medication..."
+      "explanation": "For difficulty initiating sleep, a medication with a rapid onset and short half-life like zaleplon is ideal to prevent daytime grogginess."
     },
     {
       "id": "q22",
@@ -2226,7 +2226,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "Modafinil is the first-line, standard pharmacologic..."
+      "explanation": "Modafinil is the first-line, standard pharmacologic treatment for excessive daytime sleepiness in narcolepsy due to its efficacy and favorable side effect profile compared to classic amphetamines."
     },
 
     {
@@ -2313,7 +2313,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "The \"Quick Start\" method refers to the practice..."
+      "explanation": "The 'Quick Start' method refers to the practice of taking the first hormonal contraceptive pill on the exact day of the clinic visit to improve compliance."
     },
     {
       "id": "q57",
@@ -2341,7 +2341,7 @@ const MCQS = {
         }
       ],
       "correctId": "c",
-      "explanation": "Hyperprolactinemia (high prolactin levels)..."
+      "explanation": "Hyperprolactinemia (high prolactin levels) causing amenorrhea is best treated centrally with dopamine agonists like cabergoline or bromocriptine to suppress prolactin secretion."
     },
     {
       "id": "q80",
@@ -2369,7 +2369,7 @@ const MCQS = {
         }
       ],
       "correctId": "c",
-      "explanation": "Ulipristal acetate is a progesterone receptor modulator..."
+      "explanation": "Ulipristal acetate is a progesterone receptor modulator that can be used effectively for emergency contraception up to 5 days (120 hours) following unprotected intercourse."
     },
     {
       "id": "q84",
@@ -2397,7 +2397,7 @@ const MCQS = {
         }
       ],
       "correctId": "c",
-      "explanation": "Barrier methods (condom, cervical cap, diaphragm, sponge)..."
+      "explanation": "Barrier methods (condom, cervical cap, diaphragm, sponge) physically prevent sperm from reaching the mature ovum, whereas the transdermal patch prevents ovulation hormonally."
     },
     {
       "id": "q88",
@@ -2425,7 +2425,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "Primary amenorrhea is defined as the absence of menarche..."
+      "explanation": "Primary amenorrhea is defined as the absence of menarche by age 15 or 16 in a girl who has completely normal secondary sexual characteristics."
     },
     {
       "id": "q93",
@@ -2453,7 +2453,7 @@ const MCQS = {
         }
       ],
       "correctId": "d",
-      "explanation": "Drospirenone is a progestin analog of spironolactone..."
+      "explanation": "Drospirenone is a unique progestin analog of spironolactone and therefore possesses significant antimineralocorticoid and antiandrogenic properties, limiting fluid retention and acne."
     },
     {
       "id": "q99",
@@ -2481,7 +2481,7 @@ const MCQS = {
         }
       ],
       "correctId": "c",
-      "explanation": "This statement is false and therefore the exception..."
+      "explanation": "This statement is false because low-dose CHCs are not universally safe and are not recommended for all women with a history of dyslipidemia; careful assessment of cardiovascular risk is required."
     },
 
     {
@@ -2848,7 +2848,7 @@ const MCQS = {
         }
       ],
       "correctId": "b",
-      "explanation": "Tibolone is a synthetic steroid used in some countries..."
+      "explanation": "Tibolone is a synthetic steroid used in some countries for menopause that uniquely exhibits weak estrogenic, progestogenic, and androgenic properties to relieve symptoms and maintain bone density."
     },
     {
       "id": "q66",
@@ -2876,7 +2876,7 @@ const MCQS = {
         }
       ],
       "correctId": "e",
-      "explanation": "Transdermal estrogen avoids the \"first-pass\" effect..."
+      "explanation": "Transdermal estrogen avoids the 'first-pass' hepatic effect, making it much less likely to elevate triglycerides or negatively impact coagulation parameters compared to oral estrogen."
     },
     {
       "id": "q83",
@@ -2904,7 +2904,7 @@ const MCQS = {
         }
       ],
       "correctId": "e",
-      "explanation": "Standard contraindications to Hormone Replacement Therapy (HRT)..."
+      "explanation": "Standard contraindications to Hormone Replacement Therapy (HRT) include breast cancer, severe liver disease, and active cardiovascular, but a history of peptic ulcer disease is not a contraindication."
     },
     {
       "id": "q86",
@@ -2932,7 +2932,7 @@ const MCQS = {
         }
       ],
       "correctId": "d",
-      "explanation": "A hot flush is a symptom of menopause... (Using \"E\" as correct answer in parsing since it is a single answer usually and D is an indication). Let me just use the literal text."
+      "explanation": "A hot flush is one of the classic vasomotor symptoms of menopause and serves as a primary indication for HRT, rather than a contraindication."
     },
     {
       "id": "q101",
@@ -2960,7 +2960,7 @@ const MCQS = {
         }
       ],
       "correctId": "d",
-      "explanation": "Estrogen-based hormone replacement therapy..."
+      "explanation": "Estrogen-based hormone replacement therapy offers comprehensive benefits including relief of severe vasomotor symptoms, treatment of vulvovaginal atrophy, and prevention of postmenopausal osteoporosis."
     },
     {
       "id": "q105",
@@ -2988,7 +2988,7 @@ const MCQS = {
         }
       ],
       "correctId": "b",
-      "explanation": "In a woman with an intact uterus..."
+      "explanation": "In a woman with an intact uterus, unopposed estrogen significantly increases the risk of endometrial hyperplasia and carcinoma; adding a progestogen thoroughly blocks this excessive proliferation."
     },
 
     {
@@ -3131,7 +3131,7 @@ const MCQS = {
         }
       ],
       "correctId": "e",
-      "explanation": "Dysmenorrhea (painful periods)..."
+      "explanation": "Dysmenorrhea (painful periods) is primarily driven by excess prostaglandin production, making NSAIDs the targeted first-line pharmacologic therapy."
     },
     {
       "id": "q77",
@@ -3159,7 +3159,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "Gonadotropin-releasing hormone (GnRH)..."
+      "explanation": "Gonadotropin-releasing hormone (GnRH) specifically stimulates the anterior pituitary gland to produce and release Follicle-Stimulating Hormone (FSH) and Luteinizing Hormone (LH)."
     },
     {
       "id": "q78",
@@ -3187,7 +3187,7 @@ const MCQS = {
         }
       ],
       "correctId": "d",
-      "explanation": "Menopause is a clinical diagnosis..."
+      "explanation": "Menopause is a clinical diagnosis established retrospectively only after a continuous period of 12 consecutive months of amenorrhea with no other pathological cause."
     },
     {
       "id": "q82",
@@ -3215,7 +3215,7 @@ const MCQS = {
         }
       ],
       "correctId": "d",
-      "explanation": "Prostaglandins..."
+      "explanation": "Prostaglandins, particularly PGF2-alpha, trigger the intense and dysrhythmic uterine muscle contractions that cause the pain of primary dysmenorrhea."
     },
 
     {
@@ -3330,7 +3330,7 @@ const MCQS = {
         }
       ],
       "correctId": "b",
-      "explanation": "Neoadjuvant therapy..."
+      "explanation": "Neoadjuvant therapy is a form of chemotherapy or radiation given before the primary surgical intervention to shrink the tumor burden and increase the likelihood of successful resection."
     },
     {
       "id": "q13",
@@ -3358,7 +3358,7 @@ const MCQS = {
         }
       ],
       "correctId": "b",
-      "explanation": "Deletion of chromosome 17p..."
+      "explanation": "Deletion of chromosome 17p in CLL is associated with very poor outcomes with standard chemoimmunotherapy; novel targeted agents like the BTK inhibitor ibrutinib are strongly preferred."
     },
     {
       "id": "q19",
@@ -3386,7 +3386,7 @@ const MCQS = {
         }
       ],
       "correctId": "c",
-      "explanation": "Cancers are classified..."
+      "explanation": "Cancers are classified by their tissue of origin; malignant tumors arising from mesenchymal or connective tissues (such as bone, cartilage, fat) are termed sarcomas."
     },
     {
       "id": "q25",
@@ -3414,7 +3414,7 @@ const MCQS = {
         }
       ],
       "correctId": "d",
-      "explanation": "The T315I mutation..."
+      "explanation": "The T315I mutation in CML is notoriously resistant to most standard tyrosine kinase inhibitors; however, ponatinib was specifically designed to overcome this resistance."
     },
     {
       "id": "q30",
@@ -3442,7 +3442,7 @@ const MCQS = {
         }
       ],
       "correctId": "b",
-      "explanation": "In CLL..."
+      "explanation": "In CLL, treatment is typically deferred in asymptomatic early-stage patients until true progression occurs, such as rapid lymphocyte doubling or symptomatic organomegaly."
     },
     {
       "id": "q31",
@@ -3470,7 +3470,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "Broad-spectrum antibiotics..."
+      "explanation": "Broad-spectrum antibiotics do not have a role in systemic cancer prevention and prolonged intermittent use can disrupt normal flora and incite resistance."
     },
     {
       "id": "q32",
@@ -3498,7 +3498,7 @@ const MCQS = {
         }
       ],
       "correctId": "b",
-      "explanation": "While chronic stress..."
+      "explanation": "While chronic psychological stress can negatively modulate overall health, it is not fundamentally classified as a direct cellular carcinogen mapping to DNA mutation like benzene or smoking."
     },
     {
       "id": "q35",
@@ -3526,7 +3526,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "Most cytotoxic chemotherapies..."
+      "explanation": "Most traditional cytotoxic chemotherapies indiscriminately target rapidly dividing cells including the bone marrow, making myelosuppression the most common dose-limiting toxicity."
     },
     {
       "id": "q36",
@@ -3554,7 +3554,7 @@ const MCQS = {
         }
       ],
       "correctId": "c",
-      "explanation": "The main indication for intrathecal methotrexate..."
+      "explanation": "The main indication for intrathecal methotrexate in acute lymphoblastic leukemia is to penetrate the blood-brain barrier for definitive CNS prophylaxis or treatment."
     },
     {
       "id": "q41",
@@ -3582,7 +3582,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "Gemtuzumab ozogamicin..."
+      "explanation": "Gemtuzumab ozogamicin is a targeted anti-CD33 antibody-drug conjugate approved to treat CD33-positive acute myeloid leukemia in both adult and pediatric patients."
     },
     {
       "id": "q43",
@@ -3610,7 +3610,7 @@ const MCQS = {
         }
       ],
       "correctId": "b",
-      "explanation": "This statement is not a primary property of cisplatin..."
+      "explanation": "This statement is misleading; cisplatin is predominantly indicated and effective for treating solid tumors (testicular, ovarian, bladder) rather than broadly used as primary treatment for lymphomas."
     },
     {
       "id": "q44",
@@ -3638,7 +3638,7 @@ const MCQS = {
         }
       ],
       "correctId": "e",
-      "explanation": "Non-pharmacological therapies..."
+      "explanation": "Non-pharmacological therapies for the comprehensive management of prostate cancer include watchful waiting, external beam radiotherapy, and surgical interventions like radical prostatectomy and bilateral orchiectomy."
     },
     {
       "id": "q47",
@@ -3666,7 +3666,7 @@ const MCQS = {
         }
       ],
       "correctId": "e",
-      "explanation": "The toxicity of chemotherapy is multifactorial..."
+      "explanation": "The clinical toxicity of systemic chemotherapy is highly multifactorial, depending heavily on the precise drug properties, exact dosing schedules, treatment duration, and a myriad of patient-related physical factors."
     },
     {
       "id": "q48",
@@ -3694,7 +3694,7 @@ const MCQS = {
         }
       ],
       "correctId": "d",
-      "explanation": "In leukemia treatment..."
+      "explanation": "In leukemia treatment, the specialized purpose of maintenance therapy is to provide prolonged exposure to lower-dose chemotherapy, acting to continue the morphological remission and eliminate minimal residual leukemic cells."
     },
     {
       "id": "q49",
@@ -3722,7 +3722,7 @@ const MCQS = {
         }
       ],
       "correctId": "d",
-      "explanation": "This statement is false..."
+      "explanation": "This statement is entirely false; methotrexate safely operates as a powerful antimetabolite that also possesses profound anti-inflammatory and systemic immunosuppressive properties utilized in rheumatology."
     },
     {
       "id": "q51",
@@ -3750,7 +3750,7 @@ const MCQS = {
         }
       ],
       "correctId": "d",
-      "explanation": "The most important risk factor..."
+      "explanation": "The most important, firmly established clinical risk factor for irreversible anthracycline-induced cardiomyopathy is surpassing the strict total lifetime cumulative drug dose limit."
     },
 
     {
@@ -4117,7 +4117,7 @@ const MCQS = {
         }
       ],
       "correctId": "e",
-      "explanation": "The vast majority..."
+      "explanation": "The vast majority of malignant breast cancers originate biologically within the epithelial glandular tissue (ducts or lobules) and thus are formally classified as adenocarcinomas."
     },
     {
       "id": "q68",
@@ -4145,7 +4145,7 @@ const MCQS = {
         }
       ],
       "correctId": "c",
-      "explanation": "Tamoxifen is a selective estrogen receptor modulator..."
+      "explanation": "Tamoxifen acts uniquely as a selective estrogen receptor modulator (SERM) providing potent antiestrogenic effects in tumor breast tissue alongside paradoxical protective estrogenic agonist effects within bone."
     },
     {
       "id": "q72",
@@ -4173,7 +4173,7 @@ const MCQS = {
         }
       ],
       "correctId": "b",
-      "explanation": "Pamidronate is a bisphosphonate..."
+      "explanation": "Pamidronate is a powerful bisphosphonate routinely used in oncology to inhibit harmful osteoclast destruction within bones, thereby reducing severe skeletal-related events and bone pain from active metastases."
     },
     {
       "id": "q75",
@@ -4201,7 +4201,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "Exemestane is an aromatase inhibitor..."
+      "explanation": "Exemestane is a potent aromatase inhibitor that strictly blocks peripheral estrogen synthesis, significantly preventing early development of hormone-receptor-positive breast cancer in highly at-risk postmenopausal women."
     },
     {
       "id": "q85",
@@ -4229,7 +4229,7 @@ const MCQS = {
         }
       ],
       "correctId": "d",
-      "explanation": "The most common presenting symptom..."
+      "explanation": "The most common and concerning initial presenting symptom of underlying breast cancer is discovering a painless, hard, well-circumscribed solitary lump or physical mass deep in the breast tissue."
     },
     {
       "id": "q103",
@@ -4257,7 +4257,7 @@ const MCQS = {
         }
       ],
       "correctId": "c",
-      "explanation": "Cyclophosphamide is metabolized..."
+      "explanation": "Cyclophosphamide is metabolically processed in the liver to form acrolein, a highly toxic urothelial irritant that causes intense hemorrhagic cystitis unless aggressively flushed with hydration or mesna."
     },
 
     {
@@ -4596,7 +4596,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "Prostate-Specific Antigen (PSA)..."
+      "explanation": "Prostate-Specific Antigen (PSA) functions universally as the cornerstone clinical tumor marker reliably used for initial screening, pathological diagnosis, and longitudinally monitoring longitudinal response to targeted therapy in prostate cancer."
     },
     {
       "id": "q14",
@@ -4624,7 +4624,7 @@ const MCQS = {
         }
       ],
       "correctId": "a",
-      "explanation": "Degarelix is a GnRH *antagonist*..."
+      "explanation": "Degarelix operates directly as an advanced GnRH antagonist, creating an immediate and profound drop in circulating testosterone levels without provoking the dangerous initial clinical tumor flare characteristic of older LHRH agonists."
     },
     {
       "id": "q17",
@@ -4652,7 +4652,7 @@ const MCQS = {
         }
       ],
       "correctId": "e",
-      "explanation": "Prostate function is regulated by a hormonal cascade..."
+      "explanation": "Prostate glandular function is rigidly regulated organically by a complex hormonal cascade axis actively originating in the brain via LHRH, ACTH, FSH, and LH prior to reaching visceral targets."
     },
     {
       "id": "q27",
@@ -4680,7 +4680,7 @@ const MCQS = {
         }
       ],
       "correctId": "b",
-      "explanation": "Mesna..."
+      "explanation": "Mesna is an adjunctive uroprotective pharmaceutical specifically administered clinically to covalently bind and chemically detoxify acrolein, effectively eliminating the severe risk of cyclophosphamide-induced hemorrhagic cystitis."
     },
     {
       "id": "q37",
@@ -4708,7 +4708,7 @@ const MCQS = {
         }
       ],
       "correctId": "b",
-      "explanation": "Leuprolide is an LHRH agonist..."
+      "explanation": "Leuprolide operates as an LHRH agonist capable of initially triggering dangerous surges in testosterone; concurrently prescribing flutamide actively blocks androgen receptors, neutralizing the flare before initiating long-term therapy."
     },
     {
       "id": "q45",
@@ -4736,7 +4736,7 @@ const MCQS = {
         }
       ],
       "correctId": "c",
-      "explanation": "Prostate cancer most commonly metastasizes to bones..."
+      "explanation": "Advanced prostate cancer invariably and preferentially metastasizes hematogenously to the axial skeleton and bones, establishing osteoblastic lesions, rather than aggressively invading the cellular architecture of the kidneys."
     },
 
     {
@@ -4991,7 +4991,7 @@ const MCQS = {
         }
       ],
       "correctId": "c",
-      "explanation": "Bleomycin is most famously associated with pulmonary toxicity..."
+      "explanation": "Bleomycin is an antineoplastic antibiotic uniquely and fatally associated with cumulative dose-dependent pulmonary toxicity, aggressively manifesting as severe interstitial pneumonitis progressing rapidly into untreatable pulmonary fibrosis."
     },
     {
       "id": "q23",
@@ -5019,7 +5019,7 @@ const MCQS = {
         }
       ],
       "correctId": "c",
-      "explanation": "Modern antiemetic regimens..."
+      "explanation": "Modern standardized antiemetic regimens powerfully mitigate chemotherapy-induced nausea through layered neuroreceptor blockade utilizing dexamethasone, aprepitant, and ondansetron; meanwhile, metoclopramide demonstrates markedly inferior central efficacy."
     },
     {
       "id": "q26",
@@ -5047,7 +5047,7 @@ const MCQS = {
         }
       ],
       "correctId": "c",
-      "explanation": "Pegfilgrastim is a long-acting form of filgrastim..."
+      "explanation": "Pegfilgrastim operates biochemically as a heavily pegylated, massively long-acting formulation of filgrastim (G-CSF) directly administered post-chemotherapy to powerfully stimulate profound neutrophil maturation, preventing neutropenic sepsis."
     },
     {
       "id": "q52",
@@ -5075,7 +5075,7 @@ const MCQS = {
         }
       ],
       "correctId": "b",
-      "explanation": "Ponatinib is a potent third-generation TKI..."
+      "explanation": "Ponatinib represents an aggressively potent third-generation rationally-designed Tyrosine Kinase Inhibitor overcoming the T315I mutation; however, it strictly carries a black-box FDA warning for inducing severe, life-threatening arterial thrombosis."
     },
     {
       "id": "q104",
@@ -5103,7 +5103,7 @@ const MCQS = {
         }
       ],
       "correctId": "e",
-      "explanation": "Hyperparathyroidism causes hypercalcemia..."
+      "explanation": "Symptomatic hyperparathyroidism universally orchestrates systemic hypercalcemia mathematically driven by parathyroid hormone severely accelerating baseline bone resorption whilst maximizing renal calcium reabsorption uniformly."
     },
 
     {
