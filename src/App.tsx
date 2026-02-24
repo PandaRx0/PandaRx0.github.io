@@ -5835,8 +5835,8 @@ function App() {
                   {answered && (
                     <div className={`feedback-msg ${answered.isCorrect ? 'success' : 'error'}`} dir="rtl" style={{ textAlign: 'right', marginTop: '1.5rem', padding: '1rem', background: '#222', borderRadius: '8px' }}>
                       <strong>{answered.isCorrect ? 'إجابة صحيحة! بطل 👏' : 'إجابة خاطئة! ❌'}</strong>
-                      <p style={{ marginTop: '0.5rem', whiteSpace: 'pre-line' }}>
-                        <strong>التفسير:</strong> {q.explanation}
+                      <p style={{ marginTop: '0.5rem', whiteSpace: 'pre-line', wordBreak: 'break-word', overflowWrap: 'break-word' }}>
+                        <strong>التفسير:</strong> <span dir="auto">{q.explanation}</span>
                       </p>
                     </div>
                   )}
