@@ -1,0 +1,758 @@
+[
+  {
+    "subject": "thyroid",
+    "index": 0,
+    "id": "q63",
+    "question": "63- For the treatment of hyperthyroidism during the first trimester of pregnancy. Which one of the following medications can be used during first trimester of pregnancy",
+    "options": "a) propylthiouracil | b) Radioactive iodine | c) carbamazole | d) Both A and B | e) None of the above",
+    "correctId": "a",
+    "explanation": "Propylthiouracil (PTU) is the preferred antithyroid drug during the first trimester of pregnancy..."
+  },
+  {
+    "subject": "thyroid",
+    "index": 1,
+    "id": "q74",
+    "question": "74- Hypothyroid patients are evaluated every 4- 8 weeks. The most sensitive and specific parameter for adjustment of L- thyroxine dose is",
+    "options": "a) Serum TSH | b) Serum total T3 | c) Serum free T3 | d) Serum total T4 | e) Serum free T4",
+    "correctId": "a",
+    "explanation": "In primary hypothyroidism, the pituitary gland's secretion of TSH..."
+  },
+  {
+    "subject": "thyroid",
+    "index": 2,
+    "id": "q98",
+    "question": "98- The followings are correct regarding the pathophysiology of hyperthyroidism EXCEPT:",
+    "options": "a) Thyrotoxicosis occurs when autonomous follicles generate more thyroid hormones than required. | b) Toxic adenoma is a thyroid mass whose function is independent of pituitary control | c) Painless subacute granulomatous thyroiditis often develops after viral syndrome | d) Thyrotoxicosis factitia is hyperthyroidism by ingestion of exogenous thyroid hormone. | e) Amiodarone may induce thyrotoxicosis.",
+    "correctId": "c",
+    "explanation": "Subacute granulomatous (or De Quervain's) thyroiditis is typically *painful*..."
+  },
+  {
+    "subject": "thyroid",
+    "index": 3,
+    "id": "q100",
+    "question": "100- A 45- year- old woman has received a diagnosis of Graves' disease. She is reluctant to try ablative therapy and wants to attempt oral pharmacotherapy first. Her thyroid laboratory values today include TSH 0.25 mIU/L (normal 0.5- 4.5 mIU/L) and a free TA concentration of \\(3.6 \\text{ng / dL}\\) (normal \\(0.8 - 1.9 \\text{ng / dL}\\) ), She is anxious and always feels warm when others say it is too cold. Which would be considered the best drug for initial treatment of her condition?",
+    "options": "a) Lugol's solution. | b) Propylthiouracil (PTU). | c) Atenolol. | d) Methimazole. | e) Radioactive iodine.",
+    "correctId": "d",
+    "explanation": "For a non-pregnant patient with Graves' disease choosing oral pharmacotherapy..."
+  },
+  {
+    "subject": "alzheimer",
+    "index": 0,
+    "id": "q64",
+    "question": "64- Cholinesterase inhibitors and NMDA- receptor antagonists are indicated for treatment of Alzheimer Disease. Which drug blocks glutamatergic neurotransmission by antagonizing NMDA receptors",
+    "options": "a) Donepezil | b) Rivastigmine | c) Memantine | d) Galantamine | e) None of the above",
+    "correctId": "c",
+    "explanation": "Memantine is an uncompetitive antagonist of the NMDA..."
+  },
+  {
+    "subject": "alzheimer",
+    "index": 1,
+    "id": "q67",
+    "question": "67- Alzheimer disease, there are many clinical symptoms will associate with it. The main change in personality and behavior that associated with Alzheimer disease:",
+    "options": "a) Depression | b) Social withdrawal | c) Delusions | d) Changes in sleeping habits | e) All mentioned points are correct",
+    "correctId": "e",
+    "explanation": "Alzheimer's disease is a progressive neurodegenerative disorder..."
+  },
+  {
+    "subject": "alzheimer",
+    "index": 2,
+    "id": "q69",
+    "question": "69- Alzheimer disease is a progressive illness. Neurotransmitters involved in pathophysiology of Alzheimer disease",
+    "options": "a) Acetylcholine | b) Serotonin | c) Glutamate | d) Monoamine oxidase type B | e) All are involved",
+    "correctId": "e",
+    "explanation": "The pathophysiology of Alzheimer's disease is complex..."
+  },
+  {
+    "subject": "alzheimer",
+    "index": 3,
+    "id": "q90",
+    "question": "90- Donepezil could be used in",
+    "options": "a) Mild Alzheimer cases | b) moderate Alzheimer cases | c) severe Alzheimer cases | d) Dementia of parkinson disease | e) All above",
+    "correctId": "e",
+    "explanation": "Donepezil, an acetylcholinesterase inhibitor..."
+  },
+  {
+    "subject": "alzheimer",
+    "index": 4,
+    "id": "q97",
+    "question": "97- Pathologic characteristics of AD include",
+    "options": "a) Neurofibrillary tangles | b) Neuritic plaques | c) Loss of acetylcholine activity | d) Both B and C | e) A, B, and C",
+    "correctId": "e",
+    "explanation": "The classic pathological hallmarks of Alzheimer's disease..."
+  },
+  {
+    "subject": "anxiety",
+    "index": 0,
+    "id": "q89",
+    "question": "89- The most frequently prescribed drugs for the treatment of acute anxiety are:",
+    "options": "a) Benzodiazepines. | b) Tricyclic antidepressants. | c) Antiepileptic. | d) Selective serotonin reuptake inhibitors. | e) none",
+    "correctId": "a",
+    "explanation": "For the *acute* management of anxiety..."
+  },
+  {
+    "subject": "anxiety",
+    "index": 1,
+    "id": "q94",
+    "question": "94- A 23 year- old otherwise healthy woman with GAD has no past history of drug or alcohol abuse and no family history of substance abuse. She is started on lorazepam 0.5 mg three times daily. Which of the following side effects will you warn her about?",
+    "options": "a) Slowed reaction time | b) Sedation | c) Risk of withdrawal symptoms upon discontinuation | d) Anterograde amnesia | e) All of the above",
+    "correctId": "e",
+    "explanation": "Benzodiazepines like lorazepam are CNS depressants..."
+  },
+  {
+    "subject": "anxiety",
+    "index": 2,
+    "id": "q95",
+    "question": "95- Regarding anxiety disorders, The drug of choice for the management of choice generalized anxiety disorder is:",
+    "options": "a) Diazepam | b) Hydroxyzine | c) Citalopram | d) Buspirone | e) Pregabalin",
+    "correctId": "c",
+    "explanation": "Selective Serotonin Reuptake Inhibitors (SSRIs)..."
+  },
+  {
+    "subject": "anxiety",
+    "index": 3,
+    "id": "q102",
+    "question": "102- Common medical illnesses associated with symptoms of anxiety are listed below, EXCEPT:",
+    "options": "a) Depression | b) Ulcerative colitis | c) Systemic lupus erythematosus | d) Migraine headache | e) B12 deficiency anemia",
+    "correctId": "a",
+    "explanation": "While anxiety and depression are highly comorbid..."
+  },
+  {
+    "subject": "depressive",
+    "index": 0,
+    "id": "q1",
+    "question": "1- An antidepressant drug that can cause anticholinergic side effects (eg. dry mouth, blurred vision, constipation), and sedation is",
+    "options": "a) Fluoxetine | b) Amitriptyline | c) Escitalopram | d) Sertraline | e) Trazodone",
+    "correctId": "b",
+    "explanation": "Amitriptyline is a tricyclic antidepressant (TCA)..."
+  },
+  {
+    "subject": "depressive",
+    "index": 1,
+    "id": "q6",
+    "question": "6- A breast feeding woman was diagnosed to have depression. Which one of the following antidepressant drugs is the preferred one in this case?",
+    "options": "a) Sertraline | b) Fluoxetine | c) Duloxetine | d) Mirtazapine | e) Bupropion",
+    "correctId": "a",
+    "explanation": "Sertraline is generally considered the preferred..."
+  },
+  {
+    "subject": "depressive",
+    "index": 2,
+    "id": "q16",
+    "question": "16- A young woman suffered from depression. She has a history of anorexia nervosa. What is the antidepressant that should not be used for this patient?",
+    "options": "a) Sertraline | b) Imipramine | c) Bupropion | d) Mirtazapine | e) Duloxetine",
+    "correctId": "c",
+    "explanation": "Bupropion is associated with a dose-related risk of seizures..."
+  },
+  {
+    "subject": "depressive",
+    "index": 3,
+    "id": "q20",
+    "question": "20- A patient with severe depression and history of arrhythmia and uncontrolled hypertension. He was treated by fluoxetine. Despite good adherence to therapy by this patient to fluoxetine but no response was detected. What is the best action here?",
+    "options": "a) Increase fluoxetine dose | b) Changing treatment to amitriptyline | c) Addition of psychotherapy | d) Addition of imipramine | e) Addition of venlafaxine",
+    "correctId": "c",
+    "explanation": "Given the patient's history of arrhythmia..."
+  },
+  {
+    "subject": "depressive",
+    "index": 4,
+    "id": "q21",
+    "question": "21- The patient who was prescribed antidepressant agent must be monitored regularly for adverse effects. A pretreatment ECG is recommended before starting which one of the following antidepressant drugs",
+    "options": "a) Imipramine | b) Fluoxetine | c) Duloxetine | d) Mirtazapine | e) Bupropion",
+    "correctId": "a",
+    "explanation": "Tricyclic antidepressants (TCAs) like imipramine..."
+  },
+  {
+    "subject": "depressive",
+    "index": 5,
+    "id": "q28",
+    "question": "28- In regard to the clinical presentation of depression. Which one of the followings is a physical symptom for depression?",
+    "options": "a) Headache | b) Confusion | c) Suicidal thinking | d) Crying | e) Hopelessness",
+    "correctId": "a",
+    "explanation": "Depression can manifest with a variety of physical..."
+  },
+  {
+    "subject": "depressive",
+    "index": 6,
+    "id": "q46",
+    "question": "46- In regard to diagnosis of depression. Which one of the followings is the Diagnostic Criteria for Major Depressive Episode?",
+    "options": "a) At least five symptoms must be consistently present (nearly every day) over a 2- week period | b) At least two symptoms must be consistently present (nearly every day) over a 2- week period | c) At least five symptoms must be consistently present (nearly every day) over a 6- week period | d) At least two symptoms must be consistently present (nearly every day) over a 5- week period | e) At least five symptoms must be intermittently present over a 2- week period",
+    "correctId": "a",
+    "explanation": "According to the DSM-5 criteria..."
+  },
+  {
+    "subject": "depressive",
+    "index": 7,
+    "id": "q50",
+    "question": "50- The most common adverse effect profile of the SSR is includes:",
+    "options": "a) sedation | b) sexual dysfunction | c) weight loss | d) delusion | e) headache",
+    "correctId": "b",
+    "explanation": "While SSRIs can cause a range of side effects..."
+  },
+  {
+    "subject": "schizophrenia",
+    "index": 0,
+    "id": "q2",
+    "question": "2- P.S Is 22 years old female with history of the following symptoms: Hallucinations; delusions; illogical conversation; autistic thinking: uncooperativeness, physical aggression; impaired self- care skills; and disturbed steep and appetite. P.S is in the emergency department now, she is severely agitated, shouting and being uncooperative with the staff. What is the best treatment that should be administered to this patient in the emergency department?",
+    "options": "a) Oral Lorazepam | b) IM Diazepam | c) IM Haloperidol | d) oral Clozapine | e) IV Phenytoin",
+    "correctId": "c",
+    "explanation": "For a severely agitated and aggressive patient..."
+  },
+  {
+    "subject": "schizophrenia",
+    "index": 1,
+    "id": "q10",
+    "question": "10- 27years old patient with the following symptoms: Hallucinations; delusions; illogical conversation; Autistic thinking uncooperativeness, physical aggression, impaired Self- care skills, and disturbed sleep and appetite, her parents are concerned about her suicidal attempts. Which antipsychotic medication is best used to address suicidal behavior?",
+    "options": "a) Haloperidol | b) Quetiapine | c) Risperidone | d) Aripiprazole | e) Clozapine",
+    "correctId": "e",
+    "explanation": "Clozapine is the only antipsychotic medication..."
+  },
+  {
+    "subject": "schizophrenia",
+    "index": 2,
+    "id": "q12",
+    "question": "12- Regarding Schizophrenia many factors can cause it. The following represent pathophysiology of schizophrenia, EXCEPT:",
+    "options": "a) Genetic predisposition | b) Defect in epinephrine receptors | c) Obstetric complications with hypoxia | d) Alterations in glutamatergic neurotransmission | e) Autoimmune disorder",
+    "correctId": "b",
+    "explanation": "The pathophysiology of schizophrenia is complex..."
+  },
+  {
+    "subject": "schizophrenia",
+    "index": 3,
+    "id": "q15",
+    "question": "15- A 33- year- old female is brought to the emergency department by her mother. The patient had a sudden onset of fever and her temperature is now \\(40^{\\circ}C\\) (104F). She has no sick contacts. The mother mentions that she is on a medication for schizophrenia but could not remember the name. A complete blood count shows 250 neutrophils per microliter. (normal 2500 and 7500 neutrophils per microliter). Which of the following medications is she likely taking?",
+    "options": "a) Clozapine | b) Olanzapine | c) Quetiapine | d) Risperidone | e) Haloperidol",
+    "correctId": "a",
+    "explanation": "The presentation of fever and severe neutropenia..."
+  },
+  {
+    "subject": "schizophrenia",
+    "index": 4,
+    "id": "q33",
+    "question": "33- Regarding schizophrenia: Symptom domains that are characteristic of a diagnosis of schizophrenia include all of the following EXCEPT",
+    "options": "a) Cognitive impairment. | b) Musculoskeletal problems | c) Social isolation | d) Talking to someone who is not there. | e) Hearing abnormal voices.",
+    "correctId": "b",
+    "explanation": "Schizophrenia is characterized by positive symptoms..."
+  },
+  {
+    "subject": "schizophrenia",
+    "index": 5,
+    "id": "q34",
+    "question": "34- Regarding treatment of schizophrenia: Which of the following antipsychotics is the appropriate choice for the treatment of an individual with schizophrenia in its first psychotic break?",
+    "options": "a) Clozapine. | b) Perphenazine + Ziprasidone | c) Chlorpromazine. | d) Risperidone | e) There is no need for such therapy",
+    "correctId": "d",
+    "explanation": "For a first psychotic break, guidelines recommend..."
+  },
+  {
+    "subject": "schizophrenia",
+    "index": 6,
+    "id": "q39",
+    "question": "39- Best drug for treatment of resistant schizophrenia is",
+    "options": "a) olanzapine | b) clozapine | c) carbamazepine | d) haloperidol | e) sertraline",
+    "correctId": "b",
+    "explanation": "Clozapine is the gold-standard..."
+  },
+  {
+    "subject": "schizophrenia",
+    "index": 7,
+    "id": "q40",
+    "question": "40- Which the following perpetration are not intended be given to schizophrenic mothers during breastfeeding?",
+    "options": "a) Aripiprazole | b) Perphenazine | c) Trifluroperazine. | d) Clozapine | e) Quetiapine",
+    "correctId": "d",
+    "explanation": "Clozapine is generally contraindicated..."
+  },
+  {
+    "subject": "insomnia",
+    "index": 0,
+    "id": "q9",
+    "question": "9- Obstructive sleep apnea (OSA) is potentially life- threatening and characterized by repeated episodes of nocturnal breathing cessation followed by blood oxygen desaturation. Which one of the following drugs are approved by the FDA to improve wakefulness in those with residual daytime sleepiness. They should be used only in patients without cardiovascular disease who are using optimal PAP therapy.",
+    "options": "a) Imipramine | b) Clomipramine | c) Fluoxetine | d) Modafinil | e) Nortriptyline",
+    "correctId": "d",
+    "explanation": "Modafinil is a wakefulness-promoting agent..."
+  },
+  {
+    "subject": "insomnia",
+    "index": 1,
+    "id": "q11",
+    "question": "11- AK. is 66 years old male patient with history of depression, arrhythmia, and substance abuse. What is the best treatment for treating insomnia for this patient?",
+    "options": "a) Quazepam | b) Trazodone | c) Triazolam | d) Suvorexant | e) Amitriptyline",
+    "correctId": "b",
+    "explanation": "For an elderly patient with a history of depression..."
+  },
+  {
+    "subject": "insomnia",
+    "index": 2,
+    "id": "q29",
+    "question": "29- An elderly patient who has difficulty in sleep with frequent nighttime awakenings. What is the best treatment for this patient?",
+    "options": "a) Zalepon | b) Zolpidem | c) Triazolam | d) Flurazepam | e) Quazepam",
+    "correctId": "a",
+    "explanation": "For an elderly patient with difficulty maintaining sleep..."
+  },
+  {
+    "subject": "insomnia",
+    "index": 3,
+    "id": "q42",
+    "question": "42- DP is a 46- year- old woman who presents with a complaint of difficulty initiating sleep. After a careful sleep history, you rule out other potential sleep disorders and want to start her on drug therapy for her insomnia. Which of the following would be the best recommendation?",
+    "options": "a) Amitriptyline 10 mg at bedtime | b) Flurazepam 15 mg at bedtime | c) Zaleplon 5 mg at bedtime | d) Doxepin 3 mg at bedtime | e) None of the above",
+    "correctId": "c",
+    "explanation": "For difficulty *initiating* sleep, a medication..."
+  },
+  {
+    "subject": "insomnia",
+    "index": 4,
+    "id": "q22",
+    "question": "22- M.M is 38 years old patient presented to the sleep hygienist with excessive day time sleepiness (EDS), sleep attacks that last up to 30 minutes, fatigue, impaired performance, and disturbed nighttime sleep. He was diagnosed with Narcolepsy. Which one of the following is the standard of treatment of EDS?",
+    "options": "a) Modafinil | b) Atomoxetine | c) Fluoxetine | d) Imipramine | e) Amphetamine",
+    "correctId": "a",
+    "explanation": "Modafinil is the first-line, standard pharmacologic..."
+  },
+  {
+    "subject": "contraception",
+    "index": 0,
+    "id": "q54",
+    "question": "54- Many methods exist for initiating oral contraceptive pills. The method of initiating first pill in the same day of physician visit is:",
+    "options": "a) Quick start method | b) Flexible method | c) First day start method | d) Sunday start method | e) Clinic and pharmacy method",
+    "correctId": "a",
+    "explanation": "The \"Quick Start\" method refers to the practice..."
+  },
+  {
+    "subject": "contraception",
+    "index": 1,
+    "id": "q57",
+    "question": "57- A 23 years old female is diagnosed to have amenorrhea due to hyperprolactinemia. The drug of choice is",
+    "options": "a) Estrogen/progestin pills | b) Progestin only pills | c) Dopamine agonists | d) NSAIDs | e) Insulin sensitizing drugs",
+    "correctId": "c",
+    "explanation": "Hyperprolactinemia (high prolactin levels)..."
+  },
+  {
+    "subject": "contraception",
+    "index": 2,
+    "id": "q80",
+    "question": "80- Emergency contraceptives should be taken after unprotected intercourse to prevent unintended pregnancy. Ulipristal should be taken within",
+    "options": "a) 5 minutes | b) 5 hours | c) 5 days | d) 10 days | e) 14 days.",
+    "correctId": "c",
+    "explanation": "Ulipristal acetate is a progesterone receptor modulator..."
+  },
+  {
+    "subject": "contraception",
+    "index": 3,
+    "id": "q84",
+    "question": "84- Regarding contraception: All of the following contraception methods can prevent pregnancy by inhibiting sperm from reaching a mature ovum EXCEPT",
+    "options": "a) Condom. | b) Cervical cap. | c) Transdermal contraceptive patch | d) Diaphragm. | e) Vaginal sponge.",
+    "correctId": "c",
+    "explanation": "Barrier methods (condom, cervical cap, diaphragm, sponge)..."
+  },
+  {
+    "subject": "contraception",
+    "index": 4,
+    "id": "q88",
+    "question": "88- 16 years old girl with normal secondary sexual characteristics but with no menarche. This girl could be describe as having?",
+    "options": "a) Primary amenorrhoea | b) Oligomenorrhea | c) Dysmenorrhea | d) Secondary amenorrhoea | e) Endometriosis",
+    "correctId": "a",
+    "explanation": "Primary amenorrhea is defined as the absence of menarche..."
+  },
+  {
+    "subject": "contraception",
+    "index": 5,
+    "id": "q93",
+    "question": "93- Which of the following progesterone have antiandrogenic properties...",
+    "options": "a) desogestrel | b) norgestimate | c) northindrone | d) drospirinone | e) levonorgestrel",
+    "correctId": "d",
+    "explanation": "Drospirenone is a progestin analog of spironolactone..."
+  },
+  {
+    "subject": "contraception",
+    "index": 6,
+    "id": "q99",
+    "question": "99- The followings should be taken into consideration for a woman over 35 years of age while taking combined hormonal contraceptives (CHCS) EXCEPT",
+    "options": "a) Us CHCs containing less than 50 meg estrogen. | b) Not recommended for women with migraine. | c) Low dose of CHCs can be given safely to all women with a history of dyslipidemia | d) CHCs are not recommended for women with uncontrolled BP. | e) CHCs are not preferred to be given to women with a history of diabetes and hypertension.",
+    "correctId": "c",
+    "explanation": "This statement is false and therefore the exception..."
+  },
+  {
+    "subject": "hrt",
+    "index": 0,
+    "id": "q58",
+    "question": "58- Many types of medications can be used for treatment of post menopausal symptoms. The medication which has combined estrogenic, progestogenic, and androgenic activity and improves mood, menopausal symptoms, and vaginal atrophy.",
+    "options": "a) Citalopram | b) Tibolone | c) Dehydroepiandrosterone | d) Fluoxetine | e) Estradiol",
+    "correctId": "b",
+    "explanation": "Tibolone is a synthetic steroid used in some countries..."
+  },
+  {
+    "subject": "hrt",
+    "index": 1,
+    "id": "q66",
+    "question": "66- Estrogens have important roles in treatment of post menopausal symptoms. When compared to oral estrogen, transdermal estrogen is",
+    "options": "a) Less likely to increase triglycerides | b) Less likely to elevate blood pressure | c) Associated with lower risk of DVT | d) Associated with lower risk of MI | e) All",
+    "correctId": "e",
+    "explanation": "Transdermal estrogen avoids the \"first-pass\" effect..."
+  },
+  {
+    "subject": "hrt",
+    "index": 2,
+    "id": "q83",
+    "question": "83- Regarding menopause: Which of the following postmenopausal females can safely receive hormone replacement therapy?",
+    "options": "a) A 53 year- old female underwent mastectomy 10 years ago due to breast cancer. | b) A 49 year- old female with a history of myocardial infarction one year ago. | c) A 55 year- old female newly diagnosed with decompensated cirrhosis. | d) A 54 year- old female with a stroke attack 6 months ago. | e) A 51 year- old female with a history of peptic ulceration a year ago.",
+    "correctId": "e",
+    "explanation": "Standard contraindications to Hormone Replacement Therapy (HRT)..."
+  },
+  {
+    "subject": "hrt",
+    "index": 3,
+    "id": "q86",
+    "question": "86- Contraindication to HRT include all the following EXCEPT",
+    "options": "a) DVT | b) Breast cancer | c) Hypertriglycermia | d) Hot flush | e) Hypothyroidism",
+    "correctId": "d",
+    "explanation": "A hot flush is a symptom of menopause... (Using \"E\" as correct answer in parsing since it is a single answer usually and D is an indication). Let me just use the literal text."
+  },
+  {
+    "subject": "hrt",
+    "index": 4,
+    "id": "q101",
+    "question": "101- Regarding hormonal replacement therapy, The benefits of hormonal replacement therapy include:",
+    "options": "a) Relief of moderate to severe vasomotor symptoms | b) Treatment of vulvo- vaginal atrophy | c) Short term therapy for prevention of postmenopausal osteoporosis | d) All of the above | e) None of the above",
+    "correctId": "d",
+    "explanation": "Estrogen-based hormone replacement therapy..."
+  },
+  {
+    "subject": "hrt",
+    "index": 5,
+    "id": "q105",
+    "question": "105- Addition of a progestene for estrogen replacement therapy in postmenopausal women is recommended because the",
+    "options": "a) blocks the increased risk of MI due to estrogen | b) blocks the increased risk of endometrial carcinoma due to estrogen | c) reverses vulval atrophy | d) enhances the metabolic benefits of estrogen | e) All of them",
+    "correctId": "b",
+    "explanation": "In a woman with an intact uterus..."
+  },
+  {
+    "subject": "menstruation",
+    "index": 0,
+    "id": "q60",
+    "question": "60- Regarding pharmacologic therapy of dysmenorrhea, The first line pharmacologic therapy is",
+    "options": "a) Estrogen only | b) Progestogen only | c) Combination hormonal contraceptives | d) Paracetamol | e) NSAIDs",
+    "correctId": "e",
+    "explanation": "Dysmenorrhea (painful periods)..."
+  },
+  {
+    "subject": "menstruation",
+    "index": 1,
+    "id": "q77",
+    "question": "77- Hypothalamus secretes gonadotropin- releasing hormone (GnRH) in a pulse like manner with varying frequencies throughout the menstrual cycle and GRH stimulates the anterior pituitary to produce and release hormones. What are the hormones that produced by stimulation of GnRH to the anterior pituitary gland",
+    "options": "a) Follicle- stimulating hormone (FSH) and luteinizing hormone (LH) | b) Estrogen and progesterone | c) GRH | d) Growth hormone | e) aldosterone and cortisol",
+    "correctId": "a",
+    "explanation": "Gonadotropin-releasing hormone (GnRH)..."
+  },
+  {
+    "subject": "menstruation",
+    "index": 2,
+    "id": "q78",
+    "question": "78- For diagnosis of menopause, The most important parameter in the diagnosis of menopause is",
+    "options": "a) Thyroid function test | b) Complete blood count and serum FSH | c) Physical examination | d) Diagnosis is determined retrospectively after 12 consecutive months of amenorrhea | e) None of the above",
+    "correctId": "d",
+    "explanation": "Menopause is a clinical diagnosis..."
+  },
+  {
+    "subject": "menstruation",
+    "index": 3,
+    "id": "q82",
+    "question": "82- Regarding menstruation disorders: Which of the following hormone- like substance is responsible for painful menstrual cramps?",
+    "options": "a) Estrogen. | b) Dopamine. | c) Epinephrine. | d) Prostaglandin. | e) Serotonin.",
+    "correctId": "d",
+    "explanation": "Prostaglandins..."
+  },
+  {
+    "subject": "oncology",
+    "index": 0,
+    "id": "q7",
+    "question": "7- Chemotherapy that is given before surgical resection of the tumor to decrease the tumor burden to be removed is called",
+    "options": "a) Adjuvant therapy | b) Neoadjuvant therapy | c) Chemotherapy cycle | d) Metastasis | e) Off- label therapy",
+    "correctId": "b",
+    "explanation": "Neoadjuvant therapy..."
+  },
+  {
+    "subject": "oncology",
+    "index": 1,
+    "id": "q13",
+    "question": "13- A patient diagnosed with CLL with del (17p). What is the best initial treatment for this patient?",
+    "options": "a) Fludarabine- based chemoimmunotherapy | b) Ibrutinib. | c) Venetoclax | d) Bendamustine plus rituximab | e) Obinutuzumab plus chlorambucil",
+    "correctId": "b",
+    "explanation": "Deletion of chromosome 17p..."
+  },
+  {
+    "subject": "oncology",
+    "index": 2,
+    "id": "q19",
+    "question": "19- A cancer that arise in the connective tissue. Such type of cancer is called",
+    "options": "a) Carcinoma | b) Adenocarcinoma | c) Sarcoma | d) Lipoma | e) Lymphoma",
+    "correctId": "c",
+    "explanation": "Cancers are classified..."
+  },
+  {
+    "subject": "oncology",
+    "index": 3,
+    "id": "q25",
+    "question": "25- A patient diagnosed with resistant CML due to T3151 mutation. Which one of the following TKIs is suitable for this patient?",
+    "options": "a) Imatinib | b) Dasatinib | c) Nilotinib | d) Ponatinib | e) Bosutinib",
+    "correctId": "d",
+    "explanation": "The T315I mutation..."
+  },
+  {
+    "subject": "oncology",
+    "index": 4,
+    "id": "q30",
+    "question": "30- A patient diagnosed with CLL and treated by watchful waiting. All of the followings are indications for treatment initiation to CLL patients, EXCEPT",
+    "options": "a) Significant anemia | b) A lymphocyte doubling time of more than 6 months | c) Persistent B- symptoms | d) Hepatomegaly, and/or splenomegaly | e) Recurrent infection",
+    "correctId": "b",
+    "explanation": "In CLL..."
+  },
+  {
+    "subject": "oncology",
+    "index": 5,
+    "id": "q31",
+    "question": "31- Regarding cancer prevention: All of the following strategies are useful in cancer prevention EXCEPT",
+    "options": "a) Intermittent administration of broad-spectrum antibiotics. | b) Smoking cessation. | c) Avoidance of direct sunlight exposure. | d) Vaccination against certain types of viruses (Hepatitis B). | e) Regular and brisk daily exercise.",
+    "correctId": "a",
+    "explanation": "Broad-spectrum antibiotics..."
+  },
+  {
+    "subject": "oncology",
+    "index": 6,
+    "id": "q32",
+    "question": "32- Regarding carcinogens: All of the following are carcinogenic EXCEPT",
+    "options": "a) Benzene. | b) Stress. | c) Smoking. | d) Epstein- Barr virus infection. | e) Excessive sun exposure",
+    "correctId": "b",
+    "explanation": "While chronic stress..."
+  },
+  {
+    "subject": "oncology",
+    "index": 7,
+    "id": "q35",
+    "question": "35- Regarding chemotherapy induced toxicities: Which of the following is the most common toxicity of cytotoxic anticancer therapy?",
+    "options": "a) Myelosuppression | b) Xerostomia. | c) Extravasation. | d) Hepatic encephalopathy. | e) Infertility.",
+    "correctId": "a",
+    "explanation": "Most cytotoxic chemotherapies..."
+  },
+  {
+    "subject": "oncology",
+    "index": 8,
+    "id": "q36",
+    "question": "36- Regarding management of acute leukemia: What is the main indication of intrathecal methotrexate in a patient with acute lymphocytic/lymphoblastic leukemia?",
+    "options": "a) Minimization of chemotherapy adverse effects. | b) Prevention of heart diseases. | c) CNS prophylaxis. | d) Reducing renal toxicity. | e) Treating hyperuricemia.",
+    "correctId": "c",
+    "explanation": "The main indication for intrathecal methotrexate..."
+  },
+  {
+    "subject": "oncology",
+    "index": 9,
+    "id": "q41",
+    "question": "41- Concerning leukemia, Anti- CD33 monoclonal antibody utilized for relapsed acute myeloid leukemia in adults and children?",
+    "options": "a) Gemtuzumab ozogamicin. | b) Glasdegib. | c) Glitertinib. | d) Ivosidenib. | e) Enasidenib.",
+    "correctId": "a",
+    "explanation": "Gemtuzumab ozogamicin..."
+  },
+  {
+    "subject": "oncology",
+    "index": 10,
+    "id": "q43",
+    "question": "43- Which of the followings are not properties of cisplatin used in cancer treatment?",
+    "options": "a) Clinically active in the treatment of different tumors from the head, neck to anal cancer. | b) Effective in the treatment of many types of lymphoma and carcinoma of unknown primary. | c) Significant nephrotoxicity and electrolyte abnormalities can occur even with adequate hydration. | d) Emetogenic. | e) Ototoxic with a high frequency of hearing loss.",
+    "correctId": "b",
+    "explanation": "This statement is not a primary property of cisplatin..."
+  },
+  {
+    "subject": "oncology",
+    "index": 11,
+    "id": "q44",
+    "question": "44- Regarding prostate cancer, which of the following maneuvers considered as a non- pharmacological therapy for prostate cancer",
+    "options": "a) Watchful waiting | b) Bilateral orchiectomy | c) External beam radiotherapy | d) Radical prostatectomy | e) All of the above",
+    "correctId": "e",
+    "explanation": "Non-pharmacological therapies..."
+  },
+  {
+    "subject": "oncology",
+    "index": 12,
+    "id": "q47",
+    "question": "47- The toxic effect of chemotherapy may be affected by",
+    "options": "a) The properties of anticancer agent | b) The dose of anticancer agent | c) The duration of treatment | d) Patient-related factors | e) All of them",
+    "correctId": "e",
+    "explanation": "The toxicity of chemotherapy is multifactorial..."
+  },
+  {
+    "subject": "oncology",
+    "index": 13,
+    "id": "q48",
+    "question": "48- The purpose of maintenance therapy for leukemia is to",
+    "options": "a) induce a remission | b) further eliminate leukemic cells and produce an enduring CCR | c) Administer dose-intensive chemotherapy to reduce the burden of residual leukemic cells | d) Continue remission and to lower cumulative toxicity | e) minimize the development of drug cross-resistance",
+    "correctId": "d",
+    "explanation": "In leukemia treatment..."
+  },
+  {
+    "subject": "oncology",
+    "index": 14,
+    "id": "q49",
+    "question": "49- Concerning the cancer chemotherapy, all the statements bellow about methotrexate are correct, EXCEPT:",
+    "options": "a) It inhibits cytokine production. | b) It inhibits purine biosynthesis. | c) It stimulates adenosine release. | d) It does not have anti-inflammatory properties. | e) Methotrexate is contraindicated in pregnant and nursing women.",
+    "correctId": "d",
+    "explanation": "This statement is false..."
+  },
+  {
+    "subject": "oncology",
+    "index": 15,
+    "id": "q51",
+    "question": "51- Anthracycline induced cardiomyopathy is closely linked to a patient's",
+    "options": "a) Normal dose | b) Toxic dose | c) Total daily dose | d) Cumulative dose | e) All of the above",
+    "correctId": "d",
+    "explanation": "The most important risk factor..."
+  },
+  {
+    "subject": "breast_cancer",
+    "index": 0,
+    "id": "q24",
+    "question": "24- A woman was diagnosed to have breast cancer. The cancer of the breast is mostly",
+    "options": "a) Carcinoma | b) Sarcoma | c) Lipoma | d) Breastoma | e) Adenocarcinoma",
+    "correctId": "e",
+    "explanation": "The vast majority..."
+  },
+  {
+    "subject": "breast_cancer",
+    "index": 1,
+    "id": "q68",
+    "question": "68- Adjuvant hormonal therapy is an important part in the treatment of breast cancer. The gold standard adjuvant hormonal therapy for premenopausal women and has both estrogenic and antiestrogenic properties",
+    "options": "a) Doxorubicin | b) Cyclophosphamide | c) Tamoxifen | d) Goserelin | e) Pamidronate",
+    "correctId": "c",
+    "explanation": "Tamoxifen is a selective estrogen receptor modulator..."
+  },
+  {
+    "subject": "breast_cancer",
+    "index": 2,
+    "id": "q72",
+    "question": "72- In metastatic breast cancer (stage IV), we consider adding agents to standard therapy for treating breast cancer patients with metastases to the bone to decrease rates of skeletal- related events, such as fractures, spinal cord compression, and pain, and the need for radiation to the bones or surgery. Which medication is frequently added",
+    "options": "a) Pertuzumab | b) Pamidronate | c) Methotrexate | d) Docetaxel | e) Doxorubicin",
+    "correctId": "b",
+    "explanation": "Pamidronate is a bisphosphonate..."
+  },
+  {
+    "subject": "breast_cancer",
+    "index": 3,
+    "id": "q75",
+    "question": "75- There are medications if taken for 5 years can prevent development of breast cancers in postmenopausal women. The preventive medications include exemestane and",
+    "options": "a) Anastrozole | b) Tinidazole | c) Albendazole | d) Pantoprazole | e) Econazole",
+    "correctId": "a",
+    "explanation": "Exemestane is an aromatase inhibitor..."
+  },
+  {
+    "subject": "breast_cancer",
+    "index": 4,
+    "id": "q85",
+    "question": "85- Regarding breast cancer: Most women with breast cancer present with:",
+    "options": "a) A painless, multiple and large masses in the skin of the breast nipple. | b) A soft mass with pain associated with start of menstruation. | c) A painful, small solitary mass deep in the muscle of the chest. | d) A painless solitary lump in the breast. | e) Nipple dislocation.",
+    "correctId": "d",
+    "explanation": "The most common presenting symptom..."
+  },
+  {
+    "subject": "breast_cancer",
+    "index": 5,
+    "id": "q103",
+    "question": "103- Regarding breast cancer, which of the following chemotherapies used for breast cancer associated with hemorrhagic cystitis.",
+    "options": "a) Doxorubicin | b) Paclitaxel | c) Cyclophosphamide | d) Fluorouracil | e) Methotrexate",
+    "correctId": "c",
+    "explanation": "Cyclophosphamide is metabolized..."
+  },
+  {
+    "subject": "prostate_cancer",
+    "index": 0,
+    "id": "q5",
+    "question": "5- For evaluation of therapeutic outcomes in patient treated for prostate cancer, many parameters can be used for monitoring response to therapy. Which one of the following markers can be used for monitoring response to therapy?",
+    "options": "a) PSA | b) General urine examination | c) Albumin | d) CA- 125 | e) None of the above",
+    "correctId": "a",
+    "explanation": "Prostate-Specific Antigen (PSA)..."
+  },
+  {
+    "subject": "prostate_cancer",
+    "index": 1,
+    "id": "q14",
+    "question": "14- A patient diagnosed with prostate cancer and was prescribed degarelix. A major advantage of degarelix over LHRH agonists is?",
+    "options": "a) Lack of tumor flare | b) Given orally | c) Given once every 28 days | d) No osteoporosis risk | e) No injection site reactions",
+    "correctId": "a",
+    "explanation": "Degarelix is a GnRH *antagonist*..."
+  },
+  {
+    "subject": "prostate_cancer",
+    "index": 2,
+    "id": "q17",
+    "question": "17- Many hormones involve in regulating prostate gland function. Hormone (s) that involve in regulation of prostate gland function is/are:",
+    "options": "a) Adrenocorticotropic hormone (ACTH) | b) Follicle- stimulating hormone (FSH) | c) Luteinizing hormone- releasing hormone (LHRH) | d) Luteinizing hormone (LH) | e) All mentioned points are correct",
+    "correctId": "e",
+    "explanation": "Prostate function is regulated by a hormonal cascade..."
+  },
+  {
+    "subject": "prostate_cancer",
+    "index": 3,
+    "id": "q27",
+    "question": "27- T.D is 9 years old boy with acute lymphoblastic leukemia. While you were observing his treatment you noticed that his induction phase regimen is: Cyclophosphamide, L- asparaginase, Vincristine, and Prednisolone. The senior clinical pharmacist suggested to add Mesna to the treatment regimen. What is the reason behind adding Mesna to this treatment protocol?",
+    "options": "a) To further intensify the treatment protocol | b) To reduce the risk of hemorrhagic cystitis of cyclophosphamide | c) To reduce the risk of vincristine toxicity | d) To boost immune system | e) To relief the symptoms",
+    "correctId": "b",
+    "explanation": "Mesna..."
+  },
+  {
+    "subject": "prostate_cancer",
+    "index": 4,
+    "id": "q37",
+    "question": "37- Regarding management of prostate cancer. Which of the following regarding the combination of (flutamide and leuprolide) is true?",
+    "options": "a) It is indicated to delay the initiation of chemotherapy in both nonmetastatic and metastatic disease. | b) It is indicated for advanced prostate cancer. | c) It is indicated for orchiectomy. | d) It is indicated for metastatic castrate-resistant prostate cancer. | e) It is indicated as adjuvant therapy before mastectomy.",
+    "correctId": "b",
+    "explanation": "Leuprolide is an LHRH agonist..."
+  },
+  {
+    "subject": "prostate_cancer",
+    "index": 5,
+    "id": "q45",
+    "question": "45- The followings are correct regarding the pathophysiology of prostate cancer EXCEPT.",
+    "options": "a) Well- differentiated tumors grow slowly. | b) Adenocarcinoma cells Include \\(95\\%\\) of cases. | c) The kidney is the most organ involved initially in metastasis | d) The rationale for hormone therapy is based on the effect of androgen on the growth and differentiation of the normal prostate | e) Localized prostate cancer is curable by surgery or radiotherapy",
+    "correctId": "c",
+    "explanation": "Prostate cancer most commonly metastasizes to bones..."
+  },
+  {
+    "subject": "chemo_adverse",
+    "index": 1,
+    "id": "q18",
+    "question": "18- Regarding adverse effect of chemotherapeutic agent. Which one can cause pulmonary toxicity as The most serious side effect",
+    "options": "a) Cisplatin | b) Carmustine | c) Bleomycin | d) Cyclophosphamide | e) Paclitaxel",
+    "correctId": "c",
+    "explanation": "Bleomycin is most famously associated with pulmonary toxicity..."
+  },
+  {
+    "subject": "chemo_adverse",
+    "index": 2,
+    "id": "q23",
+    "question": "23- Vomiting is a common adverse effect after administration of cytotoxic Chemotherapy. All of the following drugs are highly effective in preventing CINV EXCEPT?",
+    "options": "a) Dexamethasone | b) Aprepitant | c) Metoclopramide | d) Olanzapine | e) Ondansetron",
+    "correctId": "c",
+    "explanation": "Modern antiemetic regimens..."
+  },
+  {
+    "subject": "chemo_adverse",
+    "index": 3,
+    "id": "q26",
+    "question": "26- Febrile neutropenia is a common adverse effect after administration of cytotoxic Chemotherapy. Which one of the following drugs stimulates the maturation and differentiation of neutrophil precursors?",
+    "options": "a) Methotrexate | b) Doxorubicin | c) Pegfilgrastim | d) Peginterferon | e) None of the above",
+    "correctId": "c",
+    "explanation": "Pegfilgrastim is a long-acting form of filgrastim..."
+  },
+  {
+    "subject": "chemo_adverse",
+    "index": 4,
+    "id": "q52",
+    "question": "52- Which one of the following TK is associated with an increase in serious arterial thrombotic events?",
+    "options": "a) Imatinib | b) Ponatinib | c) Dasatinib | d) Nilotinib | e) Bosutinib",
+    "correctId": "b",
+    "explanation": "Ponatinib is a potent third-generation TKI..."
+  },
+  {
+    "subject": "chemo_adverse",
+    "index": 5,
+    "id": "q104",
+    "question": "104- Features of hyperparathyroidism include the following EXCEPT",
+    "options": "a) hypercalcemia | b) kidney stones | c) bone pain | d) psychiatric moans | e) Hypocalcemia",
+    "correctId": "e",
+    "explanation": "Hyperparathyroidism causes hypercalcemia..."
+  }
+]

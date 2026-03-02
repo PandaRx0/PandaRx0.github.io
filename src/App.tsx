@@ -39,6 +39,22 @@ const TOPICS = {
   biotech: []
 };
 
+const SUMMARIES = {
+  therapeutics: [
+    { id: 'adrenal', title: 'Adrenal Insufficiency', url: '/summaries/Adrenal Insufficiency.pdf' },
+    { id: 'alzheimer', title: 'Alzhiemers disease', url: '/summaries/Alzhiemers disease.pdf' },
+    { id: 'anxiety', title: 'Anxiety', url: '/summaries/Anxiety.pdf' },
+    { id: 'thyroid', title: 'Hyperthyrodism and thyroid storm', url: '/summaries/Hyperthyrodism and thyroid storm.pdf' },
+    { id: 'cushing', title: 'Cushing Syndrome', url: '/summaries/cushing syndrome.pdf' },
+    { id: 'hyperaldosteronism', title: 'Hyperaldosteronism', url: '/summaries/hyperaldosteronism.pdf' }
+  ],
+  advanced: [],
+  delivery: [
+    { id: 'd1', title: 'Drug Development Summary', url: '/summaries/drug_development.pdf' }
+  ],
+  biotech: []
+};
+
 const MCQS = {
   'adrenal_disorders': [
     {
@@ -5721,17 +5737,61 @@ function App() {
         </div>
       </div>
 
+      {step === 'subject' && (
+        <div
+          className="promo-banner summaries-promo-banner"
+          onClick={() => setStep('summaries_subject')}
+          style={{
+            cursor: 'pointer',
+            marginBottom: '2rem',
+            transition: 'transform 0.3s, border-color 0.3s, box-shadow 0.3s'
+          }}
+          onMouseOver={(e) => {
+            e.currentTarget.style.transform = 'translateY(-4px)';
+            e.currentTarget.style.borderColor = '#d4af37';
+            e.currentTarget.style.boxShadow = '0 12px 40px rgba(0,0,0,0.5)';
+          }}
+          onMouseOut={(e) => {
+            e.currentTarget.style.transform = 'translateY(0)';
+            e.currentTarget.style.borderColor = '#333';
+            e.currentTarget.style.boxShadow = '0 8px 32px rgba(0,0,0,0.4)';
+          }}
+        >
+          <div className="promo-video-wrapper" style={{ width: '300px' }}>
+            <video
+              className="promo-video"
+              autoPlay
+              muted
+              loop
+              playsInline
+              style={{ filter: 'brightness(0.8)', transform: 'scale(1.15)' }}
+            >
+              <source src="/Books_floating_animation_030a28c348.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div className="promo-content" style={{ padding: '2.5rem 3rem 2.5rem 1rem' }}>
+            <h2 style={{ margin: 0, fontFamily: "'Cairo', sans-serif", fontSize: '2.4rem', fontWeight: 700, display: 'flex', alignItems: 'center', gap: '0.8rem', color: '#d4af37' }}>
+              <Database size={32} /> ملخصات
+            </h2>
+            <p className="promo-text" style={{ fontSize: '1.2rem', fontWeight: 600, color: '#f0f0f0', marginTop: '0.5rem' }}>اضغط هنا للوصول إلى ملخصات المواد الدراسية بصيغة PDF</p>
+          </div>
+        </div>
+      )}
+
       <main className="main-content" style={{ width: '100%', maxWidth: '1000px', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '0 1rem' }}>
         <div className="nav-bar" style={{ width: '100%', display: 'flex', justifyContent: 'space-between', marginBottom: '2rem' }}>
           <button
             className="back-btn"
             onClick={() => {
-              if (step === 'topic' || step === 'coming_soon_subject') {
+              if (step === 'topic' || step === 'coming_soon_subject' || step === 'summaries_subject') {
                 setStep('subject');
                 setSelectedSubject(null);
               } else if (step === 'mcq') {
                 setStep('topic');
                 setSelectedTopic(null);
+              } else if (step === 'summaries_list') {
+                setStep('summaries_subject');
+                setSelectedSubject(null);
               }
             }}
             disabled={step === 'subject'}
@@ -5742,7 +5802,9 @@ function App() {
           <div className="breadcrumb" style={{ display: 'flex', alignItems: 'center' }}>
             <span>الرئيسية</span>
             <span>
-              {selectedSubject && ` / ${(selectedSubject as any).title}`}
+              {step.startsWith('summaries') && ' / ملخصات'}
+              {selectedSubject && !step.startsWith('summaries') && ` / ${(selectedSubject as any).title}`}
+              {selectedSubject && step.startsWith('summaries') && step !== 'summaries_subject' && ` / ${(selectedSubject as any).title}`}
               {selectedTopic && step === 'mcq' && ` / ${(selectedTopic as any).title}`}
             </span>
           </div>
@@ -5764,6 +5826,55 @@ function App() {
           <div className="coming-soon-container" style={{ textAlign: 'center', padding: '3rem' }}>
             <h2>قريباً!</h2>
             <p>الأسئلة الخاصة بهذا الموضوع قيد التحضير حالياً.</p>
+          </div>
+        )}
+
+        {step === 'summaries_subject' && (
+          <div className="subjects-section" style={{ textAlign: 'center', marginBottom: '2rem', width: '100%' }}>
+            <h2 style={{ fontSize: '1.8rem', marginBottom: '0.5rem' }}>اختر المادة لملخصات PDF</h2>
+            <p style={{ color: '#aaa', marginBottom: '2rem' }}>حدد التخصص الذي ترغب في تصفح ملخصاته.</p>
+            <div className="grid-container" style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%' }}>
+              {SUBJECTS.map((sub: any) => (
+                <FeatureCard key={sub.id} title={sub.title} desc={sub.desc} Icon={sub.icon} onClick={() => {
+                  setSelectedSubject(sub);
+                  setStep('summaries_list');
+                }} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {step === 'summaries_list' && (
+          <div className="summaries-list-container" style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', textAlign: 'center' }}>ملخصات {(selectedSubject as any)?.title}</h2>
+            {((SUMMARIES as any)[selectedSubject?.id || 'therapeutics'] || []).length === 0 ? (
+              <div className="coming-soon-container" style={{ textAlign: 'center', padding: '3rem' }}>
+                <h2>قريباً!</h2>
+                <p>لا توجد ملخصات متاحة حالياً لهذه المادة.</p>
+              </div>
+            ) : (
+              ((SUMMARIES as any)[selectedSubject?.id || 'therapeutics'] || []).map((summary: any) => (
+                <a
+                  key={summary.id}
+                  href={summary.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="summary-item"
+                  style={{
+                    display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                    background: '#222', padding: '1.5rem', borderRadius: '12px',
+                    color: 'white', textDecoration: 'none', border: '1px solid #444',
+                    transition: 'background 0.3s'
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                    <Database size={24} color="#4facfe" />
+                    <span style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>{summary.title}</span>
+                  </div>
+                  <span style={{ color: '#4facfe', background: 'rgba(79, 172, 254, 0.1)', padding: '0.4rem 0.8rem', borderRadius: '20px', fontSize: '0.9rem' }}>تحميل / عرض</span>
+                </a>
+              ))
+            )}
           </div>
         )}
 
