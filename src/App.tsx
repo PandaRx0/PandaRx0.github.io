@@ -34,7 +34,8 @@ const TOPICS = {
   ],
   advanced: [],
   delivery: [
-    { id: 'drug_development', title: 'New Drug Development and Approval Process', desc: 'Chapter 2', icon: Cloud }
+    { id: 'nanotechnology', title: 'Nanotechnology', desc: 'Pharmaceutical Nanotechnology', icon: Cloud }
+    , { id: 'drug_development', title: 'Drug Development', desc: 'New Drug Development and Approval Process', icon: Cloud }
   ],
   biotech: []
 };
@@ -50,7 +51,6 @@ const SUMMARIES = {
   ],
   advanced: [],
   delivery: [
-    { id: 'd1', title: 'Drug Development Summary', url: '/summaries/drug_development.pdf' }
   ],
   biotech: []
 };
@@ -5321,331 +5321,2432 @@ const MCQS = {
   ],
   'drug_development': [
     {
-      "id": "q1",
-      "question": "1) Regarding the time course for a new drug development, the FDA’s approval of the __________ indicates that the new drug is effective and safe for its proposed use and can be marketed.",
-      "options": [
-        { "id": "a", "text": "IND application" },
-        { "id": "b", "text": "NDA application" },
-        { "id": "c", "text": "ANAD" },
-        { "id": "d", "text": "SNDA" },
-        { "id": "e", "text": "Preclinical testing" }
-      ],
-      "correctId": "b",
-      "explanation": "The New Drug Application (NDA) is the formal proposal for the FDA to approve a new drug for sale and marketing in the U.S. based on demonstrated safety and efficacy from preclinical and clinical studies."
+          "id": "q1",
+          "question": "1- To gain marketing approval for a new drug, a sponsor must demonstrate all of the following EXCEPT:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "The drug is safe and effective for its proposed use."
+                },
+                {
+                      "id": "b",
+                      "text": "The manufacturing processes are properly controlled and validated."
+                },
+                {
+                      "id": "c",
+                      "text": "The new drug is more effective than all existing drugs on the market."
+                },
+                {
+                      "id": "d",
+                      "text": "The product meets established standards of quality."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "The text states the sponsor must demonstrate safety, efficacy, and proper control/quality. It does not require the drug to be superior to all existing drugs."
     },
     {
-      "id": "q10",
-      "question": "10) Why is it important to know whether a drug dose is based on the salt form or the base form of the active pharmaceutical ingredient (API)?",
-      "options": [
-        { "id": "a", "text": "The salt form always has a higher potency than the base form." },
-        { "id": "b", "text": "The base form is more stable and preferred for all formulations." },
-        { "id": "c", "text": "The salt form is 100% active drug and does not require dose adjustment." },
-        { "id": "d", "text": "The actual amount of active drug differs between the salt and base forms, affecting dosing accuracy." },
-        { "id": "e", "text": "Only the salt form of a drug exerts a pharmacological effect in the body." }
-      ],
-      "correctId": "d",
-      "explanation": "The \"active moiety\" is the molecule responsible for the drug's action, excluding the portions that make it a salt; therefore, the weight of the salt form must be adjusted to ensure the patient receives the correct dose of the active drug."
+          "id": "q2",
+          "question": "2- What is the correct sequence of studies undertaken to obtain evidence of a drug's safety and effectiveness?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Clinical studies -> Preclinical studies -> Formulation studies"
+                },
+                {
+                      "id": "b",
+                      "text": "Preclinical studies -> Clinical studies"
+                },
+                {
+                      "id": "c",
+                      "text": "Formulation studies -> Clinical studies -> Preclinical studies"
+                },
+                {
+                      "id": "d",
+                      "text": "Clinical studies -> Preformulation studies -> Preclinical studies"
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text describes a \"progressive sequence of preclinical (e.g., cell culture, whole animal) and clinical (human) studies.\""
     },
     {
-      "id": "q11",
-      "question": "11) Which of the following statements about vaccine production is FALSE?",
-      "options": [
-        { "id": "a", "text": "The smallpox vaccine was historically produced using bovine calf skin inoculated with vaccinia virus." },
-        { "id": "b", "text": "The mumps and influenza vaccines are produced using chick embryo fluids." },
-        { "id": "c", "text": "The rubella (German measles) vaccine is developed using duck embryo tissue." },
-        { "id": "d", "text": "Vaccines are produced exclusively through genetic engineering methods." },
-        { "id": "e", "text": "Cell and tissue cultures are being used to develop new vaccines for diseases like AIDS and cancer." }
-      ],
-      "correctId": "d",
-      "explanation": "While genetic engineering is a modern method, vaccines are also produced through historical and ongoing methods using animal tissues, such as renal monkey tissue, chick embryo fluids, and duck embryos."
+          "id": "q3",
+          "question": "3- The application that must be filed with the FDA to begin initial testing of a new drug in humans is called a(n):",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "New Drug Application (NDA)"
+                },
+                {
+                      "id": "b",
+                      "text": "Abbreviated New Drug Application (ANDA)"
+                },
+                {
+                      "id": "c",
+                      "text": "Investigational New Drug (IND) Application"
+                },
+                {
+                      "id": "d",
+                      "text": "Product License Application (PLA)"
+                }
+          ],
+          "correctId": "c",
+          "explanation": "The text states, \"...the drug's sponsor file an Investigational New Drug (IND) Application with the FDA for initial testing in humans.\""
     },
     {
-      "id": "q12",
-      "question": "12) What is the primary purpose of molecular modification in drug development?",
-      "options": [
-        { "id": "a", "text": "To create entirely new drug classes unrelated to existing therapies." },
-        { "id": "b", "text": "To alter chemical structures to enhance pharmacologic activity or improve drug properties." },
-        { "id": "c", "text": "To eliminate all potential side effects from existing drugs." },
-        { "id": "d", "text": "To ensure that all drugs have identical structures for standardization." },
-        { "id": "e", "text": "To replace natural drug sources with purely synthetic alternatives." }
-      ],
-      "correctId": "b",
-      "explanation": "Molecular modification is the chemical alteration of a known organic compound to enhance its specificity, potency, absorption, or to reduce toxicity."
+          "id": "q4",
+          "question": "4- What does FDA approval of a New Drug Application (NDA) signify?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "The drug is the best treatment available for the indication."
+                },
+                {
+                      "id": "b",
+                      "text": "The drug is safe and effective for its proposed use, and its manufacturing and labeling are adequate."
+                },
+                {
+                      "id": "c",
+                      "text": "The drug can be marketed immediately without any further reporting."
+                },
+                {
+                      "id": "d",
+                      "text": "The drug's patent has been approved."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text defines NDA approval as demonstrating the drug is safe and effective, with proper manufacture/control and accurate labeling."
     },
     {
-      "id": "q16",
-      "question": "16) Regarding new drug design and development, the preclinical stage is aimed to study the following except:",
-      "options": [
-        { "id": "a", "text": "The Physico-chemical properties of the new compound" },
-        { "id": "b", "text": "The new compound pharmacology" },
-        { "id": "c", "text": "The short-term animal toxicity" },
-        { "id": "d", "text": "The efficacy and safety in human" },
-        { "id": "e", "text": "Pharmacokinetics in animals and preformulation" }
-      ],
-      "correctId": "d",
-      "explanation": "Preclinical studies are limited to laboratory (cell culture) and animal models; testing for safety and efficacy in humans occurs later during the clinical trial phases."
+          "id": "q5",
+          "question": "5- The content of a product's approved labeling (package insert) is best described as:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "A marketing brochure for the drug."
+                },
+                {
+                      "id": "b",
+                      "text": "A summary of the entire drug development process."
+                },
+                {
+                      "id": "c",
+                      "text": "A legal document protecting the drug's patent."
+                },
+                {
+                      "id": "d",
+                      "text": "A guide for patients on how to save money on the drug."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text calls the package insert \"a summary of the entire drug development process.\""
     },
     {
-      "id": "q17",
-      "question": "17) Regarding new drug development, which of the following activities is NOT included in phase 4 study?",
-      "options": [
-        { "id": "a", "text": "Adverse reaction reporting" },
-        { "id": "b", "text": "Post marketing activities" },
-        { "id": "c", "text": "Long-term animal toxicity" },
-        { "id": "d", "text": "Product defect reporting" },
-        { "id": "e", "text": "Product line extension" }
-      ],
-      "correctId": "c",
-      "explanation": "Phase 4 clinical trials are post-marketing studies conducted in humans; long-term animal toxicity is a component of the research and development phase conducted before or during early clinical trials."
+          "id": "q6",
+          "question": "6- A \"treatment IND\" is a special protocol that allows:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "A company to test a drug on healthy volunteers."
+                },
+                {
+                      "id": "b",
+                      "text": "The use of an investigational drug to treat patients with a serious condition before NDA approval."
+                },
+                {
+                      "id": "c",
+                      "text": "A generic version of a drug to be approved."
+                },
+                {
+                      "id": "d",
+                      "text": "A drug to be sold over-the-counter."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text defines a treatment IND as a protocol permitting the use of an investigational drug for patients prior to NDA approval."
     },
     {
-      "id": "q18",
-      "question": "18) Regarding new drug design and development, carcinogenicity study is identified by the following except:",
-      "options": [
-        { "id": "a", "text": "Carried out in limited number of rat and mouse strains" },
-        { "id": "b", "text": "Carried out after NDA approval by the FDA" },
-        { "id": "c", "text": "Done with female and male animals" },
-        { "id": "d", "text": "Carried out using high, intermediate, and low doses over a 90 day" },
-        { "id": "e", "text": "Carcinogenicity study is a long-term study" }
-      ],
-      "correctId": "b",
-      "explanation": "Carcinogenicity studies are long-term preclinical tests (18–24 months) that are typically completed and submitted as part of the NDA to support a drug's safety for marketing."
+          "id": "q7",
+          "question": "7- An Abbreviated New Drug Application (ANDA) is used to gain approval for:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "A new chemical entity."
+                },
+                {
+                      "id": "b",
+                      "text": "A new biologic drug."
+                },
+                {
+                      "id": "c",
+                      "text": "A generic equivalent of an already approved drug."
+                },
+                {
+                      "id": "d",
+                      "text": "A new use for an existing drug."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "The text states, \"An abbreviated new drug application (ANDA) is used to gain approval to market a generic equivalent of a product that is already approved.\""
     },
     {
-      "id": "q20",
-      "question": "20) The rDNA technology is aimed to:",
-      "options": [
-        { "id": "a", "text": "Change cell genetic properties" },
-        { "id": "b", "text": "Solely manufacture human insulin" },
-        { "id": "c", "text": "To boost cell growth effectively" },
-        { "id": "d", "text": "To enable the production of specific proteins" },
-        { "id": "e", "text": "To produce specific antibodies" }
-      ],
-      "correctId": "d",
-      "explanation": "Recombinant DNA (rDNA) technology involves gene splicing to induce organisms (like bacteria) to produce specific proteins they would not otherwise make, such as human insulin or growth hormone."
+          "id": "q8",
+          "question": "8- According to the text, what is the fastest growing segment within the new prescription drug market?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Small molecule drugs"
+                },
+                {
+                      "id": "b",
+                      "text": "Generic drugs"
+                },
+                {
+                      "id": "c",
+                      "text": "Over-the-counter medications"
+                },
+                {
+                      "id": "d",
+                      "text": "Biologics"
+                }
+          ],
+          "correctId": "d",
+          "explanation": "The text states, \"Presently, biologics is the fastest growing segment within the new prescription drug market.\""
     },
     {
-      "id": "q21",
-      "question": "21) What plays an important role in designing new drug molecules during molecular modification?",
-      "options": [
-        { "id": "a", "text": "Biological target selection" },
-        { "id": "b", "text": "Chemical structure-pharmacologic activity relationship" },
-        { "id": "c", "text": "Dosage adjustment" },
-        { "id": "d", "text": "Pharmacokinetic properties" },
-        { "id": "e", "text": "Route of administration" }
-      ],
-      "correctId": "b",
-      "explanation": "Understanding how changes in chemical structure impact pharmacologic activity is fundamental for medicinal chemists when designing new molecules to achieve desired features."
+          "id": "q9",
+          "question": "9- New drugs can be discovered from which of the following sources?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Natural sources (e.g., plants)"
+                },
+                {
+                      "id": "b",
+                      "text": "Laboratory synthesis"
+                },
+                {
+                      "id": "c",
+                      "text": "Biotechnology processes"
+                },
+                {
+                      "id": "d",
+                      "text": "All of the above"
+                }
+          ],
+          "correctId": "d",
+          "explanation": "The text explicitly lists all three as sources: natural, synthesized in the lab, and created through biotechnology."
     },
     {
-      "id": "q22",
-      "question": "22) Regarding development of new drug, in which phase of the clinical trials the drug's safety, effectiveness, and additional indications is evaluated?",
-      "options": [
-        { "id": "a", "text": "Phase I" },
-        { "id": "b", "text": "Phase II" },
-        { "id": "c", "text": "Phase III" },
-        { "id": "d", "text": "Phase IV" },
-        { "id": "e", "text": "All of them" }
-      ],
-      "correctId": "e",
-      "explanation": "Safety is assessed starting in Phase 1, effectiveness is evaluated in Phases 2 and 3, and additional indications are explored in Phase 3b and Phase 4."
+          "id": "q10",
+          "question": "10- A drug created by chemically altering a substance obtained from a natural source is termed a(n):",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Biologic drug"
+                },
+                {
+                      "id": "b",
+                      "text": "Semisynthetic drug"
+                },
+                {
+                      "id": "c",
+                      "text": "Prodrug"
+                },
+                {
+                      "id": "d",
+                      "text": "New chemical entity"
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text defines \"semisynthetic drugs\" as new structures resulting from the chemical alteration of a starting substance from a natural source."
     },
     {
-      "id": "q30",
-      "question": "30) Regarding toxicological study, which of the following is true?",
-      "options": [
-        { "id": "a", "text": "Subacute toxicity study is conducted over short period, usually single day." },
-        { "id": "b", "text": "Acute toxicity study is conducted at least for two weeks." },
-        { "id": "c", "text": "Salmonella typhimurium is routinely organism used in carcinogenicity studies." },
-        { "id": "d", "text": "Reproduction studies involve assessing fertility and mating behavior among amphibians." },
-        { "id": "e", "text": "The observation of carcinogenicity studies lasts for 1.5-2 years." }
-      ],
-      "correctId": "e",
-      "explanation": "Carcinogenicity testing is a long-term chronic study that generally lasts between 18 to 24 months (1.5 to 2 years)."
+          "id": "q11",
+          "question": "11- The two basic technologies that drive the genetic field of drug development are:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "High-throughput screening and molecular modification"
+                },
+                {
+                      "id": "b",
+                      "text": "Recombinant DNA and monoclonal antibody (mAb) production"
+                },
+                {
+                      "id": "c",
+                      "text": "Prodrug design and mechanism-based design"
+                },
+                {
+                      "id": "d",
+                      "text": "Bioassays and toxicology studies"
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text states, \"The two basic technologies that drive the genetic field of drug development are recombinant DNA and monoclonal antibody (mAb) production.\""
     },
     {
-      "id": "q33",
-      "question": "33) Regarding the use of animal in production of various biologic products, the poliomyelitis vaccine is developed from:",
-      "options": [
-        { "id": "a", "text": "In fluid of chick embryo" },
-        { "id": "b", "text": "In fluid of Duck embryo" },
-        { "id": "c", "text": "In cultures of renal monkey tissue" },
-        { "id": "d", "text": "from the skin of bovine calves inoculated with vaccinia virus." },
-        { "id": "e", "text": "none of them" }
-      ],
-      "correctId": "c",
-      "explanation": "The source specifically notes that the poliomyelitis vaccine is prepared in cultures of renal monkey tissue."
+          "id": "q12",
+          "question": "12- Human gene therapy may involve modifying cells outside the body for subsequent administration. This is known as:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "In vivo modification"
+                },
+                {
+                      "id": "b",
+                      "text": "Ex vivo modification"
+                },
+                {
+                      "id": "c",
+                      "text": "Passive targeting"
+                },
+                {
+                      "id": "d",
+                      "text": "Biotransformation"
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text defines ex vivo as modifying cells \"outside the body\" and in vivo as modifying them \"within the body.\""
     },
     {
-      "id": "q44",
-      "question": "44) Regarding drug discovery and drug design, interferon is an example of drug produced by:",
-      "options": [
-        { "id": "a", "text": "Monoclonal antibody production" },
-        { "id": "b", "text": "rDNA" },
-        { "id": "c", "text": "Human gene therapy" },
-        { "id": "d", "text": "Animal hormones" },
-        { "id": "e", "text": "Cell and tissue culture" }
-      ],
-      "correctId": "b",
-      "explanation": "Recombinant DNA (rDNA) technology is the process used to produce drug products like interferon, human insulin, and the hepatitis B vaccine."
+          "id": "q13",
+          "question": "13- In theory, a \"goal drug\" would possess all of the following features EXCEPT:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Be administered by the most desired route (generally orally)."
+                },
+                {
+                      "id": "b",
+                      "text": "Exhibit no side effects."
+                },
+                {
+                      "id": "c",
+                      "text": "Be difficult and expensive to produce."
+                },
+                {
+                      "id": "d",
+                      "text": "Have an optimal onset and duration of activity."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "A goal drug would be \"easily produced at low cost.\" Difficulty and high cost are not desired features."
     },
     {
-      "id": "q49",
-      "question": "49) A company is developing a novel therapeutic approach. Which of the following scenarios would necessitate the drug being classified as a \"new drug\" by the FDA, requiring rigorous safety and efficacy re-evaluation...?",
-      "options": [
-        { "id": "a", "text": "The drug is a well-established chemical entity with a long history of safe clinical use." },
-        { "id": "b", "text": "The company changes the tablet coating color for better patient identification..." },
-        { "id": "c", "text": "The company replaces the excipient in the capsule with a plant-based alternative..." },
-        { "id": "d", "text": "The company reformulates the drug from a once-daily tablet to a twice-daily sublingual spray." },
-        { "id": "e", "text": "The drug is an existing chemical entity manufactured with the same formulation... child-resistant packaging." }
-      ],
-      "correctId": "d",
-      "explanation": "According to the FDA's definition, any change in a previously approved drug’s formulation, dosage schedule, or route of administration constitutes \"newness\" under the law."
+          "id": "q14",
+          "question": "14- What is the purpose of molecular modification of a lead compound?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "To make the compound easier to synthesize."
+                },
+                {
+                      "id": "b",
+                      "text": "To enhance its usefulness as a drug (e.g., increase potency, reduce toxicity)."
+                },
+                {
+                      "id": "c",
+                      "text": "To create a generic version of the drug."
+                },
+                {
+                      "id": "d",
+                      "text": "To obtain a patent for the natural substance."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text lists enhancing specificity, potency, absorption, reducing toxicity, etc., as purposes of molecular modification."
     },
     {
-      "id": "q50",
-      "question": "50) Regarding toxicology, how long it takes to follow up the animals for acute toxicity?",
-      "options": [
-        { "id": "a", "text": "one day" },
-        { "id": "b", "text": "14 days" },
-        { "id": "c", "text": "90 days" },
-        { "id": "d", "text": "30 days" },
-        { "id": "e", "text": "180 days" }
-      ],
-      "correctId": "d",
-      "explanation": "While acute toxicity studies involve dosing over a short period (usually one day), the animals are observed for untoward signs and clinical chemistry changes typically over a 30-day postdose period."
+          "id": "q15",
+          "question": "15- Mechanism-based drug design involves:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Randomly testing thousands of compounds for any biological activity."
+                },
+                {
+                      "id": "b",
+                      "text": "Designing a drug that interferes with the known biochemical pathway of a disease."
+                },
+                {
+                      "id": "c",
+                      "text": "Chemically altering a lead compound to improve its solubility."
+                },
+                {
+                      "id": "d",
+                      "text": "Creating a copy of an already approved drug."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The definition provided is \"molecular modification to design a drug that interferes specifically with the known or suspected biochemical pathway or mechanism of a disease process.\""
     },
     {
-      "id": "q51",
-      "question": "51) The information regarding the pharmacologic profile and in vivo animal studies, which of the following statements is FALSE?",
-      "options": [
-        { "id": "a", "text": "In vitro methods use whole animals to evaluate drug efficacy and classify compounds as agonists or antagonists." },
-        { "id": "b", "text": "In pharmacologic and toxicologic studies, rabbits are used as a model for blood coagulation." },
-        { "id": "c", "text": "Dogs and rats are animal models often used for hypertension." },
-        { "id": "d", "text": "Animals are not absolute predictors of human response due to species variation." },
-        { "id": "e", "text": "The primary objective of animal studies is to obtain basic information on the drug’s effects to predict safe and effective use in humans." }
-      ],
-      "correctId": "a",
-      "explanation": "\"In vitro\" means studies conducted outside the living body (such as cell cultures or enzyme systems), whereas studies using whole animals are \"in vivo\"."
+          "id": "q16",
+          "question": "16- A \"lead compound\" is best described as:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "The final drug that is brought to market."
+                },
+                {
+                      "id": "b",
+                      "text": "A prototype chemical compound with a fundamental desired biologic activity."
+                },
+                {
+                      "id": "c",
+                      "text": "An inactive compound that requires metabolic conversion."
+                },
+                {
+                      "id": "d",
+                      "text": "The most toxic compound in a series of analogs."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text defines a lead compound as \"a prototype chemical compound that has a fundamental desired biologic or pharmacologic activity.\""
     },
     {
-      "id": "q53",
-      "question": "53) Toxicology deals with adverse or undesired effects of drugs. Which of the following statements regarding toxicology studies is TRUE?",
-      "options": [
-        { "id": "a", "text": "Acute toxicity studies determine the toxic effects of a test compound and involve a single daily dose for a short period of up to two weeks." },
-        { "id": "b", "text": "Carcinogenicity testing is conducted over a short-term period to quickly identify potential tumor-causing effects." },
-        { "id": "c", "text": "Subacute toxicity studies assess the safety of a drug’s initial single dose for human use over a week or longer..." },
-        { "id": "d", "text": "Reproduction studies primarily use Salmonella typhimurium as the animal model to detect gene mutations." },
-        { "id": "e", "text": "Chronic toxicity studies often involve animal studies lasting a year or longer for drugs intended to treat chronic illnesses." }
-      ],
-      "correctId": "e",
-      "explanation": "If a drug is intended for chronic human illness, animal toxicity studies for 1 year or longer must be undertaken to support human use."
+          "id": "q17",
+          "question": "17- A prodrug is a compound that:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Is active immediately upon administration."
+                },
+                {
+                      "id": "b",
+                      "text": "Is always more toxic than the parent drug."
+                },
+                {
+                      "id": "c",
+                      "text": "Requires metabolic biotransformation after administration to become the active pharmacologic compound."
+                },
+                {
+                      "id": "d",
+                      "text": "Cannot be administered orally."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "This is the core definition of a prodrug provided in the text."
     },
     {
-      "id": "q56",
-      "question": "56) Regarding the design of the prodrugs, Hydrocortisone sodium succinate is a prodrug designed to:",
-      "options": [
-        { "id": "a", "text": "Improve water solubility" },
-        { "id": "b", "text": "Provide sustained effect" },
-        { "id": "c", "text": "Protect drug from premature destruction" },
-        { "id": "d", "text": "Cross blood brain barrier" },
-        { "id": "e", "text": "Increase lipophilic character" }
-      ],
-      "correctId": "a",
-      "explanation": "Hydrocortisone sodium succinate is an example of a water-soluble prodrug designed to overcome the active drug's poor solubility for intravenous injection."
+          "id": "q18",
+          "question": "18- Why was valacyclovir designed as a prodrug of acyclovir?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "To make the drug less water-soluble."
+                },
+                {
+                      "id": "b",
+                      "text": "To improve the drug's biostability and increase its oral bioavailability."
+                },
+                {
+                      "id": "c",
+                      "text": "To target the drug specifically to the liver."
+                },
+                {
+                      "id": "d",
+                      "text": "To prolong the drug's release for up to 4 weeks."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text explains that acyclovir has low oral bioavailability, but its prodrug valacyclovir is converted in the liver, resulting in much higher (55%) bioavailability."
     },
     {
-      "id": "q76",
-      "question": "76) The formulation of haloperidol as decanoate ester leads to:",
-      "options": [
-        { "id": "a", "text": "protect from degradation" },
-        { "id": "b", "text": "increase water solubility" },
-        { "id": "c", "text": "prolong drug action" },
-        { "id": "d", "text": "increase biostability" },
-        { "id": "e", "text": "all of them" }
-      ],
-      "correctId": "c",
-      "explanation": "The addition of the decanoate ester to haloperidol makes the molecule less water soluble, providing a sustained therapeutic effect lasting up to 4 weeks after deep intramuscular injection."
+          "id": "q19",
+          "question": "19- The conversion of the prodrug levodopa to the active drug dopamine is an example of a prodrug designed to improve:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Solubility for IV injection."
+                },
+                {
+                      "id": "b",
+                      "text": "Biostability in the stomach."
+                },
+                {
+                      "id": "c",
+                      "text": "Site-specific action (crossing the blood-brain barrier)."
+                },
+                {
+                      "id": "d",
+                      "text": "Prolonged release for extended activity."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "Dopamine cannot cross the blood-brain barrier, but its prodrug levodopa can. Once in the brain, it is converted to the active drug."
     },
     {
-      "id": "q77",
-      "question": "77) Regarding animal studies on drug candidates, the final pharmacologic and toxicologic studies, as required by the FDA, to be performed on__________",
-      "options": [
-        { "id": "a", "text": "on small animals, usually rodents (mouse, rat)" },
-        { "id": "b", "text": "a rodent and an animal from another order" },
-        { "id": "c", "text": "No specification available" },
-        { "id": "d", "text": "dogs and guinea pigs" },
-        { "id": "e", "text": "Rabbits" }
-      ],
-      "correctId": "b",
-      "explanation": "For final pharmacologic and toxicologic studies, the FDA requires the use of at least two animal species: a rodent and an animal from another order, such as a dog."
+          "id": "q20",
+          "question": "20- According to the FDA, a drug can be considered \"new\" for which of the following reasons?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "A new use for an established drug."
+                },
+                {
+                      "id": "b",
+                      "text": "A new dosage form or route of administration."
+                },
+                {
+                      "id": "c",
+                      "text": "A change in the formulation of a previously approved product."
+                },
+                {
+                      "id": "d",
+                      "text": "All of the above."
+                }
+          ],
+          "correctId": "d",
+          "explanation": "The text lists a new use, new dosage schedule, new route, new dosage form, and a change in formulation or manufacture as triggers for a drug being considered \"new.\""
     },
     {
-      "id": "q79",
-      "question": "79) Regarding performing subacute or subchronic studies, all the following statements are true except:",
-      "options": [
-        { "id": "a", "text": "requires 2 weeks of daily drug administration" },
-        { "id": "b", "text": "performed at three dosage levels" },
-        { "id": "c", "text": "using two animal species" },
-        { "id": "d", "text": "support administration of a drug to humans for a week" },
-        { "id": "e", "text": "none of them" }
-      ],
-      "correctId": "d",
-      "explanation": "Subacute studies (2 weeks of daily animal dosing) only support the initial administration of a single human dose. Supporting human use for a week or more requires 90 to 180 days of animal safety data."
+          "id": "q21",
+          "question": "21- The study of a drug's absorption, distribution, metabolism, and excretion (ADME) is known as:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Pharmacodynamics"
+                },
+                {
+                      "id": "b",
+                      "text": "Pharmacokinetics"
+                },
+                {
+                      "id": "c",
+                      "text": "Toxicology"
+                },
+                {
+                      "id": "d",
+                      "text": "Pharmacogenetics"
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text defines pharmacokinetics as dealing \"with the absorption, distribution, metabolism or biotransformation, and excretion (ADME) of drugs.\""
     },
     {
-      "id": "q80",
-      "question": "80) In gene therapy, the cloned DNA may be transferred into the cells by:",
-      "options": [
-        { "id": "a", "text": "gene splicing" },
-        { "id": "b", "text": "gene expression" },
-        { "id": "c", "text": "DNA sequencing" },
-        { "id": "d", "text": "disabled viral vector" },
-        { "id": "e", "text": "none of them" }
-      ],
-      "correctId": "d",
-      "explanation": "Gene therapy involves the transfer of cloned DNA into cells via various systems, including disabled retroviral gene transfer systems."
+          "id": "q22",
+          "question": "22- The selectivity and specificity of a drug for a certain body tissue is related to:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "The drug's color."
+                },
+                {
+                      "id": "b",
+                      "text": "The patient's age."
+                },
+                {
+                      "id": "c",
+                      "text": "Specific sites on or within cells called receptor sites."
+                },
+                {
+                      "id": "d",
+                      "text": "The drug's cost of manufacturing."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "The text explains that drug effects are due to \"specific interactions between a drug's chemical structure and specific cells or cellular components... termed receptor sites.\""
     },
     {
-      "id": "q81",
-      "question": "81) ANDA is used to gain approval for:",
-      "options": [
-        { "id": "a", "text": "generic product" },
-        { "id": "b", "text": "brand product" },
-        { "id": "c", "text": "Changes in the labelling of a previously approved NDA" },
-        { "id": "d", "text": "both a and b" },
-        { "id": "e", "text": "none of them" }
-      ],
-      "correctId": "a",
-      "explanation": "The Abbreviated New Drug Application (ANDA) is used to gain approval to market a generic equivalent of a product already pioneer-sponsored and approved."
+          "id": "q23",
+          "question": "23- Why are small animals like rodents primarily used for initial animal testing?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "They are physiologically identical to humans."
+                },
+                {
+                      "id": "b",
+                      "text": "They are inexpensive, readily available, and require small amounts of drug."
+                },
+                {
+                      "id": "c",
+                      "text": "The FDA does not allow testing on larger animals."
+                },
+                {
+                      "id": "d",
+                      "text": "They have no immune system, making testing easier."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text lists \"cost, availability, the small amount of drug required... ease of administration... and experience\" as reasons for using small animals like rodents."
     },
     {
-      "id": "q90",
-      "question": "90) The process and time from drug discovery to approval for marketing A novel chemical entity (NCE) undergoing preclinical studies must demonstrate comprehensive data across various domains. Which of the following is considered the MOST critical aspect in determining the NCE’s potential for further development, given its direct impact on both safety and efficacy?",
-      "options": [
-        { "id": "a", "text": "Package and label design" },
-        { "id": "b", "text": "Manufacturing and controls" },
-        { "id": "c", "text": "Long-term animal toxicity" },
-        { "id": "d", "text": "Absorption, Distribution, Metabolism, and Excretion" },
-        { "id": "e", "text": "Organic synthesis methods" }
-      ],
-      "correctId": "d",
-      "explanation": "Gaining information on how a drug is absorbed, distributed, metabolized, and excreted (ADME) is essential to judge its safety and effectiveness for further human trials."
+          "id": "q24",
+          "question": "24- The primary objective of animal pharmacologic studies is to:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Prove the drug is 100% safe for humans."
+                },
+                {
+                      "id": "b",
+                      "text": "Obtain basic information to predict safe and effective use in humans."
+                },
+                {
+                      "id": "c",
+                      "text": "Satisfy animal rights activists."
+                },
+                {
+                      "id": "d",
+                      "text": "Determine the final marketing price of the drug."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text states the objective is \"to obtain basic information on the drug's effects that may be used to predict safe and effective use in humans.\""
     },
     {
-      "id": "q99",
-      "question": "99) The initial bioassay may be performed:",
-      "options": [
-        { "id": "a", "text": "in vivo using small animals" },
-        { "id": "b", "text": "in vivo using disease-specific animal models" },
-        { "id": "c", "text": "In vitro using cell cultures" },
-        { "id": "d", "text": "ex vivo animal tissue" },
-        { "id": "e", "text": "none of them" }
-      ],
-      "correctId": "c",
-      "explanation": "Initial bioassays are frequently performed in vitro using cell cultures to test a new agent's effect against specific enzyme systems or tumor cells."
+          "id": "q25",
+          "question": "25- Drug metabolism (biotransformation) primarily serves to:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Increase the drug's fat solubility."
+                },
+                {
+                      "id": "b",
+                      "text": "Transform nonpolar drug molecules into polar compounds for easier elimination."
+                },
+                {
+                      "id": "c",
+                      "text": "Make the drug more potent."
+                },
+                {
+                      "id": "d",
+                      "text": "Help the drug bind to receptors."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text explains that metabolism is \"the body's means of transforming nonpolar drug molecules into polar compounds, which are more readily eliminated.\""
+    },
+    {
+          "id": "q26",
+          "question": "26- Toxicology studies are designed to determine all of the following EXCEPT:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "The drug's potential for specific organ toxicity."
+                },
+                {
+                      "id": "b",
+                      "text": "The drug's carcinogenic and genotoxic potential."
+                },
+                {
+                      "id": "c",
+                      "text": "The drug's mechanism of therapeutic action."
+                },
+                {
+                      "id": "d",
+                      "text": "The drug's potential for reproductive or teratogenic toxicities."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "Determining the mechanism of therapeutic action falls under pharmacology. Toxicology focuses on adverse or undesired effects."
+    },
+    {
+          "id": "q27",
+          "question": "27- The initial human dose in Phase 1 clinical trials is typically based on:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "The highest dose tolerated in animals."
+                },
+                {
+                      "id": "b",
+                      "text": "The average dose of similar drugs on the market."
+                },
+                {
+                      "id": "c",
+                      "text": "One-tenth of the highest nontoxic dose shown in animal studies."
+                },
+                {
+                      "id": "d",
+                      "text": "The patient's body weight only."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "The text states, \"The initial human dose is usually one- tenth of the highest nontoxic dose... shown during the animal studies.\""
+    },
+    {
+          "id": "q28",
+          "question": "28- Carcinogenicity studies are typically:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Short-term studies lasting a single day."
+                },
+                {
+                      "id": "b",
+                      "text": "Performed only on dogs."
+                },
+                {
+                      "id": "c",
+                      "text": "Long-term studies (18 to 24 months) to assess cancer-causing potential."
+                },
+                {
+                      "id": "d",
+                      "text": "Required only for over-the-counter drugs."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "The text states, \"Carcinogenicity studies are long term (18 to 24 months)...\""
+    },
+    {
+          "id": "q29",
+          "question": "29- Which of the following is NOT listed as an intrinsic chemical or physical characteristic to consider during preformulation studies?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Drug solubility"
+                },
+                {
+                      "id": "b",
+                      "text": "Marketing cost of the final product"
+                },
+                {
+                      "id": "c",
+                      "text": "Partition coefficient"
+                },
+                {
+                      "id": "d",
+                      "text": "Stability"
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text lists solubility, partition coefficient, dissolution rate, physical form, and stability. Marketing cost is a commercial, not a preformulation, consideration."
+    },
+    {
+          "id": "q30",
+          "question": "30- A drug's partition coefficient is a measure that indicates its:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Overall toxicity."
+                },
+                {
+                      "id": "b",
+                      "text": "Rate of dissolution in water."
+                },
+                {
+                      "id": "c",
+                      "text": "Ability to penetrate biologic (lipophilic) membranes."
+                },
+                {
+                      "id": "d",
+                      "text": "Stability at high temperatures."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "The text defines partition coefficient as a measure of a drug's distribution in a lipophilic-hydrophilic system, which \"indicates its ability to penetrate biologic multiphase systems.\""
+    },
+    {
+          "id": "q31",
+          "question": "31- Reducing the particle size of a poorly soluble drug can enhance its absorption primarily by:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Making the drug more stable."
+                },
+                {
+                      "id": "b",
+                      "text": "Increasing its dissolution rate in the gut."
+                },
+                {
+                      "id": "c",
+                      "text": "Changing its color to make it more appealing."
+                },
+                {
+                      "id": "d",
+                      "text": "Allowing it to be injected intravenously."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text explains that reducing particle size increases surface area, which enhances the dissolution rate and therefore biologic absorption."
+    },
+    {
+          "id": "q32",
+          "question": "32- During Phase 1 clinical trials for orally administered drugs, what formulation is often used?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "A tablet with multiple excipients."
+                },
+                {
+                      "id": "b",
+                      "text": "A flavored syrup."
+                },
+                {
+                      "id": "c",
+                      "text": "A capsule containing the active ingredient alone, without excipients."
+                },
+                {
+                      "id": "d",
+                      "text": "A transdermal patch."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "The text states, \"Often during Phase 1 studies, for orally administered drugs, capsules are employed containing the active ingredient alone, without pharmaceutical excipients.\""
+    },
+    {
+          "id": "q33",
+          "question": "33- What is the primary purpose of Phase 1 clinical studies?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "To assess the drug's effectiveness in a large patient population."
+                },
+                {
+                      "id": "b",
+                      "text": "To assess the drug's safety in humans."
+                },
+                {
+                      "id": "c",
+                      "text": "To compare the drug to a marketed competitor."
+                },
+                {
+                      "id": "d",
+                      "text": "To obtain data for a treatment IND."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text states Phase 1 is \"primarily for the purpose of assessing safety.\""
+    },
+    {
+          "id": "q34",
+          "question": "34- The subjects in Phase 1 clinical trials are typically:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Patients with the target disease."
+                },
+                {
+                      "id": "b",
+                      "text": "Healthy volunteers."
+                },
+                {
+                      "id": "c",
+                      "text": "Elderly patients only."
+                },
+                {
+                      "id": "d",
+                      "text": "Children."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text states, \"The human subjects are usually healthy volunteers...\""
+    },
+    {
+          "id": "q35",
+          "question": "35- According to Table 2.1, what percentage of drugs that enter Phase 1 clinical trials are typically successful and ultimately approved for marketing?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "70%"
+                },
+                {
+                      "id": "b",
+                      "text": "33%"
+                },
+                {
+                      "id": "c",
+                      "text": "25-30%"
+                },
+                {
+                      "id": "d",
+                      "text": "20%"
+                }
+          ],
+          "correctId": "d",
+          "explanation": "The text states, \"...on average, 20 of the original 100 drugs ultimately will be approved for marketing.\""
+    },
+    {
+          "id": "q36",
+          "question": "36- Controlled clinical studies to evaluate the effectiveness of a drug in patients with the target condition are conducted during which phase?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Phase 1"
+                },
+                {
+                      "id": "b",
+                      "text": "Phase 2"
+                },
+                {
+                      "id": "c",
+                      "text": "Phase 4"
+                },
+                {
+                      "id": "d",
+                      "text": "Preclinical studies"
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text defines Phase 2 trials as \"controlled clinical studies to evaluate the effectiveness of a drug in patients with the condition.\""
+    },
+    {
+          "id": "q37",
+          "question": "37- The final dosage form that is submitted to the FDA for marketing approval is typically developed and selected during which phase?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Phase 1"
+                },
+                {
+                      "id": "b",
+                      "text": "Phase 2"
+                },
+                {
+                      "id": "c",
+                      "text": "Preclinical studies"
+                },
+                {
+                      "id": "d",
+                      "text": "Phase 4"
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text states, \"During Phase 2, the final dosage form is selected and developed for Phase 3 trials; this is the formulation that is submitted to the FDA for marketing approval.\""
+    },
+    {
+          "id": "q38",
+          "question": "38- Phase 3 studies involve a large patient population (1,000-5,000) and are designed to:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Determine the drug's safety only."
+                },
+                {
+                      "id": "b",
+                      "text": "Assess the drug's safety, effectiveness, and dosage in an expanded patient base."
+                },
+                {
+                      "id": "c",
+                      "text": "Test the drug on animals for the first time."
+                },
+                {
+                      "id": "d",
+                      "text": "Market the drug to physicians."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Table 2.1 lists the purpose of Phase 3 as \"Safety, effectiveness, dosage.\""
+    },
+    {
+          "id": "q39",
+          "question": "39- Studies conducted after an NDA is approved to gather additional information on a drug's long-term safety, new uses, or additional dosage forms are known as:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Phase 3b studies"
+                },
+                {
+                      "id": "b",
+                      "text": "Preclinical studies"
+                },
+                {
+                      "id": "c",
+                      "text": "Phase 4 studies"
+                },
+                {
+                      "id": "d",
+                      "text": "Bioequivalence studies"
+                }
+          ],
+          "correctId": "c",
+          "explanation": "The text defines Phase 4 as \"continued clinical investigations\" after marketing to understand the drug's mechanism, find new uses, or reveal additional side effects."
+    },
+    {
+          "id": "q40",
+          "question": "40- Why is age a particularly important consideration in drug dosing for neonates and infants?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "They have a higher proportion of body fat."
+                },
+                {
+                      "id": "b",
+                      "text": "They have immature hepatic and renal function."
+                },
+                {
+                      "id": "c",
+                      "text": "They are more physically active."
+                },
+                {
+                      "id": "d",
+                      "text": "They require lower doses due to their smaller size only."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text explains that infants have \"immature hepatic and renal function, the means by which drugs are normally inactivated and eliminated from the body.\""
+    },
+    {
+          "id": "q41",
+          "question": "41- The decline in renal and hepatic function in elderly patients can lead to:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Faster drug clearance and reduced efficacy."
+                },
+                {
+                      "id": "b",
+                      "text": "Slower drug clearance and an increased possibility of drug accumulation and toxicity."
+                },
+                {
+                      "id": "c",
+                      "text": "No change in drug pharmacokinetics."
+                },
+                {
+                      "id": "d",
+                      "text": "A need for higher initial doses."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text states the decline \"slows the drug clearance rate and increases the possibility of drug accumulation and toxicity.\""
+    },
+    {
+          "id": "q42",
+          "question": "42- Body Surface Area (BSA) is sometimes used to determine drug dosage because:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "It is easier to measure than body weight."
+                },
+                {
+                      "id": "b",
+                      "text": "It correlates with a number of physiologic processes."
+                },
+                {
+                      "id": "c",
+                      "text": "It is required by law for all new drugs."
+                },
+                {
+                      "id": "d",
+                      "text": "It only applies to topical medications."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text mentions, \"Because of the correlation between a number of physiologic processes and BSA, some drug doses are based on this relationship.\""
+    },
+    {
+          "id": "q43",
+          "question": "43- The phenomenon where a patient requires an increased dose of a drug over time to maintain the same therapeutic response is known as:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Cross-tolerance"
+                },
+                {
+                      "id": "b",
+                      "text": "Drug interaction"
+                },
+                {
+                      "id": "c",
+                      "text": "Tolerance"
+                },
+                {
+                      "id": "d",
+                      "text": "Sensitization"
+                }
+          ],
+          "correctId": "c",
+          "explanation": "The text defines drug tolerance as \"The ability to endure the influence of a drug, particularly during continued use,\" resulting in the need for increased dosage."
+    },
+    {
+          "id": "q44",
+          "question": "44- A drug with a narrow therapeutic index carries an inherent risk that:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "It must be taken with food."
+                },
+                {
+                      "id": "b",
+                      "text": "Small changes in dose can lead to toxic or ineffective blood levels."
+                },
+                {
+                      "id": "c",
+                      "text": "It cannot be used in children."
+                },
+                {
+                      "id": "d",
+                      "text": "It is only effective in men."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text explains that for drugs with a narrow therapeutic index, \"drug blood levels may increase to toxic levels or decrease to ineffective levels with minimal dosing changes.\""
+    },
+    {
+          "id": "q45",
+          "question": "45- Why might a lower parenteral (injectable) dose be required compared to an oral dose to achieve the same effect?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Injections are less painful."
+                },
+                {
+                      "id": "b",
+                      "text": "Oral drugs are never fully absorbed into the bloodstream due to various barriers."
+                },
+                {
+                      "id": "c",
+                      "text": "Injectable drugs are always more potent."
+                },
+                {
+                      "id": "d",
+                      "text": "The liver destroys all of an oral dose."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text explains that oral drugs face \"physical, chemical, and biologic barriers to their absorption,\" whereas IV drugs enter the bloodstream directly and completely."
+    },
+    {
+          "id": "q46",
+          "question": "46- The FDA's \"review clock\" for a New Drug Application (NDA) is typically:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "90 days"
+                },
+                {
+                      "id": "b",
+                      "text": "180 days"
+                },
+                {
+                      "id": "c",
+                      "text": "365 days"
+                },
+                {
+                      "id": "d",
+                      "text": "Indefinite"
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text states, \"By regulation, the FDA must respond within 180 days of receipt of an application.\""
+    },
+    {
+          "id": "q47",
+          "question": "47- If an NDA review is complete but the application is not yet ready for approval, the FDA will issue a:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Approval letter"
+                },
+                {
+                      "id": "b",
+                      "text": "Complete response letter"
+                },
+                {
+                      "id": "c",
+                      "text": "Warning letter"
+                },
+                {
+                      "id": "d",
+                      "text": "Treatment IND"
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text describes this letter as letting the company know the review is complete but the application is not ready for approval, and it outlines deficiencies."
+    },
+    {
+          "id": "q48",
+          "question": "48- According to federal regulations, drug \"labeling\" includes all of the following EXCEPT:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "The label on the immediate container."
+                },
+                {
+                      "id": "b",
+                      "text": "The information in the package insert."
+                },
+                {
+                      "id": "c",
+                      "text": "The company's annual financial report."
+                },
+                {
+                      "id": "d",
+                      "text": "Information in promotional materials."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "The text defines labeling as including labels, package inserts, and company literature/advertising. Financial reports are not part of drug labeling."
+    },
+    {
+          "id": "q49",
+          "question": "49- A Supplemental New Drug Application (SNDA) would be required for which of the following changes to an approved drug?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "A minor editorial change in the labeling that strengthens a statement."
+                },
+                {
+                      "id": "b",
+                      "text": "A change in the size of the container for a solid dosage form."
+                },
+                {
+                      "id": "c",
+                      "text": "A change in the method of synthesis of the drug substance."
+                },
+                {
+                      "id": "d",
+                      "text": "An extension of the expiration date based on a full shelf-life protocol."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "A change in the synthesis method is listed as one of the changes that requires prior FDA approval via an SNDA."
+    },
+    {
+          "id": "q50",
+          "question": "50- The abbreviated pathway for a generic copy of a biologic product to be approved is based on demonstrating that the product is:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Identical and \"bioequivalent\" to the innovator product."
+                },
+                {
+                      "id": "b",
+                      "text": "\"Biosimilar\" to or \"interchangeable\" with an FDA-licensed biological product."
+                },
+                {
+                      "id": "c",
+                      "text": "Cheaper than the innovator product."
+                },
+                {
+                      "id": "d",
+                      "text": "Manufactured in the same facility as the innovator product."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text explains that the Patient Protection and Affordable Care Act created a pathway for biologics demonstrated to be \"biosimilar\" or \"interchangeable.\""
     }
-  ]
+  ],
+  'nanotechnology': [
+    {
+          "id": "q1",
+          "question": "1- According to the text, what is the general size range applied to the term \"pharmaceutical nanotechnology\"?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "1 nm to 1000 nm"
+                },
+                {
+                      "id": "b",
+                      "text": "100 nm to 500 nm"
+                },
+                {
+                      "id": "c",
+                      "text": "1 nm to 100 nm"
+                },
+                {
+                      "id": "d",
+                      "text": "0.1 nm to 10 nm"
+                }
+          ],
+          "correctId": "c",
+          "explanation": "The very first sentence of the text defines pharmaceutical nanotechnology as having \"one or more dimensions between approximately 1 nm and 100 nm.\""
+    },
+    {
+          "id": "q2",
+          "question": "2- The US Food and Drug Administration (FDA) considers a material to fall under nanotechnology if it has at least one external dimension in the nanoscale range OR if it:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "is intended for cancer treatment."
+                },
+                {
+                      "id": "b",
+                      "text": "is administered via injection."
+                },
+                {
+                      "id": "c",
+                      "text": "exhibits properties that result from its dimensions."
+                },
+                {
+                      "id": "d",
+                      "text": "is composed of synthetic polymers."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "The text states the FDA considers \"a material that exhibits properties (physical, chemical or biological) that result from its dimensions\" as nanotechnology, even if its size is above the typical nanoscale."
+    },
+    {
+          "id": "q3",
+          "question": "3- According to the text, what is often considered an appropriate upper limit for screening materials for consideration as nanotechnology?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "100 nm"
+                },
+                {
+                      "id": "b",
+                      "text": "150 nm"
+                },
+                {
+                      "id": "c",
+                      "text": "500 nm"
+                },
+                {
+                      "id": "d",
+                      "text": "1000 nm"
+                }
+          ],
+          "correctId": "d",
+          "explanation": "The text explicitly mentions, \"often sizes up to 1000 nm are considered as an appropriate upper limit regarding the screening of materials for consideration as nanotechnology.\""
+    },
+    {
+          "id": "q4",
+          "question": "4- Which of the following is NOT mentioned in the text as a key critical attribute that must be accounted for in a nanomedicine product?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Surface charge and surface properties"
+                },
+                {
+                      "id": "b",
+                      "text": "Drug loading and drug release"
+                },
+                {
+                      "id": "c",
+                      "text": "The color and odor of the formulation"
+                },
+                {
+                      "id": "d",
+                      "text": "Biological interactions"
+                }
+          ],
+          "correctId": "c",
+          "explanation": "The text lists surface charge, surface properties, drug loading, drug release, and biological interactions as key attributes. Color and odor are not mentioned in this context."
+    },
+    {
+          "id": "q5",
+          "question": "5- Which of the following is given in the text as an example of a nanomedicine that is a polymer-protein conjugate?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Ambisome"
+                },
+                {
+                      "id": "b",
+                      "text": "Abraxane"
+                },
+                {
+                      "id": "c",
+                      "text": "Herceptin"
+                },
+                {
+                      "id": "d",
+                      "text": "Pegintron"
+                }
+          ],
+          "correctId": "d",
+          "explanation": "The text states, \"Pharmaceutical nanotechnology can encompass many systems, from macromolecules, such as antibodies (e.g. Herceptin) and polymere- protein conjugates (e.g. Pegintron).\" Ambisome and Abraxane are other types of nanomedicines (liposomal and nanoparticle systems, respectively)."
+    },
+    {
+          "id": "q6",
+          "question": "6- The text mentions that the composition and quality of a nanomedicine product can be dependent on:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "The country of origin."
+                },
+                {
+                      "id": "b",
+                      "text": "The manufacturing process adopted."
+                },
+                {
+                      "id": "c",
+                      "text": "The color of the final product."
+                },
+                {
+                      "id": "d",
+                      "text": "The brand name of the product."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text states, \"the composition and quality of a nanomedicine product can be dependent on the manufacturing process adopted,\" which is why regulatory authorities have issued guidance."
+    },
+    {
+          "id": "q7",
+          "question": "7- Which of the following is a liposomal formulation mentioned in the text as an example of pharmaceutical nanotechnology?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Emend"
+                },
+                {
+                      "id": "b",
+                      "text": "Onpattro"
+                },
+                {
+                      "id": "c",
+                      "text": "Herceptin"
+                },
+                {
+                      "id": "d",
+                      "text": "Ambisome"
+                }
+          ],
+          "correctId": "d",
+          "explanation": "The text lists \"liposomal formulations (e.g. Ambisome)\" as an example. Emend is a nanoscale drug particle, Onpattro is a lipid nanoparticle, and Herceptin is an antibody (macromolecule)."
+    },
+    {
+          "id": "q8",
+          "question": "8- According to the text, what are two primary advantages of using nanotechnology for drug delivery?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Increased cost and easier manufacturing"
+                },
+                {
+                      "id": "b",
+                      "text": "Enhanced solubility/dissolution and enhanced drug delivery"
+                },
+                {
+                      "id": "c",
+                      "text": "Decreased potency and increased toxicity"
+                },
+                {
+                      "id": "d",
+                      "text": "Simpler chemical structure and lower molecular weight"
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Page 2 explicitly lists these as two key advantages: \"1. Enhanced solubility and dissolution... 2. Enhanced drug delivery.\""
+    },
+    {
+          "id": "q9",
+          "question": "9- The conjugation of drugs to polymeric carriers like PEG offers several advantages. Which of the following is NOT mentioned as one of these advantages?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Improved drug solubility"
+                },
+                {
+                      "id": "b",
+                      "text": "Reduced immunogenicity"
+                },
+                {
+                      "id": "c",
+                      "text": "Increased drug metabolism in the liver"
+                },
+                {
+                      "id": "d",
+                      "text": "Controlled delivery"
+                }
+          ],
+          "correctId": "c",
+          "explanation": "The text lists improved solubility, pharmacokinetics, reduced immunogenicity, and controlled delivery. It does not mention increasing liver metabolism; in fact, it often reduces clearance."
+    },
+    {
+          "id": "q10",
+          "question": "10- How are polymer-drug conjugates classified from a regulatory perspective?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "As generic drugs"
+                },
+                {
+                      "id": "b",
+                      "text": "As new chemical entities in their own right"
+                },
+                {
+                      "id": "c",
+                      "text": "As simple drug mixtures"
+                },
+                {
+                      "id": "d",
+                      "text": "As medical devices"
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text on page 2 states, \"Polymer- drug conjugates are considered as new chemical entities in their own right...\""
+    },
+    {
+          "id": "q11",
+          "question": "11- What are the three basic components of a polymer-drug conjugate described in the text?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "A lipid bilayer, an aqueous core, and a drug"
+                },
+                {
+                      "id": "b",
+                      "text": "A water-soluble polymer backbone, a linker group, and a drug"
+                },
+                {
+                      "id": "c",
+                      "text": "A metal core, a polymeric shell, and a targeting group"
+                },
+                {
+                      "id": "d",
+                      "text": "A surfactant, an oil phase, and a drug"
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Page 2 describes the conjugate as being built of these three basic components."
+    },
+    {
+          "id": "q12",
+          "question": "12- Which polymer is cited as the most widely used water-soluble polymer backbone for drug conjugation?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Dextran"
+                },
+                {
+                      "id": "b",
+                      "text": "Chitosan"
+                },
+                {
+                      "id": "c",
+                      "text": "Poly(glutamic acid)"
+                },
+                {
+                      "id": "d",
+                      "text": "Polyethylene glycol (PEG)"
+                }
+          ],
+          "correctId": "d",
+          "explanation": "The text on page 2 states, \"Of the polymers, PEG is the most widely used.\""
+    },
+    {
+          "id": "q13",
+          "question": "13- According to the text, what molecular weight range of PEG is used in clinically approved products?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "200-1000 Da"
+                },
+                {
+                      "id": "b",
+                      "text": "1000-4000 Da"
+                },
+                {
+                      "id": "c",
+                      "text": "5000-40,000 Da"
+                },
+                {
+                      "id": "d",
+                      "text": "50,000-100,000 Da"
+                }
+          ],
+          "correctId": "c",
+          "explanation": "Page 3 begins with, \"In clinically approved products, PEG molecular weights of 5000- 40 000 Da are used.\""
+    },
+    {
+          "id": "q14",
+          "question": "14- How does PEGylation (conjugation with PEG) protect a protein from degradation?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "By increasing its electrical charge."
+                },
+                {
+                      "id": "b",
+                      "text": "By making the protein more hydrophobic."
+                },
+                {
+                      "id": "c",
+                      "text": "By shielding the protein via steric repulsion."
+                },
+                {
+                      "id": "d",
+                      "text": "By directly inhibiting proteolytic enzymes."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "Page 3 explains, \"When bound to a protein, PEG shields the protein via steric repulsion. This can protect the protein from degradation by enzymes...\""
+    },
+    {
+          "id": "q15",
+          "question": "15- What is the primary reason for using a linker group to attach a drug to a polymer, rather than direct covalent bonding?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "To make the synthesis process cheaper."
+                },
+                {
+                      "id": "b",
+                      "text": "To help avoid the therapeutic action of the drug being blocked by the polymer."
+                },
+                {
+                      "id": "c",
+                      "text": "To increase the molecular weight of the conjugate."
+                },
+                {
+                      "id": "d",
+                      "text": "To make the drug more water-soluble."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Page 3 states the linker is used \"to help avoid the therapeutic action of the drug being blocked by the polymer.\""
+    },
+    {
+          "id": "q16",
+          "question": "16- Which of the following is given as the most common type of linker group used in polymer-drug conjugates?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Amine linker"
+                },
+                {
+                      "id": "b",
+                      "text": "Carbamate linker"
+                },
+                {
+                      "id": "c",
+                      "text": "Ester linker"
+                },
+                {
+                      "id": "d",
+                      "text": "Amide linker"
+                }
+          ],
+          "correctId": "d",
+          "explanation": "The text on page 3 explicitly states, \"with an amide linker being the most common option.\""
+    },
+    {
+          "id": "q17",
+          "question": "17- The text mentions that naloxegol (Movantik/Moventig) is a polymer conjugate used for the treatment of opioid-induced constipation. What is the key advantage of its conjugation?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "It increases its systemic absorption after oral administration."
+                },
+                {
+                      "id": "b",
+                      "text": "It reduces its systemic absorbance after oral administration."
+                },
+                {
+                      "id": "c",
+                      "text": "It allows it to be administered intravenously."
+                },
+                {
+                      "id": "d",
+                      "text": "It targets it specifically to the brain."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Page 3 states, \"Conjugation of a small molecules to a polymeric backbone can reduce systemic absorbance after oral administration, and this is exploited in the case of naloxegol.\""
+    },
+    {
+          "id": "q18",
+          "question": "18- Conjugating a low-solubility drug like paclitaxel to a water-soluble polymer enhances solubility, which allows for:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Administration without further solubilizing agents."
+                },
+                {
+                      "id": "b",
+                      "text": "The drug to be given in a smaller volume."
+                },
+                {
+                      "id": "c",
+                      "text": "The drug to become more lipophilic."
+                },
+                {
+                      "id": "d",
+                      "text": "The drug to be effective at lower temperatures."
+                }
+          ],
+          "correctId": "a",
+          "explanation": "Page 3 concludes by stating that after conjugation, \"the conjugate can be administered without further solubilizing agents.\""
+    },
+    {
+          "id": "q19",
+          "question": "19- The increased hydrodynamic volume of a polymer-drug conjugate reduces its excretion rate via the kidneys. Up to what molecular weight threshold does clearance rate decrease with increasing molecular weight?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Approximately 5,000"
+                },
+                {
+                      "id": "b",
+                      "text": "Approximately 20,000"
+                },
+                {
+                      "id": "c",
+                      "text": "Approximately 45,000"
+                },
+                {
+                      "id": "d",
+                      "text": "Approximately 1,00,000"
+                }
+          ],
+          "correctId": "c",
+          "explanation": "Page 4 states, \"...clearance rates decreasing with increasing molecular weight up to a threshold of approximately 45000.\""
+    },
+    {
+          "id": "q20",
+          "question": "20- What happens to polymers with a molecular weight above the renal excretion threshold?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "They are rapidly excreted in the bile."
+                },
+                {
+                      "id": "b",
+                      "text": "They are more susceptible to clearance by the mononuclear phagocytic system (MPS)."
+                },
+                {
+                      "id": "c",
+                      "text": "They become permanently trapped in the bloodstream."
+                },
+                {
+                      "id": "d",
+                      "text": "They are broken down into smaller units by the kidneys."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Following the previous statement, page 4 says, \"Above a molecular weight 45000, renal excretion cannot occur, and larger polymers are more susceptible to clearance by the mononuclear phagocytic system (MPS).\""
+    },
+    {
+          "id": "q21",
+          "question": "21- How do water-soluble polymer strands protect a conjugated drug from degradation by enzymes?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "By chemically neutralizing the enzymes."
+                },
+                {
+                      "id": "b",
+                      "text": "By promoting steric hindrance, blocking enzymes from reaching the drug."
+                },
+                {
+                      "id": "c",
+                      "text": "By actively pumping the enzymes out of the bloodstream."
+                },
+                {
+                      "id": "d",
+                      "text": "By binding to the enzymes and destroying them."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Page 4 explains that hydrated polymer strands \"can promote steric hindrance, and block enzymes and antibodies from reaching the drug.\""
+    },
+    {
+          "id": "q22",
+          "question": "22- The hydrophilic coating of a polymer conjugate helps reduce aggregation and immunogenicity. This is achieved by:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Increasing the protein's hydrophobic regions."
+                },
+                {
+                      "id": "b",
+                      "text": "Masking hydrophobic regions in the protein and providing a steric shield."
+                },
+                {
+                      "id": "c",
+                      "text": "Promoting protein-protein association."
+                },
+                {
+                      "id": "d",
+                      "text": "Making the protein structure more rigid."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Page 4 states the hydrated chains \"can mask the hydrophobic regions in the protein... and provide a steric shield that can help prevent protein- protein association, and reduce aggregation.\""
+    },
+    {
+          "id": "q23",
+          "question": "23- What is the Enhanced Permeability and Retention (EPR) effect?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Active targeting using antibodies to find tumor cells."
+                },
+                {
+                      "id": "b",
+                      "text": "Passive targeting where nanomedicines accumulate in tumors due to leaky vasculature and poor lymphatic drainage."
+                },
+                {
+                      "id": "c",
+                      "text": "The process of a drug being pumped out of a tumor cell."
+                },
+                {
+                      "id": "d",
+                      "text": "The retention of a drug in the kidneys due to its large size."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Page 5 describes the EPR effect as \"passive targeting\" resulting from \"defective hypervasculature\" (leaky vessels) and \"deficient lymphatic drainage\" in tumors."
+    },
+    {
+          "id": "q24",
+          "question": "24- According to the text, what causes the endothelial fenestrations that allow nanomedicines to escape into tumor tissue?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Healthy, tight junctions in the endothelium."
+                },
+                {
+                      "id": "b",
+                      "text": "Defective hypervasculature due to inflammatory processes or tumor growth."
+                },
+                {
+                      "id": "c",
+                      "text": "The action of targeting groups on the nanomedicine."
+                },
+                {
+                      "id": "d",
+                      "text": "High blood pressure in the tumor vicinity."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Page 5 mentions, \"The integrity of the endothelial barrier can be disturbed by inflammatory processes or by tumour growth. This can result in defective hypervasculature, leading to endothelial fenestrations...\""
+    },
+    {
+          "id": "q25",
+          "question": "25- The use of targeting groups, such as antibodies or folate, to determine the distribution of drugs is referred to as:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Passive targeting"
+                },
+                {
+                      "id": "b",
+                      "text": "The EPR effect"
+                },
+                {
+                      "id": "c",
+                      "text": "Active targeting"
+                },
+                {
+                      "id": "d",
+                      "text": "Renal filtration"
+                }
+          ],
+          "correctId": "c",
+          "explanation": "Page 5 clearly states, \"The use of targeting groups to determine the distribution of drugs and drug carriers can also be considered to promote targeting to a specific site. This is commonly referred to as active targeting.\""
+    },
+    {
+          "id": "q26",
+          "question": "26- Why is folate used as a targeting group?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "To target folate receptors, which are overexpressed in tumor cells."
+                },
+                {
+                      "id": "b",
+                      "text": "To increase the solubility of the drug."
+                },
+                {
+                      "id": "c",
+                      "text": "To protect the drug from degradation."
+                },
+                {
+                      "id": "d",
+                      "text": "To reduce the immunogenicity of the conjugate."
+                }
+          ],
+          "correctId": "a",
+          "explanation": "The text on page 5 gives the example of \"folate to target folate receptors, which are overexpressed in tumour cells.\""
+    },
+    {
+          "id": "q27",
+          "question": "27- What are the three main elements of a dendrimer?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "A lipid core, a protein shell, and a drug payload."
+                },
+                {
+                      "id": "b",
+                      "text": "A central core, an internal dendritic structure, and an exterior surface."
+                },
+                {
+                      "id": "c",
+                      "text": "A micellar core, a polymeric shell, and a targeting group."
+                },
+                {
+                      "id": "d",
+                      "text": "A phospholipid bilayer, an aqueous core, and a carbohydrate coating."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Page 5 lists these three elements in a numbered format."
+    },
+    {
+          "id": "q28",
+          "question": "28- What key advantage do dendrimers have over traditional linear or branched polymers used in drug conjugates?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "They are always biodegradable."
+                },
+                {
+                      "id": "b",
+                      "text": "They are cheaper and easier to produce."
+                },
+                {
+                      "id": "c",
+                      "text": "They can be prepared with a very narrow size distribution (near monodisperse)."
+                },
+                {
+                      "id": "d",
+                      "text": "They have a lower drug-loading capacity."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "Page 5 states, \"they offer the advantage that they can be prepared with a very narrow size distribution.\""
+    },
+    {
+          "id": "q29",
+          "question": "29- The large number of peripheral groups on a dendrimer's exterior allows for:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "A slower rate of drug release."
+                },
+                {
+                      "id": "b",
+                      "text": "A higher drug-loading capacity compared to linear polymers."
+                },
+                {
+                      "id": "c",
+                      "text": "The dendrimer to be invisible to the immune system."
+                },
+                {
+                      "id": "d",
+                      "text": "A smaller overall size."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "The text explains that the peripheral groups \"allow higher drug- loading capacities compared with the linear or branched polymers used in polymeredrug conjugates.\""
+    },
+    {
+          "id": "q30",
+          "question": "30- How can a dendrimer act as a solubilizing agent for a low-solubility drug?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "By covalently bonding the drug to its hydrophobic core."
+                },
+                {
+                      "id": "b",
+                      "text": "By encapsulating the drug within its structure, which offers a hydrophobic core and a hydrophilic exterior."
+                },
+                {
+                      "id": "c",
+                      "text": "By dissolving the drug in its aqueous core."
+                },
+                {
+                      "id": "d",
+                      "text": "By attaching the drug to its surface with a hydrophilic linker."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Page 6 states dendrimers can act as solubilizing agents \"by encapsulating the drug within the dendrimer construct, which offers a hydrophobic core and a hydrophilic exterior.\""
+    },
+    {
+          "id": "q31",
+          "question": "31- Drug molecules can be loaded into or onto a dendrimer in two main ways: by physical entrapment/encapsulation or by:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Adsorption onto a lipid bilayer."
+                },
+                {
+                      "id": "b",
+                      "text": "Conjugation to the surface groups."
+                },
+                {
+                      "id": "c",
+                      "text": "Dissolution in the central core."
+                },
+                {
+                      "id": "d",
+                      "text": "Precipitation during manufacturing."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Page 6 describes loading \"via conjugation of the drug to the surface groups on the dendrimer\" as an alternative to encapsulation."
+    },
+    {
+          "id": "q32",
+          "question": "32- Micelles form because of the ability of surfactant molecules to:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Covalently bond to each other in water."
+                },
+                {
+                      "id": "b",
+                      "text": "Form lipid bilayers."
+                },
+                {
+                      "id": "c",
+                      "text": "Self-assemble in an aqueous environment."
+                },
+                {
+                      "id": "d",
+                      "text": "Precipitate out of solution."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "Page 6 states, \"Micelles form because of the ability of surfactant molecules to self- assemble into micelles in an aqueous environment.\""
+    },
+    {
+          "id": "q33",
+          "question": "33- Due to their structure, micelles are commonly used as:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Solubilizing agents for low-solubility drugs."
+                },
+                {
+                      "id": "b",
+                      "text": "Carriers for water-soluble drugs only."
+                },
+                {
+                      "id": "c",
+                      "text": "Agents to increase the rate of renal clearance."
+                },
+                {
+                      "id": "d",
+                      "text": "Targeting moieties for brain delivery."
+                }
+          ],
+          "correctId": "a",
+          "explanation": "Page 6 explains, \"As a consequence of the micellar structure, which offers a hydrophobic core and a hydrophilic surface, micelles are commonly used as solubilizing agents.\""
+    },
+    {
+          "id": "q34",
+          "question": "34- What is the hydrophobic component of polymeric micelles typically made of?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Polyethylene glycol (PEG)"
+                },
+                {
+                      "id": "b",
+                      "text": "Poly(propylene oxide), poly(D,L-lactic acid), or poloxamers"
+                },
+                {
+                      "id": "c",
+                      "text": "Chitosan and dextran"
+                },
+                {
+                      "id": "d",
+                      "text": "Phosphatidylcholine"
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Page 7 lists these as examples of the hydrophobic components used to build polymeric micelles."
+    },
+    {
+          "id": "q35",
+          "question": "35- What is the role of PEG in a polymeric micelle?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "It forms the hydrophobic core to solubilize the drug."
+                },
+                {
+                      "id": "b",
+                      "text": "It acts as the targeting group."
+                },
+                {
+                      "id": "c",
+                      "text": "It forms the outer hydrophilic shell to enhance plasma half-life."
+                },
+                {
+                      "id": "d",
+                      "text": "It cross-links the micelle to make it solid."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "Page 7 states, \"For the hydrophilic component, which forms the outer hydrophilic shell of the micelle, PEG is commonly used.\" It then explains how this shell enhances half-life."
+    },
+    {
+          "id": "q36",
+          "question": "36- Micelles with attached monoclonal antibodies on their surface are referred to as:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Polymersomes"
+                },
+                {
+                      "id": "b",
+                      "text": "Immunomicelles"
+                },
+                {
+                      "id": "c",
+                      "text": "Bilosomes"
+                },
+                {
+                      "id": "d",
+                      "text": "Stealth micelles"
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Page 7 concludes, \"These micelles are often referred to as immunomicelles.\""
+    },
+    {
+          "id": "q37",
+          "question": "37- What are the two main manufacturing methods for solid nanoparticles mentioned in the text?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Freeze-drying and spray-drying"
+                },
+                {
+                      "id": "b",
+                      "text": "Size reduction (e.g., milling) and molecular agglomeration (e.g., precipitation)"
+                },
+                {
+                      "id": "c",
+                      "text": "Emulsification and solvent evaporation"
+                },
+                {
+                      "id": "d",
+                      "text": "High-pressure homogenization and sonication"
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Page 7 states these methods \"generally involve either size reduction... or molecular agglomeration... to form nanoparticles.\""
+    },
+    {
+          "id": "q38",
+          "question": "38- Why are surface-active agents (stabilizers) needed when formulating nanosized drug particles?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "To increase the drug's solubility even further."
+                },
+                {
+                      "id": "b",
+                      "text": "To make the particles larger and easier to handle."
+                },
+                {
+                      "id": "c",
+                      "text": "To prevent the particles from aggregating due to their high interfacial energy."
+                },
+                {
+                      "id": "d",
+                      "text": "To help the drug particles dissolve in the stomach."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "Page 7 explains that due to their high surface area and interfacial energy, they are \"prone to particle aggregation,\" so stabilizers are used to reduce this problem."
+    },
+    {
+          "id": "q39",
+          "question": "39- What is a key characteristic of NanoCrystals?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "They are made from 100% drug with no carrier."
+                },
+                {
+                      "id": "b",
+                      "text": "They always require a polymeric carrier."
+                },
+                {
+                      "id": "c",
+                      "text": "They are always amorphous."
+                },
+                {
+                      "id": "d",
+                      "text": "They are larger than 1000 nm."
+                }
+          ],
+          "correctId": "a",
+          "explanation": "Page 7 explicitly states, \"NanoCrystals are prepared from 100% drug with no carrier...\""
+    },
+    {
+          "id": "q40",
+          "question": "40- According to the text, which polymer is highlighted as being well-characterized and used in a range of clinical products, making it advantageous for solid polymeric nanoparticles?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Chitosan"
+                },
+                {
+                      "id": "b",
+                      "text": "Poly(e-caprolactone)"
+                },
+                {
+                      "id": "c",
+                      "text": "Poly(lactic acid)"
+                },
+                {
+                      "id": "d",
+                      "text": "Poly(lactide-co-glycolide) (PLGA)"
+                }
+          ],
+          "correctId": "d",
+          "explanation": "Page 8 states, \"The advantage of these polymers is that they are well characterized and used in a range of clinical products, particularly PLGA.\""
+    },
+    {
+          "id": "q41",
+          "question": "41- What are 'stealth' nanoparticles?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Nanoparticles that are invisible to the naked eye."
+                },
+                {
+                      "id": "b",
+                      "text": "Solid polymeric nanoparticles with a PEG surface coating that prevents protein binding."
+                },
+                {
+                      "id": "c",
+                      "text": "Nanoparticles made entirely from solid lipids."
+                },
+                {
+                      "id": "d",
+                      "text": "Nanoparticles that actively target cancer cells."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Page 8 describes PEG-coated nanoparticles as \"stealth\" nanoparticles, with the hydrated PEG \"prohibiting protein and antibody binding, thereby reducing recognition and clearance.\""
+    },
+    {
+          "id": "q42",
+          "question": "42- Solid lipid nanoparticles are made from:",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Liquid oils emulsified in water."
+                },
+                {
+                      "id": "b",
+                      "text": "Solid (high melting point) lipids dispersed in an aqueous phase."
+                },
+                {
+                      "id": "c",
+                      "text": "Biodegradable polymers like PLGA."
+                },
+                {
+                      "id": "d",
+                      "text": "100% drug with no carrier."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Page 8 defines them as \"nanoparticles made from solid (high melting point) lipids dispersed in an aqueous phase.\""
+    },
+    {
+          "id": "q43",
+          "question": "43- What is the fundamental structure of a liposome?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "A solid polymeric matrix with drug embedded within."
+                },
+                {
+                      "id": "b",
+                      "text": "A hydrophobic core surrounded by a surfactant monolayer."
+                },
+                {
+                      "id": "c",
+                      "text": "A closed spherical vesicle consisting of an aqueous core surrounded by one or more bilayer membranes."
+                },
+                {
+                      "id": "d",
+                      "text": "A highly branched polymer structure with a central core."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "This is the direct definition provided at the beginning of the liposome section on page 9."
+    },
+    {
+          "id": "q44",
+          "question": "44- Unlike micelle formation, what must be added to a system to drive the formation of liposomes?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "A surfactant"
+                },
+                {
+                      "id": "b",
+                      "text": "Energy"
+                },
+                {
+                      "id": "c",
+                      "text": "A hydrophobic drug"
+                },
+                {
+                      "id": "d",
+                      "text": "A targeting group"
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Page 9 states, \"Unlike micelle formation which occurs spontaneously, energy must be added to the system to drive the formation of liposomes.\""
+    },
+    {
+          "id": "q45",
+          "question": "45- How do liposomes carry water-soluble and lipophilic drugs?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Both types are incorporated within the aqueous core."
+                },
+                {
+                      "id": "b",
+                      "text": "Both types are incorporated within the bilayer."
+                },
+                {
+                      "id": "c",
+                      "text": "Water-soluble drugs are in the aqueous compartments; lipophilic drugs are incorporated within the bilayer."
+                },
+                {
+                      "id": "d",
+                      "text": "They are adsorbed onto the surface via electrostatic interactions."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "Page 9 clearly explains this differential loading based on drug solubility."
+    },
+    {
+          "id": "q46",
+          "question": "46- Which type of liposome is most commonly used in clinically approved products?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "Large unilamellar vesicles"
+                },
+                {
+                      "id": "b",
+                      "text": "Multilamellar vesicles"
+                },
+                {
+                      "id": "c",
+                      "text": "Multivesicular vesicles"
+                },
+                {
+                      "id": "d",
+                      "text": "Small unilamellar vesicles"
+                }
+          ],
+          "correctId": "d",
+          "explanation": "Page 10 states that these \"are the most commonly used in clinically approved products.\""
+    },
+    {
+          "id": "q47",
+          "question": "47- The rapid uptake of Myocet liposomes by the MPS creates an 'MPS depot'. What is the effect of this?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "The drug is immediately released in the bloodstream."
+                },
+                {
+                      "id": "b",
+                      "text": "The liposomes are targeted directly to the tumor."
+                },
+                {
+                      "id": "c",
+                      "text": "Slow release of the drug into the blood circulation, mimicking a slow transfusion."
+                },
+                {
+                      "id": "d",
+                      "text": "The liposomes are broken down and the drug is excreted."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "Page 10 explains this mechanism for Myocet."
+    },
+    {
+          "id": "q48",
+          "question": "48- How does the PEG coating on Doxil/Caelyx liposomes help them accumulate at tumor sites?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "By actively binding to receptors on tumor cells."
+                },
+                {
+                      "id": "b",
+                      "text": "By inhibiting opsonization, avoiding MPS clearance, and increasing circulation time to allow for the EPR effect."
+                },
+                {
+                      "id": "c",
+                      "text": "By making the liposomes small enough to pass through any blood vessel."
+                },
+                {
+                      "id": "d",
+                      "text": "By dissolving the tumor tissue."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Page 10 details this mechanism: the PEG coating inhibits opsonization and MPS clearance, increasing half-life so they can accumulate via the EPR effect."
+    },
+    {
+          "id": "q49",
+          "question": "49- What is the purpose of incorporating cholesterol into a liposome bilayer?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "To give the liposome a positive charge."
+                },
+                {
+                      "id": "b",
+                      "text": "To act as a targeting group."
+                },
+                {
+                      "id": "c",
+                      "text": "To reduce bilayer permeability and increase drug retention."
+                },
+                {
+                      "id": "d",
+                      "text": "To make the liposomes form more easily and spontaneously."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "Page 11 explains that cholesterol \"can reduce the bilayer permeability of the liposomes and thus increase drug retention.\""
+    },
+    {
+          "id": "q50",
+          "question": "50- What is the advantage of using ionizable lipids for the delivery of nucleic acids?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "They are permanently positively charged, ensuring strong binding."
+                },
+                {
+                      "id": "b",
+                      "text": "They are positively charged at an acidic pH (for formation) but near-neutral at physiological pH (to reduce toxicity)."
+                },
+                {
+                      "id": "c",
+                      "text": "They are cheaper than other types of lipids."
+                },
+                {
+                      "id": "d",
+                      "text": "They allow the liposome to dissolve in water."
+                }
+          ],
+          "correctId": "b",
+          "explanation": "Page 12 explains that ionizable lipids were developed to circumvent the toxicity of positively charged particles by being charged only at low pH during formation, and neutral at physiological pH."
+    },
+    {
+          "id": "q51",
+          "question": "51- According to the text, a drug with a log P > 5 would be best incorporated into which part of a liposome?",
+          "options": [
+                {
+                      "id": "a",
+                      "text": "The aqueous core"
+                },
+                {
+                      "id": "b",
+                      "text": "Adsorbed onto the surface"
+                },
+                {
+                      "id": "c",
+                      "text": "The lipid bilayer"
+                },
+                {
+                      "id": "d",
+                      "text": "It cannot be incorporated into a liposome."
+                }
+          ],
+          "correctId": "c",
+          "explanation": "Page 12 states that lipophilic drugs (log P > 5) \"are incorporated and retained within the liposome bilayers.\""
+    }
+  ],
 };
 
 
