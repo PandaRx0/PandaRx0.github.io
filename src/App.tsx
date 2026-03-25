@@ -18034,7 +18034,7 @@ function App() {
             
             <div style={{ flex: 1, border: '1px solid #444', borderRadius: '8px', overflow: 'hidden', background: '#222' }}>
               <iframe 
-                src={selectedSummary.url} 
+                src={window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' ? selectedSummary.url : `https://docs.google.com/viewer?url=${encodeURIComponent('https://pandarx0.github.io' + selectedSummary.url)}&embedded=true`} 
                 width="100%" 
                 height="100%" 
                 style={{ border: 'none' }} 
