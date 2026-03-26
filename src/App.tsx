@@ -52,7 +52,9 @@ const SUMMARIES = {
     { id: 'anxiety', title: 'Anxiety', url: '/summaries/Anxiety.pdf' },
     { id: 'thyroid', title: 'Hyperthyrodism and thyroid storm', url: '/summaries/Hyperthyrodism and thyroid storm.pdf' },
     { id: 'cushing', title: 'Cushing Syndrome', url: '/summaries/cushing syndrome.pdf' },
-    { id: 'hyperaldosteronism', title: 'Hyperaldosteronism', url: '/summaries/hyperaldosteronism.pdf' }
+    { id: 'hyperaldosteronism', title: 'Hyperaldosteronism', url: '/summaries/hyperaldosteronism.pdf' },
+    { id: 'depression', title: 'Depression', url: '/summaries/Depression.pdf' },
+    { id: 'schizophrenia', title: 'Schizophrenia', url: '/summaries/Schizophrenia.pdf' }
   ],
   advanced: [],
   delivery: [
