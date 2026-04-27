@@ -37,7 +37,9 @@ const TOPICS = {
   ],
   advanced: [
     { id: 'uv_spectroscopy', title: 'UV spectroscopy', desc: 'UV spectroscopy', icon: Database },
-    { id: 'ir_spectroscopy', title: 'IR spectroscopy', desc: 'IR spectroscopy', icon: Database }],
+    { id: 'ir_spectroscopy', title: 'IR spectroscopy', desc: 'IR spectroscopy', icon: Database },
+    { id: 'nmr', title: 'NMR spectroscopy', desc: 'NMR spectroscopy', icon: Database },
+    { id: 'mass_spectrometry', title: 'Mass spectrometry', desc: 'Mass spectrometry', icon: Database }],
   delivery: [
     { id: 'nanotechnology', title: 'Nanotechnology', desc: 'Pharmaceutical Nanotechnology', icon: Cloud }
     , { id: 'drug_development', title: 'Drug Development', desc: 'New Drug Development and Approval Process', icon: Cloud }
@@ -63,7 +65,1411 @@ const SUMMARIES = {
 };
 
 const MCQS = {
-  'schizophrenia': [
+  'mass_spectrometry': [
+    {
+        "id": "q1",
+        "question": "Compared to other spectroscopic methods, mass spectrometry is unique because it is considered:",
+        "options": [
+            {
+                "id": "a",
+                "text": "A non-destructive technique where the sample is recovered."
+            },
+            {
+                "id": "b",
+                "text": "A destructive micro-analytical technique where the sample is consumed."
+            },
+            {
+                "id": "c",
+                "text": "Only useful for analyzing pure metallic elements."
+            },
+            {
+                "id": "d",
+                "text": "Dependent on the absorption of radio-frequency radiation."
+            },
+            {
+                "id": "e",
+                "text": "Used to measure the vibration of covalent bonds."
+            }
+        ],
+        "correctId": "b",
+        "explanation": "The source defines mass spectrometry as a destructive technique because the sample is consumed during analysis as it is ionized and fragmented."
+    },
+    {
+        "id": "q2",
+        "question": "How much sample is typically required to obtain characteristic information using mass spectrometry?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Several grams."
+            },
+            {
+                "id": "b",
+                "text": "1\u20132 milligrams."
+            },
+            {
+                "id": "c",
+                "text": "Only a few nanomoles."
+            },
+            {
+                "id": "d",
+                "text": "At least 10 milliliters of liquid."
+            },
+            {
+                "id": "e",
+                "text": "One full mole of the substance."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "The source explicitly states that mass spectrometry is a micro-analytical technique requiring only a few nanomoles of the sample."
+    },
+    {
+        "id": "q3",
+        "question": "In mass spectrometry, from which site is an electron typically removed first to form the molecular ion?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Sigma (\\sigma) bond electrons."
+            },
+            {
+                "id": "b",
+                "text": "Pi (\\pi) bond electrons."
+            },
+            {
+                "id": "c",
+                "text": "Non-bonding (NB) lone pair electrons."
+            },
+            {
+                "id": "d",
+                "text": "Inner-shell core electrons."
+            },
+            {
+                "id": "e",
+                "text": "All electrons are removed simultaneously."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Electrons are first removed from the site with the lowest ionization potential. The source provides the order: Non-bonding electrons > pi bond electrons > sigma bond electrons."
+    },
+    {
+        "id": "q4",
+        "question": "When a molecular ion fragments in the mass spectrometer, which of the resulting species is actually detected by the instrument?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The neutral radical."
+            },
+            {
+                "id": "b",
+                "text": "The neutral molecule."
+            },
+            {
+                "id": "c",
+                "text": "The positively charged cation."
+            },
+            {
+                "id": "d",
+                "text": "Lighter anions."
+            },
+            {
+                "id": "e",
+                "text": "Both the radical and the cation."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Fragmentation of a molecular ion produces a radical and a cation; the source specifies that \"Only the cation is detected by MS\"."
+    },
+    {
+        "id": "q5",
+        "question": "In a mass spectrum plot, what does the \"base peak\" represent?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The peak with the highest m/z value."
+            },
+            {
+                "id": "b",
+                "text": "The peak representing the intact parent molecule."
+            },
+            {
+                "id": "c",
+                "text": "The most intense peak, assigned a relative abundance of 100%."
+            },
+            {
+                "id": "d",
+                "text": "The peak caused by the carbon-13 isotope."
+            },
+            {
+                "id": "e",
+                "text": "The peak with the lowest mass-to-charge ratio."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "The source defines the base peak as the most abundant/intense ion in the spectrum, which is assigned an abundance of 100%."
+    },
+    {
+        "id": "q6",
+        "question": "What is the correct functional order of the three major components an ion passes through in a mass spectrometer?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Analyzer -> Ion Source -> Detector"
+            },
+            {
+                "id": "b",
+                "text": "Detector -> Analyzer -> Ion Source"
+            },
+            {
+                "id": "c",
+                "text": "Ion Source -> Analyzer -> Detector"
+            },
+            {
+                "id": "d",
+                "text": "Ion Source -> Detector -> Analyzer"
+            },
+            {
+                "id": "e",
+                "text": "Analyzer -> Detector -> Ion Source"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "The source lists the three major components as: 1- Ion Source (produces ions), 2- Analyzer (resolves ions), and 3- Detector (records abundance)."
+    },
+    {
+        "id": "q7",
+        "question": "In the analyzer of a mass spectrometer, how does the mass-to-charge ratio (m/z) affect the deflection of ions by the magnetic field?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Higher m/z ions are deflected the most."
+            },
+            {
+                "id": "b",
+                "text": "The magnetic field deflects all ions equally."
+            },
+            {
+                "id": "c",
+                "text": "Lowest m/z ions are deflected the most."
+            },
+            {
+                "id": "d",
+                "text": "Only neutral radicals are deflected."
+            },
+            {
+                "id": "e",
+                "text": "Deflection is independent of momentum."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "The source states that the amount of deflection depends on m/z: highest m/z are deflected least, and lowest m/z are deflected most."
+    },
+    {
+        "id": "q8",
+        "question": "Ions that have very low mass (low momentum) in the analyzer undergo which of the following?",
+        "options": [
+            {
+                "id": "a",
+                "text": "They are not deflected enough."
+            },
+            {
+                "id": "b",
+                "text": "They are deflected the most and collide with the analyzer walls."
+            },
+            {
+                "id": "c",
+                "text": "They exit through the slit toward the detector perfectly."
+            },
+            {
+                "id": "d",
+                "text": "They are ignored by the magnetic field."
+            },
+            {
+                "id": "e",
+                "text": "They revert back to their vapor state."
+            }
+        ],
+        "correctId": "b",
+        "explanation": "According to the \"Working\" section, low mass/momentum ions are deflected the most and collide with the walls rather than reaching the detector."
+    },
+    {
+        "id": "q9",
+        "question": "A compound containing one chlorine atom will show a characteristic \"M\" and \"M+2\" isotope pattern. What is the approximate intensity ratio?",
+        "options": [
+            {
+                "id": "a",
+                "text": "1:1"
+            },
+            {
+                "id": "b",
+                "text": "1:3"
+            },
+            {
+                "id": "c",
+                "text": "3:1"
+            },
+            {
+                "id": "d",
+                "text": "1:2:1"
+            },
+            {
+                "id": "e",
+                "text": "9:6:1"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "The source explains that Chlorine exists as ^{35}Cl and ^{37}Cl with an intensity ratio of 3:1."
+    },
+    {
+        "id": "q10",
+        "question": "What isotope pattern is characteristic of a molecule containing a single bromine atom?",
+        "options": [
+            {
+                "id": "a",
+                "text": "M+2 is one-third as large as M+."
+            },
+            {
+                "id": "b",
+                "text": "M+ and M+2 are approximately equal in intensity (1:1)."
+            },
+            {
+                "id": "c",
+                "text": "M+2 is 4% the height of M+."
+            },
+            {
+                "id": "d",
+                "text": "A peak appears at m/z 127 with a large gap."
+            },
+            {
+                "id": "e",
+                "text": "The molecular ion peak is always an odd number."
+            }
+        ],
+        "correctId": "b",
+        "explanation": "Bromine isotopes (^{79}Br and ^{81}Br) have a natural abundance ratio of approximately 1:1, leading to peaks of similar height."
+    },
+    {
+        "id": "q11",
+        "question": "The presence of which element is signaled by a cation peak at m/z 127 accompanied by a characteristically large gap in the spectrum?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Bromine"
+            },
+            {
+                "id": "b",
+                "text": "Chlorine"
+            },
+            {
+                "id": "c",
+                "text": "Iodine"
+            },
+            {
+                "id": "d",
+                "text": "Sulfur"
+            },
+            {
+                "id": "e",
+                "text": "Nitrogen"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "The source table for \"Easily Recognized Elements\" explicitly lists Iodine as having an I^+ peak at 127 and a large gap."
+    },
+    {
+        "id": "q12",
+        "question": "According to the Nitrogen Rule, if a molecule has an odd-numbered molecular ion mass (e.g., m/z = 101), what can be concluded?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It contains zero nitrogen atoms."
+            },
+            {
+                "id": "b",
+                "text": "It contains an even number of nitrogen atoms."
+            },
+            {
+                "id": "c",
+                "text": "It contains an odd number of nitrogen atoms."
+            },
+            {
+                "id": "d",
+                "text": "It is a purely aromatic hydrocarbon."
+            },
+            {
+                "id": "e",
+                "text": "It must contain at least one oxygen atom."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "The Nitrogen Rule states: \"When the number of nitrogen atoms present in the molecule is odd, the molecular mass will be an odd number\"."
+    },
+    {
+        "id": "q13",
+        "question": "If a molecule has an even-numbered molecular ion mass (e.g., m/z = 60), what does the Nitrogen Rule indicate about its nitrogen content?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It must contain exactly one nitrogen atom."
+            },
+            {
+                "id": "b",
+                "text": "It contains an odd number of nitrogen atoms."
+            },
+            {
+                "id": "c",
+                "text": "It contains either zero or an even number of nitrogen atoms."
+            },
+            {
+                "id": "d",
+                "text": "It is highly branched and saturated."
+            },
+            {
+                "id": "e",
+                "text": "Nitrogen is not present in the molecule."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "The rule states that if the mass is even, the number of nitrogens is even or zero."
+    },
+    {
+        "id": "q14",
+        "question": "Which of the following classes of compounds is most likely to produce the most intense and stable molecular ion peak?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Aliphatic alcohols."
+            },
+            {
+                "id": "b",
+                "text": "Highly branched alkanes."
+            },
+            {
+                "id": "c",
+                "text": "Purely aromatic systems."
+            },
+            {
+                "id": "d",
+                "text": "Organic nitrates."
+            },
+            {
+                "id": "e",
+                "text": "Aliphatic nitriles."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "The source states: \"The most stable molecular ions are those of purely aromatic systems\" and provides the order: aromatic compounds > conjugated alkenes > cyclic compounds."
+    },
+    {
+        "id": "q15",
+        "question": "In confirming a suspected molecular ion peak, which range of mass losses is considered \"unlikely\" and suggests the peak might be an impurity or fragment?",
+        "options": [
+            {
+                "id": "a",
+                "text": "M\u201315 (CH_3)"
+            },
+            {
+                "id": "b",
+                "text": "M\u201318 (H_2O)"
+            },
+            {
+                "id": "c",
+                "text": "M\u20133 to M\u201314"
+            },
+            {
+                "id": "d",
+                "text": "M\u201331 (OCH_3)"
+            },
+            {
+                "id": "e",
+                "text": "M\u20131 (H)"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "The source notes: \"Peaks in the range of M- 3 to M-14, however, indicate that... the presumed molecular ion peak is actually a fragment ion peak\"."
+    },
+    {
+        "id": "q16",
+        "question": "If an unknown substance has a molecular formula resulting in an IHD of 0, what does this indicate about the structure?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The compound has one double bond."
+            },
+            {
+                "id": "b",
+                "text": "The compound has one ring."
+            },
+            {
+                "id": "c",
+                "text": "The compound has no \\pi bonds and no rings."
+            },
+            {
+                "id": "d",
+                "text": "The compound contains a triple bond."
+            },
+            {
+                "id": "e",
+                "text": "The compound is aromatic."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "An IHD of 0 specifically means \"the unknown substance has no \\pi bonds and/or rings\"."
+    },
+    {
+        "id": "q17",
+        "question": "Bombardment of molecules by an electron beam with energy between 10\u201315 eV typically results in which of the following?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Complete destruction of the molecule."
+            },
+            {
+                "id": "b",
+                "text": "McLafferty rearrangement."
+            },
+            {
+                "id": "c",
+                "text": "Simple ionization to form the molecular ion (M^+)."
+            },
+            {
+                "id": "d",
+                "text": "High excitation and extensive fragmentation."
+            },
+            {
+                "id": "e",
+                "text": "Absorption of infrared radiation."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "The source explains that energy between 10-15 eV \"usually results in the ionization of molecules by removal of one electron (Molecular ion formation)\"."
+    },
+    {
+        "id": "q18",
+        "question": "At what electron beam energy level does the molecular ion typically acquire enough excitation to break down into various fragments?",
+        "options": [
+            {
+                "id": "a",
+                "text": "1\u20135 eV"
+            },
+            {
+                "id": "b",
+                "text": "Exactly 10 eV"
+            },
+            {
+                "id": "c",
+                "text": "50\u201370 eV"
+            },
+            {
+                "id": "d",
+                "text": "1000 eV"
+            },
+            {
+                "id": "e",
+                "text": "Energy level does not affect fragmentation."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "The source states: \"When the energy of electron beam is increased between 50-70ev, these molecular ions acquire a high excitation resulting in their break down into various fragments\"."
+    },
+    {
+        "id": "q19",
+        "question": "Fragmentation is often governed by the stability of the resulting cation. What is the correct order of cation stability according to the source?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Methyl > Primary > Secondary > Tertiary"
+            },
+            {
+                "id": "b",
+                "text": "Tertiary > Secondary > Primary > Methyl"
+            },
+            {
+                "id": "c",
+                "text": "Primary > Tertiary > Secondary > Methyl"
+            },
+            {
+                "id": "d",
+                "text": "Secondary > Primary > Tertiary > Methyl"
+            },
+            {
+                "id": "e",
+                "text": "All cations are equally stable in a vacuum."
+            }
+        ],
+        "correctId": "b",
+        "explanation": "The source explicitly lists the cation stability order: CH_3^+ < R'CH_2^+ < R_2'CH^+ < R_3'C^+."
+    },
+    {
+        "id": "q20",
+        "question": "According to the source's categorization, which of the following is NOT a mode of \"Simple Cleavage\"?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Homolytic cleavage"
+            },
+            {
+                "id": "b",
+                "text": "Heterolytic cleavage"
+            },
+            {
+                "id": "c",
+                "text": "Retro Diels-Alder reaction"
+            },
+            {
+                "id": "d",
+                "text": "McLafferty rearrangement"
+            },
+            {
+                "id": "e",
+                "text": "All are simple cleavages."
+            }
+        ],
+        "correctId": "d",
+        "explanation": "The source classifies McLafferty rearrangement under \"Rearrangement reactions accompanied by transfer of atoms,\" separate from the \"Simple cleavage\" category."
+    }
+],
+    'nmr': [
+    {
+        "id": "q1",
+        "question": "Which of the following nuclei is considered NMR-inactive?",
+        "options": [
+            {
+                "id": "a",
+                "text": "^1H"
+            },
+            {
+                "id": "b",
+                "text": "^{13}C"
+            },
+            {
+                "id": "c",
+                "text": "^{16}O"
+            },
+            {
+                "id": "d",
+                "text": "^{15}N"
+            },
+            {
+                "id": "e",
+                "text": "^{31}P"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Nuclei with an even mass number and an even atomic number (like ^{12}C and ^{16}O) are NMR-inactive. For a nucleus to be active in NMR, it must have an odd mass number, an odd atomic number, or both."
+    },
+    {
+        "id": "q2",
+        "question": "In the presence of an applied magnetic field (B_0), magnetic nuclear spins are oriented either with or against the field. Which statement regarding these orientations is INCORRECT?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The spins are oriented randomly in the presence of B_0."
+            },
+            {
+                "id": "b",
+                "text": "More nuclei are oriented with the applied field because it is lower in energy."
+            },
+            {
+                "id": "c",
+                "text": "The parallel spin state is slightly lower in energy than the antiparallel state."
+            },
+            {
+                "id": "d",
+                "text": "When external energy (radio frequency) matching the energy gap is applied, the nucleus flips its orientation."
+            },
+            {
+                "id": "e",
+                "text": "The parallel spin state is more populated than the antiparallel state."
+            }
+        ],
+        "correctId": "a",
+        "explanation": "While nuclear magnets are randomly oriented in space normally, they orient with (parallel) or against (antiparallel) an external magnetic field once it is applied. The parallel arrangement is favored because it is the lower energy state."
+    },
+    {
+        "id": "q3",
+        "question": "A proton signal is recorded at 1590 Hz on a spectrometer operating at 300 MHz. What is the chemical shift (\\delta) in ppm?",
+        "options": [
+            {
+                "id": "a",
+                "text": "0.18 ppm"
+            },
+            {
+                "id": "b",
+                "text": "5.3 ppm"
+            },
+            {
+                "id": "c",
+                "text": "15.9 ppm"
+            },
+            {
+                "id": "d",
+                "text": "3.0 ppm"
+            },
+            {
+                "id": "e",
+                "text": "0.53 ppm"
+            }
+        ],
+        "correctId": "b",
+        "explanation": "The chemical shift is calculated by dividing the observed frequency shift (in Hz) by the spectrometer frequency (in MHz). Using the formula: \\delta = \\frac{1590 \\text{ Hz}}{300 \\text{ MHz}} = 5.3 \\text{ ppm}."
+    },
+    {
+        "id": "q4",
+        "question": "How many ^1H-NMR signals would you expect for methyl acetate (CH_3COOCH_3)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "1"
+            },
+            {
+                "id": "b",
+                "text": "2"
+            },
+            {
+                "id": "c",
+                "text": "3"
+            },
+            {
+                "id": "d",
+                "text": "4"
+            },
+            {
+                "id": "e",
+                "text": "6"
+            }
+        ],
+        "correctId": "b",
+        "explanation": "The number of signals equals the number of sets of chemically equivalent protons. In methyl acetate, there are two sets: the three protons of the acetate group (H_a) and the three protons of the methyl ester group (H_b). Protons within each set are equivalent, but the two sets are in different electronic environments."
+    },
+    {
+        "id": "q5",
+        "question": "Why is Tetramethylsilane (TMS) chosen as the standard reference compound for NMR?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It is chemically reactive and easy to detect."
+            },
+            {
+                "id": "b",
+                "text": "Its protons are more deshielded than most organic molecules."
+            },
+            {
+                "id": "c",
+                "text": "It gives twelve distinct signals for complex analysis."
+            },
+            {
+                "id": "d",
+                "text": "Its protons are highly shielded, providing a zero-point at the far right of the spectrum."
+            },
+            {
+                "id": "e",
+                "text": "It is insoluble in organic solvents."
+            }
+        ],
+        "correctId": "d",
+        "explanation": "TMS protons are highly shielded because silicon is less electronegative than carbon, meaning they absorb at a very low frequency. This provides a clear zero point at the far-right (upfield) edge of the spectrum. TMS is also chemically inert and symmetrical, giving a single intense sharp peak."
+    },
+    {
+        "id": "q6",
+        "question": "Regarding the ^1H-NMR spectrum of chloroethane (CH_3CH_2Cl), what splitting patterns will be observed for the methyl and methylene groups?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A doublet and a triplet"
+            },
+            {
+                "id": "b",
+                "text": "A doublet and a quartet"
+            },
+            {
+                "id": "c",
+                "text": "A triplet and a quartet"
+            },
+            {
+                "id": "d",
+                "text": "Two doublets"
+            },
+            {
+                "id": "e",
+                "text": "A singlet and a quartet"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "According to the n+1 rule, a signal is split by n neighboring non-equivalent protons. The CH_3 group has 2 neighboring protons from the CH_2 group, resulting in a triplet (2+1=3). The CH_2 group has 3 neighboring protons from the CH_3 group, resulting in a quartet (3+1=4)."
+    },
+    {
+        "id": "q7",
+        "question": "Which of the following atoms or groups would cause the greatest downfield (higher chemical shift) shift for nearby protons due to the inductive effect?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Carbon"
+            },
+            {
+                "id": "b",
+                "text": "Silicon"
+            },
+            {
+                "id": "c",
+                "text": "Sulfur"
+            },
+            {
+                "id": "d",
+                "text": "Nitrogen"
+            },
+            {
+                "id": "e",
+                "text": "Oxygen"
+            }
+        ],
+        "correctId": "e",
+        "explanation": "The inductive effect (electronegativity) causes deshielding. Highly electronegative atoms like Oxygen pull electron density away from nearby protons, causing them to feel more of the external magnetic field and absorb at a higher frequency (downfield)."
+    },
+    {
+        "id": "q8",
+        "question": "Why do aromatic protons in benzene appear far downfield (6.5\u20138 ppm)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Because they are highly shielded by a ring current."
+            },
+            {
+                "id": "b",
+                "text": "Because they are bonded to a highly electronegative atom."
+            },
+            {
+                "id": "c",
+                "text": "Because the induced magnetic field from circulating \\pi electrons reinforces the applied field."
+            },
+            {
+                "id": "d",
+                "text": "Because they are exchangeable with the solvent."
+            },
+            {
+                "id": "e",
+                "text": "Due to hydrogen bonding with the solvent."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "This is known as diamagnetic anisotropy. Circulating \\pi electrons in the benzene ring create a ring current that induces a magnetic field. This induced field reinforces the external field (B_0) in the vicinity of the protons, causing them to be deshielded and shift downfield."
+    },
+    {
+        "id": "q9",
+        "question": "How do protons directly bonded to heteroatoms, such as the hydroxyl group (O-H) in alcohols, typically behave in ^1H-NMR?",
+        "options": [
+            {
+                "id": "a",
+                "text": "They always appear as sharp quartets."
+            },
+            {
+                "id": "b",
+                "text": "They do not appear on the spectrum at all."
+            },
+            {
+                "id": "c",
+                "text": "They generally do not split their neighbors and often appear as broad singlets."
+            },
+            {
+                "id": "d",
+                "text": "They always appear upfield at 0 ppm."
+            },
+            {
+                "id": "e",
+                "text": "They are unaffected by the concentration of the solution."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Protons on heteroatoms (O-H or N-H) exchange rapidly with solvent or other molecules, which prevents them from splitting neighboring protons. Their chemical shift is highly dependent on concentration and hydrogen bonding, often appearing as broad singlets between 0.5 and 5 ppm."
+    },
+    {
+        "id": "q10",
+        "question": "Compared to Mass Spectrometry, NMR spectroscopy is uniquely advantageous because it is:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Destructive to the sample."
+            },
+            {
+                "id": "b",
+                "text": "Inaccurate but fast."
+            },
+            {
+                "id": "c",
+                "text": "A non-destructive analytical technique."
+            },
+            {
+                "id": "d",
+                "text": "Only useful for inorganic molecules."
+            },
+            {
+                "id": "e",
+                "text": "Dependent on high-energy gamma radiation."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Unlike Mass Spectrometry, which involves bombarding and breaking molecules into fragments, NMR is non-destructive, meaning the sample can be recovered after the experiment. It employs safe, low-energy radio frequency radiation."
+    },
+    {
+        "id": "q11",
+        "question": "Why are samples for NMR spectroscopy typically dissolved in deuterated solvents such as CDCl_3 or DMSO-d_6?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To increase the sensitivity of the detector."
+            },
+            {
+                "id": "b",
+                "text": "To catalyze the spin-flip resonance."
+            },
+            {
+                "id": "c",
+                "text": "To prevent the sample from reacting with the reference standard (TMS)."
+            },
+            {
+                "id": "d",
+                "text": "To avoid large solvent signals that would obscure the signals from the sample protons."
+            },
+            {
+                "id": "e",
+                "text": "Because deuterium is the only NMR-active isotope of hydrogen."
+            }
+        ],
+        "correctId": "d",
+        "explanation": "Deuterated solvents are used because deuterium (^2H) has different resonance properties than ^1H. By replacing normal hydrogen with deuterium, the solvent does not produce a signal in the ^1H-NMR spectrum that would otherwise overwhelm the much smaller signals from the organic sample."
+    },
+    {
+        "id": "q12",
+        "question": "When a nucleus is described as \"shielded,\" how does the local magnetic field generated by surrounding electrons affect the external applied field (B_0)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It reinforces B_0, causing the nucleus to feel a stronger field."
+            },
+            {
+                "id": "b",
+                "text": "It opposes B_0, causing the nucleus to feel a weaker effective field."
+            },
+            {
+                "id": "c",
+                "text": "It has no effect on the field felt by the nucleus."
+            },
+            {
+                "id": "d",
+                "text": "It shifts the signal to a higher frequency (downfield)."
+            },
+            {
+                "id": "e",
+                "text": "It increases the energy gap between spin states."
+            }
+        ],
+        "correctId": "b",
+        "explanation": "Electrons moving around a nucleus create tiny local magnetic fields that act in opposition to the applied external field. This shielding effect means the \"effective\" field felt by the nucleus is weaker than the applied field (B_{effective} = B_{applied} - B_{local}), requiring a lower frequency for resonance."
+    },
+    {
+        "id": "q13",
+        "question": "Protons attached to sp^2-hybridized alkene carbons typically appear downfield (4.5\u20136 ppm). What causes this specific shift?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The high electronegativity of the carbon atom."
+            },
+            {
+                "id": "b",
+                "text": "Intermolecular hydrogen bonding with the solvent."
+            },
+            {
+                "id": "c",
+                "text": "Diamagnetic anisotropy where the induced field reinforces the external field near the protons."
+            },
+            {
+                "id": "d",
+                "text": "van der Waals repulsion with adjacent alkyl groups."
+            },
+            {
+                "id": "e",
+                "text": "The n+1 splitting rule increasing the frequency."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "The loosely held \\pi electrons of a double bond circulate in the magnetic field, creating an induced field. In the vicinity of the alkene protons, this induced field reinforces the external applied field, causing the protons to feel a stronger total field and shift downfield."
+    },
+    {
+        "id": "q14",
+        "question": "If a set of equivalent protons has four equivalent neighboring protons on adjacent carbons, into how many peaks will its signal be split?",
+        "options": [
+            {
+                "id": "a",
+                "text": "3 (Triplet)"
+            },
+            {
+                "id": "b",
+                "text": "4 (Quartet)"
+            },
+            {
+                "id": "c",
+                "text": "5 (Quintet)"
+            },
+            {
+                "id": "d",
+                "text": "6 (Sextet)"
+            },
+            {
+                "id": "e",
+                "text": "1 (Singlet)"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "According to the n+1 rule, the number of peaks in a signal is determined by the number of neighboring non-equivalent protons (n) plus one. In this case, 4 + 1 = 5, which results in a quintet."
+    },
+    {
+        "id": "q15",
+        "question": "In rings or double-bond systems, two protons are considered chemically equivalent only if they:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Are attached to the same carbon atom."
+            },
+            {
+                "id": "b",
+                "text": "Are separated by more than four \\sigma bonds."
+            },
+            {
+                "id": "c",
+                "text": "Share the same orientation (cis or trans) relative to the same groups."
+            },
+            {
+                "id": "d",
+                "text": "Are bonded to atoms of identical electronegativity."
+            },
+            {
+                "id": "e",
+                "text": "Are in an asymmetric electronic environment."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "In rigid structures like rings or alkenes, protons are only equivalent if they have identical relationships to all other groups in the molecule. For example, in 1,1-dichloroethylene, the two protons are equivalent because both are cis to a chlorine atom."
+    },
+    {
+        "id": "q16",
+        "question": "A compound has the molecular formula C_3H_8O and shows two signals. Signal A has an integration of 60 units, and Signal B has 20 units. How many protons correspond to Signal A?",
+        "options": [
+            {
+                "id": "a",
+                "text": "2"
+            },
+            {
+                "id": "b",
+                "text": "3"
+            },
+            {
+                "id": "c",
+                "text": "6"
+            },
+            {
+                "id": "d",
+                "text": "8"
+            },
+            {
+                "id": "e",
+                "text": "1"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "First, determine the units per proton by dividing the total integration (60+20=80) by the total protons (8): 80 / 8 = 10 units per proton. Then, divide Signal A's units by this value: 60 / 10 = 6 protons."
+    },
+    {
+        "id": "q17",
+        "question": "Why is Magnetic Resonance Imaging (MRI) considered a safer diagnostic tool than X-rays or CT scans?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It does not require the patient to enter a magnetic field."
+            },
+            {
+                "id": "b",
+                "text": "It uses high-energy gamma radiation that does not linger in tissue."
+            },
+            {
+                "id": "c",
+                "text": "It utilizes low-energy radio frequency radiation instead of ionizing high-frequency radiation."
+            },
+            {
+                "id": "d",
+                "text": "It is a destructive technique that removes diseased cells."
+            },
+            {
+                "id": "e",
+                "text": "It only interacts with carbon atoms, which are less sensitive to radiation."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "MRI is safe because it employs low-energy radio waves, whereas X-rays and CT scans use high-frequency, ionizing radiation that can potentially damage living cells and DNA."
+    },
+    {
+        "id": "q18",
+        "question": "Unlike aromatic protons, protons attached to a carbon-carbon triple bond (alkynes) appear relatively upfield at approximately 2.5 ppm. Why?",
+        "options": [
+            {
+                "id": "a",
+                "text": "They are extremely deshielded by the triple bond."
+            },
+            {
+                "id": "b",
+                "text": "The induced magnetic field of the triple bond opposes the applied external field."
+            },
+            {
+                "id": "c",
+                "text": "The carbon is sp^3 hybridized, leading to high shielding."
+            },
+            {
+                "id": "d",
+                "text": "They participate in strong ionic bonding."
+            },
+            {
+                "id": "e",
+                "text": "They are always exchangeable with the solvent."
+            }
+        ],
+        "correctId": "b",
+        "explanation": "In the case of a triple bond, the induced magnetic field created by circulating \\pi electrons opposes the applied field in the vicinity of the proton. This causes the proton to feel a weaker effective field, resulting in shielding and an upfield shift."
+    },
+    {
+        "id": "q19",
+        "question": "Spin-spin splitting is generally NOT observed between protons that are:",
+        "options": [
+            {
+                "id": "a",
+                "text": "On the same carbon (geminal)."
+            },
+            {
+                "id": "b",
+                "text": "On adjacent carbons (vicinal)."
+            },
+            {
+                "id": "c",
+                "text": "Separated by more than three \\sigma bonds."
+            },
+            {
+                "id": "d",
+                "text": "Non-equivalent and nearby."
+            },
+            {
+                "id": "e",
+                "text": "In different electronic environments."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Splitting is a short-range interaction. It is typically only observed for non-equivalent protons on the same carbon or adjacent carbons and is not generally seen if the protons are separated by more than three sigma (\\sigma) bonds."
+    },
+    {
+        "id": "q20",
+        "question": "Which of the following describes the typical appearance and position of a carboxylic acid proton (R-COOH) in a ^1H-NMR spectrum?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A sharp quartet at 1.0 ppm."
+            },
+            {
+                "id": "b",
+                "text": "A triplet at 4.0 ppm."
+            },
+            {
+                "id": "c",
+                "text": "A deshielded singlet appearing far downfield at 10\u201312 ppm."
+            },
+            {
+                "id": "d",
+                "text": "An upfield signal at 0 ppm."
+            },
+            {
+                "id": "e",
+                "text": "It does not appear because it is NMR-inactive."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Carboxylic acid protons are highly deshielded due to both the strong inductive effect of the electronegative oxygen atoms and the magnetic anisotropy of the carbonyl group. This results in a very high chemical shift, typically between 10 and 12 ppm."
+    },
+    {
+        "id": "q21",
+        "question": "Why is ^{13}C used for carbon NMR spectroscopy instead of the much more abundant ^{12}C isotope?",
+        "options": [
+            {
+                "id": "a",
+                "text": "^{12}C is radioactive and dangerous to use in spectrometers."
+            },
+            {
+                "id": "b",
+                "text": "^{12}C has an even mass number and an even atomic number, making it NMR-inactive."
+            },
+            {
+                "id": "c",
+                "text": "^{13}C is more abundant in nature (99%) than ^{12}C."
+            },
+            {
+                "id": "d",
+                "text": "^{13}C nuclei do not possess a magnetic moment."
+            },
+            {
+                "id": "e",
+                "text": "^{12}C signals overlap too much with hydrogen signals."
+            }
+        ],
+        "correctId": "b",
+        "explanation": "For a nucleus to be active in NMR, it must have an odd mass number, an odd atomic number, or both. ^{12}C, which accounts for 99% of carbon in organic molecules, is NMR-inactive because both its mass and atomic numbers are even. ^{13}C, though only ~1% abundant, has an odd mass number and is therefore NMR-active."
+    },
+    {
+        "id": "q22",
+        "question": "Why is peak integration (the area under a signal) generally NOT useful in ^{13}C-NMR spectroscopy?",
+        "options": [
+            {
+                "id": "a",
+                "text": "^{13}C signals are too broad to be integrated accurately."
+            },
+            {
+                "id": "b",
+                "text": "All carbon atoms in a molecule always produce signals of identical intensity."
+            },
+            {
+                "id": "c",
+                "text": "Signals for some types of carbons, such as carbonyl carbons, are inherently weaker than others."
+            },
+            {
+                "id": "d",
+                "text": "The spectrometer cannot detect the intensity of ^{13}C nuclei."
+            },
+            {
+                "id": "e",
+                "text": "Integration is only possible for radioactive isotopes."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Unlike ^1H-NMR, where signal area is proportional to the number of protons, ^{13}C-NMR signal intensities are not directly proportional to the number of carbons. Some carbons, like quaternary or carbonyl carbons, produce much smaller signals than methyl (CH_3) or methylene (CH_2) carbons."
+    },
+    {
+        "id": "q23",
+        "question": "What is the typical range for chemical shifts in a ^{13}C-NMR spectrum?",
+        "options": [
+            {
+                "id": "a",
+                "text": "0\u201312 ppm"
+            },
+            {
+                "id": "b",
+                "text": "0\u201350 ppm"
+            },
+            {
+                "id": "c",
+                "text": "0\u2013100 ppm"
+            },
+            {
+                "id": "d",
+                "text": "0\u2013220 ppm"
+            },
+            {
+                "id": "e",
+                "text": "100\u2013500 ppm"
+            }
+        ],
+        "correctId": "d",
+        "explanation": "The chemical shifts for ^{13}C nuclei are spread over a much broader range (0\u2013220 ppm) compared to the small range for protons (0\u201312 ppm). This wide range is beneficial because it allows each carbon to appear as a distinct peak without the overlapping often seen in proton spectra."
+    },
+    {
+        "id": "q24",
+        "question": "Why is carbon-carbon (^{13}C-^{13}C) splitting typically NOT observed in a standard ^{13}C-NMR spectrum?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Carbon atoms are too far apart to couple."
+            },
+            {
+                "id": "b",
+                "text": "The probability of two ^{13}C nuclei being adjacent is extremely low (about 0.01%)."
+            },
+            {
+                "id": "c",
+                "text": "The spectrometer automatically filters out C-C coupling to simplify the chart."
+            },
+            {
+                "id": "d",
+                "text": "^{13}C nuclei do not have magnetic spins."
+            },
+            {
+                "id": "e",
+                "text": "^{13}C only couples with isotopes of nitrogen."
+            }
+        ],
+        "correctId": "b",
+        "explanation": "Because the natural abundance of ^{13}C is only 1.1%, the chance of two ^{13}C atoms being bonded to each other in the same molecule is very small. Consequently, C-C splitting is not observed."
+    },
+    {
+        "id": "q25",
+        "question": "In a standard broadband-decoupled ^{13}C-NMR spectrum, how do the carbon signals usually appear?",
+        "options": [
+            {
+                "id": "a",
+                "text": "As complex multiplets due to splitting by nearby protons."
+            },
+            {
+                "id": "b",
+                "text": "As doublets only."
+            },
+            {
+                "id": "c",
+                "text": "As singlets."
+            },
+            {
+                "id": "d",
+                "text": "As triplets."
+            },
+            {
+                "id": "e",
+                "text": "They do not appear unless the sample is heated."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "While ^{13}C signals can be split by nearby protons (^1H-^{13}C coupling), this splitting is usually eliminated using an instrumental technique called \"decoupling.\" This causes every peak in the spectrum to appear as a single line (singlet), simplifying interpretation."
+    },
+    {
+        "id": "q26",
+        "question": "Which type of carbon atom typically appears the furthest downfield (170\u2013220 ppm) in a ^{13}C-NMR spectrum?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Alkane carbons (sp^3)"
+            },
+            {
+                "id": "b",
+                "text": "Aromatic carbons"
+            },
+            {
+                "id": "c",
+                "text": "Alkene carbons (sp^2)"
+            },
+            {
+                "id": "d",
+                "text": "Carbonyl carbons (C=O)"
+            },
+            {
+                "id": "e",
+                "text": "Alkyne carbons (sp)"
+            }
+        ],
+        "correctId": "d",
+        "explanation": "Carbonyl carbons are highly deshielded due to both their sp^2 hybridization and the strong inductive effect of the double-bonded oxygen atom. This places them at the furthest downfield position in the spectrum."
+    },
+    {
+        "id": "q27",
+        "question": "How many ^{13}C-NMR signals would you expect for methyl acetate (CH_3COOCH_3)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "1"
+            },
+            {
+                "id": "b",
+                "text": "2"
+            },
+            {
+                "id": "c",
+                "text": "3"
+            },
+            {
+                "id": "d",
+                "text": "4"
+            },
+            {
+                "id": "e",
+                "text": "6"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Each distinct type of carbon atom gives one signal. In methyl acetate, there are three unique carbons: the acetate methyl carbon (C_a), the carbonyl carbon (C_b), and the ester methyl carbon (C_c)."
+    },
+    {
+        "id": "q28",
+        "question": "In a DEPT-90 ^{13}C-NMR experiment, which type of carbon is the ONLY one to produce a signal?",
+        "options": [
+            {
+                "id": "a",
+                "text": "CH_3 (Methyl)"
+            },
+            {
+                "id": "b",
+                "text": "CH_2 (Methylene)"
+            },
+            {
+                "id": "c",
+                "text": "CH (Methine)"
+            },
+            {
+                "id": "d",
+                "text": "Quaternary carbons (C with no H)"
+            },
+            {
+                "id": "e",
+                "text": "Carbonyl carbons"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "The DEPT-90 stage is specifically designed to show only signals from CH carbons. Signals from CH_3, CH_2, and quaternary carbons (including carbonyls) are absent in this mode."
+    },
+    {
+        "id": "q29",
+        "question": "In a DEPT-135 spectrum, a negative peak (pointing downward below the baseline) identifies which group?",
+        "options": [
+            {
+                "id": "a",
+                "text": "CH_3"
+            },
+            {
+                "id": "b",
+                "text": "CH"
+            },
+            {
+                "id": "c",
+                "text": "CH_2"
+            },
+            {
+                "id": "d",
+                "text": "Quaternary Carbon"
+            },
+            {
+                "id": "e",
+                "text": "Carbonyl Carbon"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "In a DEPT-135 experiment, CH_3 and CH resonances appear as positive signals, while CH_2 resonances appear as negative signals. Quaternary and carbonyl carbons do not appear."
+    },
+    {
+        "id": "q30",
+        "question": "Which of the following factors would cause a carbon signal to shift downfield (to a higher ppm)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Attaching the carbon to a more electropositive atom."
+            },
+            {
+                "id": "b",
+                "text": "Changing the hybridization from sp^2 to sp^3."
+            },
+            {
+                "id": "c",
+                "text": "Attaching the carbon to a more electronegative atom like Oxygen or Nitrogen."
+            },
+            {
+                "id": "d",
+                "text": "Increasing the number of hydrogen atoms attached to the carbon."
+            },
+            {
+                "id": "e",
+                "text": "Decreasing the spectrometer's operating frequency."
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Electronegative atoms pull electron density away from the carbon nucleus (deshielding), which causes the signal to shift downfield to a higher resonance frequency/ppm."
+    }
+],
+    'schizophrenia': [
     {
         "id": "q1",
         "question": "1. Schizophrenia is primarily associated with:",
