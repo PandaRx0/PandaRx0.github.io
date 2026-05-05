@@ -56,7 +56,14 @@ const SUMMARIES = {
     { id: 'cushing', title: 'Cushing Syndrome', url: '/summaries/cushing syndrome.pdf' },
     { id: 'hyperaldosteronism', title: 'Hyperaldosteronism', url: '/summaries/hyperaldosteronism.pdf' },
     { id: 'depression', title: 'Depression', url: '/summaries/Depression.pdf' },
-    { id: 'schizophrenia', title: 'Schizophrenia', url: '/summaries/Schizophrenia.pdf' }
+    { id: 'schizophrenia', title: 'Schizophrenia', url: '/summaries/Schizophrenia.pdf' },
+    { id: 'insomnia', title: 'Insomnia', url: '/summaries/insomnia.pdf' },
+    { id: 'cancer_chemo', title: 'Cancer Chemotherapy', url: '/summaries/Cancer Chemotherapy.pdf' },
+    { id: 'lymphoma', title: 'Lymphoma', url: '/summaries/Lymphoma.pdf' },
+    { id: 'contraception', title: 'Contraception', url: '/summaries/contraception.pdf' },
+    { id: 'hrt', title: 'Hormonal Replacement Therapy', url: '/summaries/Hormonal replacement therapy .pdf' },
+    { id: 'menstrual_disorders', title: 'Menstrual Disorders', url: '/summaries/Menstural Disorders.pdf' },
+    { id: 'leukemia', title: 'Leukemia', url: '/summaries/Leukemia.pdf' }
   ],
   advanced: [],
   delivery: [

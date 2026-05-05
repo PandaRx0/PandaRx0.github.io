@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 .vercel
+public/summaries/Telegram Desktop/
+public/summaries/Phone Link/
