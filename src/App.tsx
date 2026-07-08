@@ -6,7 +6,7 @@ import mcq3 from './assets/advancedassets/mcq3.png';
 import mcq4 from './assets/advancedassets/mcq4.png';
 
 import './index.css';
-import { ShieldCheck, Database, Cloud, BarChart2, ChevronLeft, ChevronRight, Check, X, Send } from 'lucide-react';
+import { ShieldCheck, Database, Cloud, BarChart2, ChevronLeft, ChevronRight, Check, X, Send, Sun } from 'lucide-react';
 
 // --- DUMMY DATA ---
 const SUBJECTS = [
@@ -14,6 +14,7 @@ const SUBJECTS = [
   { id: 'advanced', title: 'Advanced Analysis', desc: 'In-depth chemical and instrumental analysis.', icon: Database },
   { id: 'delivery', title: 'Drug Delivery', desc: 'Formulation and targeting mechanisms.', icon: Cloud },
   { id: 'biotech', title: 'Biotechnology', desc: 'Biological processes for industrial and medical purposes.', icon: BarChart2 },
+  { id: 'summer_training', title: 'Summer Training', desc: 'Summer training guidelines and topics.', icon: Sun },
 ];
 
 
@@ -45,6 +46,10 @@ const TOPICS = {
     , { id: 'drug_development', title: 'Drug Development', desc: 'New Drug Development and Approval Process', icon: Cloud }
   ],
   biotech: []
+, 
+  summer_training: [
+    { id: 'diabetes', title: 'Diabetes', desc: 'Based on the Summer Training Guide 4th Stage-2023', icon: ShieldCheck }
+  ]
 };
 
 const SUMMARIES = {
@@ -69,9 +74,734 @@ const SUMMARIES = {
   delivery: [
   ],
   biotech: []
+, 
+  summer_training: []
 };
 
 const MCQS = {
+  'diabetes': [
+    {
+        "id": "q1",
+        "question": "A patient is newly diagnosed with type 2 diabetes mellitus. Which agent is recommended as first-line pharmacotherapy?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Glipizide, which stimulates pancreatic insulin secretion"
+            },
+            {
+                "id": "b",
+                "text": "Metformin, which decreases hepatic glucose production"
+            },
+            {
+                "id": "c",
+                "text": "Pioglitazone, which enhances peripheral insulin sensitivity"
+            },
+            {
+                "id": "d",
+                "text": "Sitagliptin, which prolongs endogenous GLP-1 activity"
+            }
+        ],
+        "correctId": "b",
+        "explanation": "Page 119 states: \"Metformin is recommended as first-line pharmacotherapy in patients with type 2 DM due to extensive experience, high efficacy, minimal hypoglycemia risk, positive or neutral effects on weight, potential positive impact on CV risk, manageable side-effect profile, and low cost.\""
+    },
+    {
+        "id": "q2",
+        "question": "A patient starting metformin reports gastrointestinal upset. What is the most appropriate strategy?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Advise the patient to discontinue therapy and call the physician"
+            },
+            {
+                "id": "b",
+                "text": "Initiate treatment with a reduced dose taken after the largest meal"
+            },
+            {
+                "id": "c",
+                "text": "Prescribe an additional antidiabetic agent to reduce the side effects"
+            },
+            {
+                "id": "d",
+                "text": "Switch to a sulfonylurea which has fewer gastrointestinal effects"
+            }
+        ],
+        "correctId": "b",
+        "explanation": "Page 119 states: \"When initiating therapy, use a low dose (typically 500 mg) given with the largest meal. Then increase the dose in 500-mg increments over several weeks.\" This approach minimizes GI side effects."
+    },
+    {
+        "id": "q3",
+        "question": "Which oral antidiabetic agent carries the highest risk of causing hypoglycemia?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Acarbose, which delays carbohydrate absorption"
+            },
+            {
+                "id": "b",
+                "text": "Metformin, which reduces hepatic glucose output"
+            },
+            {
+                "id": "c",
+                "text": "Glibenclamide, which enhances insulin secretion"
+            },
+            {
+                "id": "d",
+                "text": "Empagliflozin, which increases urinary glucose excretion"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Page 120 states: \"Sulfonylureas enhance insulin secretion from the pancreatic \u03b2-cells. Common adverse effects include hypoglycemia and weight gain.\" Sulfonylureas like glibenclamide are known to cause hypoglycemia, unlike metformin, DPP-4 inhibitors, or SGLT2 inhibitors when used as monotherapy."
+    },
+    {
+        "id": "q4",
+        "question": "A patient is prescribed acarbose for type 2 diabetes. How should this medication be taken?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Swallow the tablet whole with a full glass of water before breakfast"
+            },
+            {
+                "id": "b",
+                "text": "Chew with the first mouthful of food or swallow immediately before eating"
+            },
+            {
+                "id": "c",
+                "text": "Dissolve the tablet in water and drink it 30 minutes after meals"
+            },
+            {
+                "id": "d",
+                "text": "Take the medication at bedtime to reduce gastrointestinal side effects"
+            }
+        ],
+        "correctId": "b",
+        "explanation": "Page 118 states: \"Alpha-glucosidase inhibitor (Acarbose): Tablets should be chewed with first mouthful of food or swallowed whole with a little liquid immediately before food.\""
+    },
+    {
+        "id": "q5",
+        "question": "Which insulin has the longest duration of action exceeding 42 hours?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Regular human insulin with a duration of 6 to 8 hours"
+            },
+            {
+                "id": "b",
+                "text": "NPH insulin with a duration of 10 to 20 hours"
+            },
+            {
+                "id": "c",
+                "text": "Insulin degludec with a flat action profile"
+            },
+            {
+                "id": "d",
+                "text": "Insulin detemir with a duration of approximately 17 hours"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Page 123, Table 7-2 states: \"Insulin degludec... More than 42 hours\" for effective duration. This makes it the longest-acting basal insulin available."
+    },
+    {
+        "id": "q6",
+        "question": "A patient on an SGLT2 inhibitor asks about common side effects. What should the pharmacist mention?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Weight gain and increased appetite are the most frequent complaints"
+            },
+            {
+                "id": "b",
+                "text": "Genital mycotic infections occur more commonly in women"
+            },
+            {
+                "id": "c",
+                "text": "Severe hypoglycemia is a frequent complication of therapy"
+            },
+            {
+                "id": "d",
+                "text": "Lactic acidosis is a common adverse effect requiring monitoring"
+            }
+        ],
+        "correctId": "b",
+        "explanation": "Page 122 states: \"The most common adverse effect is genital mycotic infections, which are more common in women and uncircumcised men.\" This is a class effect of SGLT2 inhibitors."
+    },
+    {
+        "id": "q7",
+        "question": "A patient is prescribed repaglinide for type 2 diabetes. What is the appropriate administration timing?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Take the medication once daily in the morning with breakfast"
+            },
+            {
+                "id": "b",
+                "text": "Administer the dose 15 to 30 minutes before each meal"
+            },
+            {
+                "id": "c",
+                "text": "Take the dose at bedtime to reduce postprandial hyperglycemia"
+            },
+            {
+                "id": "d",
+                "text": "Administer the medication 2 hours after eating to avoid peaks"
+            }
+        ],
+        "correctId": "b",
+        "explanation": "Page 120 states: \"Because they have a rapid onset and short duration of action, they should be taken 15 to 30 minutes before a meal.\" Page 118 confirms: \"Within 30 minutes before meals.\""
+    },
+    {
+        "id": "q8",
+        "question": "What is a serious adverse effect associated with thiazolidinedione therapy?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Significant weight loss and increased metabolic rate"
+            },
+            {
+                "id": "b",
+                "text": "Fluid retention that may lead to peripheral edema"
+            },
+            {
+                "id": "c",
+                "text": "Severe hypoglycemia requiring hospitalization"
+            },
+            {
+                "id": "d",
+                "text": "Profound gastrointestinal disturbances with diarrhea"
+            }
+        ],
+        "correctId": "b",
+        "explanation": "Page 121 states: \"Fluid retention may occur due to peripheral vasodilation and improved insulin sensitization in the kidney with increased sodium and water retention. This may result in peripheral edema (4%-5% of patients with monotherapy; 15% or more when combined with insulin), heart failure, hemodilution of hemoglobin and hematocrit, and weight gain.\""
+    },
+    {
+        "id": "q9",
+        "question": "A patient with type 1 diabetes is prescribed pramlintide. What is its mechanism of action?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It directly stimulates insulin secretion from pancreatic beta cells"
+            },
+            {
+                "id": "b",
+                "text": "It inhibits glucose absorption in the gastrointestinal tract"
+            },
+            {
+                "id": "c",
+                "text": "It reduces glucagon secretion and slows gastric emptying"
+            },
+            {
+                "id": "d",
+                "text": "It increases insulin sensitivity in muscle and adipose tissue"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Page 126 states: \"Pramlintide (Symlin) is a synthetic amylin analog that reduces glucagon secretion, slows gastric emptying, and increases satiety. It was the first noninsulin agent approved for patients with type 1 DM.\""
+    },
+    {
+        "id": "q10",
+        "question": "When should regular human insulin be administered in relation to meals?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Immediately upon finishing the meal to prevent postprandial spikes"
+            },
+            {
+                "id": "b",
+                "text": "Approximately 15 minutes before the meal is consumed"
+            },
+            {
+                "id": "c",
+                "text": "About 30 minutes before the meal is consumed"
+            },
+            {
+                "id": "d",
+                "text": "At bedtime to control fasting blood glucose levels"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Page 123 states: \"Patients should be counseled to inject regular insulin subcutaneously 30 minutes before consuming a meal.\""
+    },
+    {
+        "id": "q11",
+        "question": "A patient starting liraglutide reports nausea. What is the most appropriate advice?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Discontinue the medication due to an allergic reaction"
+            },
+            {
+                "id": "b",
+                "text": "The nausea is transient; eat slowly and stop when satiated"
+            },
+            {
+                "id": "c",
+                "text": "Increase the dose to overcome the gastrointestinal side effects"
+            },
+            {
+                "id": "d",
+                "text": "Take the medication with a large meal to buffer the stomach"
+            }
+        ],
+        "correctId": "b",
+        "explanation": "Page 126 states: \"The most common adverse effects of GLP1-RAs are nausea, vomiting, and diarrhea. These effects are dose related, so dose titration is recommended. They usually occur early in the treatment course and are mild and transient... Instruct patients to eat slowly and stop eating when satiated or nausea may worsen and cause vomiting.\""
+    },
+    {
+        "id": "q12",
+        "question": "Which insulin formulation is available as an inhaled product?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Technosphere insulin which is absorbed through the lungs"
+            },
+            {
+                "id": "b",
+                "text": "Insulin aspart which is a rapid-acting analog"
+            },
+            {
+                "id": "c",
+                "text": "Insulin glargine which is a long-acting basal insulin"
+            },
+            {
+                "id": "d",
+                "text": "NPH insulin which is an intermediate-acting insulin"
+            }
+        ],
+        "correctId": "a",
+        "explanation": "Page 123, Table 7-2 includes \"Technosphere inhaled insulin\" with onset of action 5-15 minutes, peak 1 hour, and duration 3 hours. Page 125 also mentions: \"Inhaled human insulin can cause cough and upper respiratory infections, and it is contraindicated in chronic obstructive pulmonary disease and asthma due to bronchospasm risk.\""
+    },
+    {
+        "id": "q13",
+        "question": "A patient with diabetes experiences hypoglycemia. What is the \"Rule of 15\"?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Consume 15 grams of protein and wait 15 minutes before rechecking"
+            },
+            {
+                "id": "b",
+                "text": "Take 15 units of insulin and recheck glucose after 15 minutes"
+            },
+            {
+                "id": "c",
+                "text": "Ingest 15 grams of fast-acting carbohydrates and recheck in 15 minutes"
+            },
+            {
+                "id": "d",
+                "text": "Perform 15 minutes of exercise to raise blood glucose levels"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Page 127 states: \"The 'rule of 15' is commonly used to teach patients the proper treatment. First, the patient should glucose level to confirm a glucose < 70 mg/dL and then ingest 15 grams of fast-acting carbohydrates... Glucose level should be repeated in 15 minutes; if the glucose is < 70 mg/dL, the process should be repeated.\""
+    },
+    {
+        "id": "q14",
+        "question": "What is the preferred pharmacologic treatment for diabetic nephropathy?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Beta-blockers to reduce cardiac workload"
+            },
+            {
+                "id": "b",
+                "text": "ACE inhibitors or angiotensin receptor blockers"
+            },
+            {
+                "id": "c",
+                "text": "Thiazolidinediones to improve insulin sensitivity"
+            },
+            {
+                "id": "d",
+                "text": "SGLT2 inhibitors to reduce glucose reabsorption"
+            }
+        ],
+        "correctId": "b",
+        "explanation": "Page 127, Table 7-3 states: \"Diabetic nephropathy: ACE inhibitor or ARBs.\" This is the standard of care for renal protection in diabetic patients."
+    },
+    {
+        "id": "q15",
+        "question": "Which GLP-1 receptor agonist is administered as a once-weekly injection?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Exenatide which requires twice daily administration"
+            },
+            {
+                "id": "b",
+                "text": "Liraglutide which is dosed once daily"
+            },
+            {
+                "id": "c",
+                "text": "Dulaglutide which is dosed once weekly"
+            },
+            {
+                "id": "d",
+                "text": "Lixisenatide which requires once daily dosing"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Page 126 states that long-acting GLP-1 RAs include dulaglutide, liraglutide, exenatide XR, and semaglutide. Dulaglutide and semaglutide are available as once-weekly formulations."
+    },
+    {
+        "id": "q16",
+        "question": "How long may it take to see maximum glycemic effects from pioglitazone therapy?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Approximately 1 to 2 weeks after initiating therapy"
+            },
+            {
+                "id": "b",
+                "text": "About 3 to 4 months of continuous treatment"
+            },
+            {
+                "id": "c",
+                "text": "Roughly 2 to 3 days from the first dose"
+            },
+            {
+                "id": "d",
+                "text": "Nearly 6 to 8 months before any benefit is seen"
+            }
+        ],
+        "correctId": "b",
+        "explanation": "Page 121 states: \"Maximum effects may not be seen until 3-4 months of therapy.\" This is important for patient education and managing expectations."
+    },
+    {
+        "id": "q17",
+        "question": "Which of the following agents is NOT classified as a DPP-4 inhibitor?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Sitagliptin which is taken once daily"
+            },
+            {
+                "id": "b",
+                "text": "Saxagliptin which is a DPP-4 inhibitor"
+            },
+            {
+                "id": "c",
+                "text": "Vildagliptin which is a DPP-4 inhibitor"
+            },
+            {
+                "id": "d",
+                "text": "Empagliflozin which is an SGLT2 inhibitor"
+            }
+        ],
+        "correctId": "d",
+        "explanation": "Empagliflozin is an SGLT2 inhibitor, not a DPP-4 inhibitor. Page 118 lists DPP-4 inhibitors as: Alogliptin, Linagliptin, Sitagliptin, Saxagliptin, Vildagliptin. Page 122 lists SGLT2 inhibitors as: Canagliflozin, Dapagliflozin, Empagliflozin, Ertugliflozin."
+    },
+    {
+        "id": "q18",
+        "question": "What is the recommended site for insulin injection to achieve the most predictable absorption?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The lateral thigh which is commonly used for self-injection"
+            },
+            {
+                "id": "b",
+                "text": "The upper arm which is easily accessible for administration"
+            },
+            {
+                "id": "c",
+                "text": "The abdominal area which provides consistent absorption"
+            },
+            {
+                "id": "d",
+                "text": "The buttocks which offers a large injection surface area"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Page 125 states: \"The primary sites used for injecting insulin are the lateral thigh, abdomen and upper arm. Many practitioners recommend using the abdominal area because absorption from this site is least affected by exercise and is the most predictable.\""
+    },
+    {
+        "id": "q19",
+        "question": "What is the most common adverse effect of erythropoiesis-stimulating agents in diabetic patients with CKD?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Severe hypotension requiring pressor support"
+            },
+            {
+                "id": "b",
+                "text": "Increased blood pressure requiring antihypertensives"
+            },
+            {
+                "id": "c",
+                "text": "Hair loss which is generally reversible"
+            },
+            {
+                "id": "d",
+                "text": "Significant weight gain with fluid retention"
+            }
+        ],
+        "correctId": "b",
+        "explanation": "Page 175 states: \"The most common adverse effect seen with erythropoiesis-stimulating agents (ESAs) is increased blood pressure, which may require antihypertensive agents to control blood pressure.\""
+    },
+    {
+        "id": "q20",
+        "question": "What is the appropriate action regarding metformin before IV contrast administration?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Continue metformin without interruption during the procedure"
+            },
+            {
+                "id": "b",
+                "text": "Increase metformin dose to prevent contrast-induced nephropathy"
+            },
+            {
+                "id": "c",
+                "text": "Withhold metformin on the day of the procedure and resume after 2-3 days"
+            },
+            {
+                "id": "d",
+                "text": "Switch to insulin permanently before the contrast procedure"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Page 119 states: \"Due to the risk of acute renal failure with use of IV contrast dye, withhold metformin therapy starting the day of the procedure and resume it 2-3 days later if normal renal function has been documented.\""
+    },
+    {
+        "id": "q21",
+        "question": "A 52-year-old woman with newly diagnosed type 2 diabetes has an HbA1c of 7.8%. She is overweight with a BMI of 31 kg/m\u00b2 and has no cardiovascular disease.\\n\\nWhat is the most appropriate initial pharmacotherapy for this patient?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Glipizide to stimulate insulin secretion and lower glucose"
+            },
+            {
+                "id": "b",
+                "text": "Metformin to reduce hepatic glucose production"
+            },
+            {
+                "id": "c",
+                "text": "Insulin glargine to provide basal insulin coverage"
+            },
+            {
+                "id": "d",
+                "text": "Sitagliptin to increase endogenous incretin levels"
+            }
+        ],
+        "correctId": "b",
+        "explanation": "Page 119 states: \"Metformin is recommended as first-line pharmacotherapy in patients with type 2 DM due to extensive experience, high efficacy, minimal hypoglycemia risk, positive or neutral effects on weight, potential positive impact on CV risk, manageable side-effect profile, and low cost.\" Given her overweight status, metformin's weight-neutral effect is particularly beneficial."
+    },
+    {
+        "id": "q22",
+        "question": "A 65-year-old male on metformin 1000 mg twice daily is scheduled for cardiac catheterization with IV contrast tomorrow.\\n\\nWhat is the appropriate management of his metformin?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Continue metformin as usual and monitor renal function"
+            },
+            {
+                "id": "b",
+                "text": "Double the metformin dose before the procedure"
+            },
+            {
+                "id": "c",
+                "text": "Withhold metformin starting the day of the procedure"
+            },
+            {
+                "id": "d",
+                "text": "Switch to insulin therapy permanently after the procedure"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Page 119 states: \"Due to the risk of acute renal failure with use of IV contrast dye, withhold metformin therapy starting the day of the procedure and resume it 2-3 days later if normal renal function has been documented.\""
+    },
+    {
+        "id": "q23",
+        "question": "A 45-year-old woman with type 2 diabetes is started on a sulfonylurea. She is concerned about hypoglycemia.\\n\\nWhich sulfonylurea is associated with the lowest hypoglycemia risk?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Glibenclamide which has a long duration of action"
+            },
+            {
+                "id": "b",
+                "text": "Glipizide which has a shorter duration of action"
+            },
+            {
+                "id": "c",
+                "text": "Chlorpropamide which has active metabolites"
+            },
+            {
+                "id": "d",
+                "text": "Tolbutamide which requires multiple daily doses"
+            }
+        ],
+        "correctId": "b",
+        "explanation": "Page 120 states: \"Glimepiride and glipizide have lower risk of hypoglycemia.\" Among the options, glipizide is the one specifically mentioned with lower risk compared to older sulfonylureas."
+    },
+    {
+        "id": "q24",
+        "question": "A 28-year-old pregnant woman with gestational diabetes is being managed. She has been on metformin.\\n\\nWhat is the recommendation regarding metformin use during pregnancy?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Metformin must be discontinued due to teratogenic effects"
+            },
+            {
+                "id": "b",
+                "text": "Metformin can be used for both preexisting and gestational diabetes"
+            },
+            {
+                "id": "c",
+                "text": "Metformin should be replaced with sulfonylureas immediately"
+            },
+            {
+                "id": "d",
+                "text": "Only insulin therapy is considered safe in pregnancy"
+            }
+        ],
+        "correctId": "b",
+        "explanation": "Page 119 states: \"Metformin can be used in pregnancy for both preexisting and gestational diabetes.\" This is an important point as metformin is considered safe during pregnancy, unlike most other oral antidiabetic agents."
+    },
+    {
+        "id": "q25",
+        "question": "A 60-year-old male with type 2 diabetes and hypertension is started on an ACE inhibitor.\\n\\nWhat other medications should be considered for cardiovascular prevention in this patient?",
+        "options": [
+            {
+                "id": "a",
+                "text": "An ACE inhibitor along with aspirin and a lipid-regulating drug"
+            },
+            {
+                "id": "b",
+                "text": "Only low-dose aspirin for primary prevention"
+            },
+            {
+                "id": "c",
+                "text": "Only a statin for lipid management"
+            },
+            {
+                "id": "d",
+                "text": "A calcium channel blocker for blood pressure control"
+            }
+        ],
+        "correctId": "a",
+        "explanation": "Page 127, Table 7-3 states: \"Cardiovascular disease: ACE inhibitor, low dose aspirin and a lipid-regulating drug.\" This represents the comprehensive approach to cardiovascular risk reduction in diabetic patients."
+    },
+    {
+        "id": "q26",
+        "question": "A patient with type 1 diabetes experiences frequent nocturnal hypoglycemia. She is on NPH insulin twice daily and regular insulin before meals.\\n\\nWhich insulin would provide the most consistent, peakless basal coverage?",
+        "options": [
+            {
+                "id": "a",
+                "text": "NPH insulin which has a distinct peak at 6-7 hours"
+            },
+            {
+                "id": "b",
+                "text": "Regular insulin which peaks at approximately 2 hours"
+            },
+            {
+                "id": "c",
+                "text": "Insulin glargine which has a flat 24-hour profile"
+            },
+            {
+                "id": "d",
+                "text": "Insulin lispro which is a rapid-acting analog"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Page 124 states: \"Long-duration: Glargine, detemir, and degludec are designed as once-daily-dosing basal insulins which provide a relatively constant insulin concentration over 24 hours. Glargine, and degludec are peakless.\" This makes insulin glargine ideal for reducing nocturnal hypoglycemia."
+    },
+    {
+        "id": "q27",
+        "question": "A 55-year-old woman is started on insulin glargine. The nurse provides education on injection technique.\\n\\nWhat is the most appropriate advice regarding insulin injection sites?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Always use the same site to maintain consistent absorption"
+            },
+            {
+                "id": "b",
+                "text": "Rotate injection sites to minimize lipohypertrophy"
+            },
+            {
+                "id": "c",
+                "text": "Only inject in the thigh for the most reliable absorption"
+            },
+            {
+                "id": "d",
+                "text": "Change the injection site only once a month"
+            }
+        ],
+        "correctId": "b",
+        "explanation": "Page 124 states: \"Patients should be educated to rotate injection sites to minimize lipohypertrophy, a buildup of fat that decreases or prevents proper insulin absorption.\""
+    },
+    {
+        "id": "q28",
+        "question": "A 48-year-old male with type 2 diabetes reports burning pain in his feet consistent with diabetic peripheral neuropathy. Acetaminophen has not provided relief.\\n\\nWhich medication would be most appropriate for this condition?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Metformin to improve glycemic control"
+            },
+            {
+                "id": "b",
+                "text": "Glimepiride to stimulate insulin secretion"
+            },
+            {
+                "id": "c",
+                "text": "Duloxetine which is approved for neuropathic pain"
+            },
+            {
+                "id": "d",
+                "text": "Liraglutide which promotes weight loss"
+            }
+        ],
+        "correctId": "c",
+        "explanation": "Page 127, Table 7-3 states: \"Diabetic neuropathy - Painful neuropathy: Gabapentin, pregabalin, carbamazepine, opioid analgesics, duloxetine, amitriptyline, nortriptyline, and capsaicin cream.\" Duloxetine is specifically approved for diabetic peripheral neuropathy and is an appropriate choice."
+    },
+    {
+        "id": "q29",
+        "question": "A patient with type 2 diabetes presents with symptoms of gastroparesis including nausea and early satiety.\\n\\nWhich medication may be helpful for this condition?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Metformin which is the first-line antidiabetic agent"
+            },
+            {
+                "id": "b",
+                "text": "Metoclopramide which promotes gastric motility"
+            },
+            {
+                "id": "c",
+                "text": "Pioglitazone which improves insulin sensitivity"
+            },
+            {
+                "id": "d",
+                "text": "Sitagliptin which is a DPP-4 inhibitor"
+            }
+        ],
+        "correctId": "b",
+        "explanation": "Page 127, Table 7-3 states: \"Gastroparesis: Metoclopramide or erythromycin may be helpful.\" These medications promote gastric motility in diabetic gastroparesis."
+    },
+    {
+        "id": "q30",
+        "question": "A 70-year-old patient with type 2 diabetes and chronic kidney disease (eGFR 35 mL/min) is being considered for SGLT2 inhibitor therapy.\\n\\nWhat is the most appropriate counseling point regarding this medication?",
+        "options": [
+            {
+                "id": "a",
+                "text": "SGLT2 inhibitors are safe in all stages of kidney disease"
+            },
+            {
+                "id": "b",
+                "text": "Hypoglycemia is unlikely unless combined with insulin or sulfonylureas"
+            },
+            {
+                "id": "c",
+                "text": "These agents always cause severe hypotension requiring monitoring"
+            },
+            {
+                "id": "d",
+                "text": "The medication should be taken with a high-fat meal for absorption"
+            }
+        ],
+        "correctId": "b",
+        "explanation": "Page 122 states: \"SGLT2 inhibitors... are unlikely to cause hypoglycemia unless combined with medications such as sulfonylureas, meglitinides, or insulin.\" While SGLT2 inhibitors have some limitations in severe renal impairment, the risk of hypoglycemia when used appropriately is low."
+    }
+],
+
   'mass_spectrometry': [
     {
         "id": "q1",
@@ -19208,7 +19938,7 @@ function App() {
 
   const handleSubjectSelect = (sub: any) => {
     setSelectedSubject(sub);
-    if (sub.id !== 'therapeutics' && sub.id !== 'delivery' && sub.id !== 'advanced') {
+    if (sub.id !== 'therapeutics' && sub.id !== 'delivery' && sub.id !== 'advanced' && sub.id !== 'summer_training') {
       setStep('coming_soon_subject');
       return;
     }
