@@ -6,14 +6,18 @@ import mcq3 from './assets/advancedassets/mcq3.png';
 import mcq4 from './assets/advancedassets/mcq4.png';
 
 import './index.css';
-import { ShieldCheck, Database, Cloud, BarChart2, ChevronLeft, ChevronRight, Check, X, Send, Sun } from 'lucide-react';
+import { ShieldCheck, Database, Cloud, BarChart2, ChevronLeft, ChevronRight, Check, X, Send, Sun, GraduationCap } from 'lucide-react';
 
 // --- DUMMY DATA ---
-const SUBJECTS = [
+const STAGE_FIVE_SUBJECTS = [
   { id: 'therapeutics', title: 'Applied Therapeutics', desc: 'Clinical guidelines and patient care.', icon: ShieldCheck },
   { id: 'advanced', title: 'Advanced Analysis', desc: 'In-depth chemical and instrumental analysis.', icon: Database },
   { id: 'delivery', title: 'Drug Delivery', desc: 'Formulation and targeting mechanisms.', icon: Cloud },
   { id: 'biotech', title: 'Biotechnology', desc: 'Biological processes for industrial and medical purposes.', icon: BarChart2 },
+];
+
+const SUBJECTS = [
+  { id: 'stage_five', title: 'Stage 5', desc: 'Applied Therapeutics, Advanced Analysis, Drug Delivery, Biotechnology.', icon: GraduationCap },
   { id: 'summer_training', title: 'Summer Training', desc: 'Summer training guidelines and topics.', icon: Sun },
 ];
 
@@ -19937,6 +19941,10 @@ function App() {
   const [answeredQs, setAnsweredQs] = useState<any>({});
 
   const handleSubjectSelect = (sub: any) => {
+    if (sub.id === 'stage_five') {
+      setStep('stage_five');
+      return;
+    }
     setSelectedSubject(sub);
     if (sub.id !== 'therapeutics' && sub.id !== 'delivery' && sub.id !== 'advanced' && sub.id !== 'summer_training') {
       setStep('coming_soon_subject');
@@ -20049,14 +20057,28 @@ function App() {
           <button
             className="back-btn"
             onClick={() => {
-              if (step === 'topic' || step === 'coming_soon_subject' || step === 'summaries_subject') {
+              if (step === 'stage_five' || step === 'summaries_subject') {
                 setStep('subject');
+                setSelectedSubject(null);
+              } else if (step === 'summaries_stage_five') {
+                setStep('summaries_subject');
+                setSelectedSubject(null);
+              } else if (step === 'topic' || step === 'coming_soon_subject') {
+                if (selectedSubject && ['therapeutics', 'delivery', 'advanced', 'biotech'].includes(selectedSubject.id)) {
+                  setStep('stage_five');
+                } else {
+                  setStep('subject');
+                }
                 setSelectedSubject(null);
               } else if (step === 'mcq') {
                 setStep('topic');
                 setSelectedTopic(null);
               } else if (step === 'summaries_list') {
-                setStep('summaries_subject');
+                if (selectedSubject && ['therapeutics', 'delivery', 'advanced', 'biotech'].includes(selectedSubject.id)) {
+                  setStep('summaries_stage_five');
+                } else {
+                  setStep('summaries_subject');
+                }
                 setSelectedSubject(null);
               } else if (step === 'summary_preview') {
                 setStep('summaries_list');
@@ -20072,8 +20094,18 @@ function App() {
             <span>الرئيسية</span>
             <span>
               {step.startsWith('summaries') && ' / ملخصات'}
-              {selectedSubject && !step.startsWith('summaries') && ` / ${(selectedSubject as any).title}`}
-              {selectedSubject && step.startsWith('summaries') && step !== 'summaries_subject' && ` / ${(selectedSubject as any).title}`}
+              {step === 'stage_five' && ' / Stage 5'}
+              {step === 'summaries_stage_five' && ' / Stage 5'}
+              {selectedSubject && !step.startsWith('summaries') && (
+                ['therapeutics', 'delivery', 'advanced', 'biotech'].includes(selectedSubject.id)
+                  ? ` / Stage 5 / ${(selectedSubject as any).title}`
+                  : ` / ${(selectedSubject as any).title}`
+              )}
+              {selectedSubject && step.startsWith('summaries') && step !== 'summaries_subject' && step !== 'summaries_stage_five' && (
+                ['therapeutics', 'delivery', 'advanced', 'biotech'].includes(selectedSubject.id)
+                  ? ` / Stage 5 / ${(selectedSubject as any).title}`
+                  : ` / ${(selectedSubject as any).title}`
+              )}
               {selectedTopic && step === 'mcq' && ` / ${(selectedTopic as any).title}`}
             </span>
           </div>
@@ -20085,6 +20117,18 @@ function App() {
             <p style={{ color: '#aaa', marginBottom: '2rem' }}>حدد التخصص الذي ترغب في دراسته ومراجعته اليوم.</p>
             <div className="grid-container" style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%' }}>
               {SUBJECTS.map((sub: any) => (
+                <FeatureCard key={sub.id} title={sub.title} desc={sub.desc} Icon={sub.icon} onClick={() => handleSubjectSelect(sub)} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {step === 'stage_five' && (
+          <div className="subjects-section" style={{ textAlign: 'center', marginBottom: '2rem', width: '100%' }}>
+            <h2 style={{ fontSize: '1.8rem', marginBottom: '0.5rem' }}>اختر المادة الدراسية (المرحلة الخامسة)</h2>
+            <p style={{ color: '#aaa', marginBottom: '2rem' }}>حدد التخصص الذي ترغب في دراسته ومراجعته اليوم.</p>
+            <div className="grid-container" style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%' }}>
+              {STAGE_FIVE_SUBJECTS.map((sub: any) => (
                 <FeatureCard key={sub.id} title={sub.title} desc={sub.desc} Icon={sub.icon} onClick={() => handleSubjectSelect(sub)} />
               ))}
             </div>
@@ -20104,6 +20148,25 @@ function App() {
             <p style={{ color: '#aaa', marginBottom: '2rem' }}>حدد التخصص الذي ترغب في تصفح ملخصاته.</p>
             <div className="grid-container" style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%' }}>
               {SUBJECTS.map((sub: any) => (
+                <FeatureCard key={sub.id} title={sub.title} desc={sub.desc} Icon={sub.icon} onClick={() => {
+                  if (sub.id === 'stage_five') {
+                    setStep('summaries_stage_five');
+                  } else {
+                    setSelectedSubject(sub);
+                    setStep('summaries_list');
+                  }
+                }} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {step === 'summaries_stage_five' && (
+          <div className="subjects-section" style={{ textAlign: 'center', marginBottom: '2rem', width: '100%' }}>
+            <h2 style={{ fontSize: '1.8rem', marginBottom: '0.5rem' }}>اختر المادة لملخصات PDF (المرحلة الخامسة)</h2>
+            <p style={{ color: '#aaa', marginBottom: '2rem' }}>حدد التخصص الذي ترغب في تصفح ملخصاته.</p>
+            <div className="grid-container" style={{ display: 'flex', flexDirection: 'column', gap: '1rem', width: '100%' }}>
+              {STAGE_FIVE_SUBJECTS.map((sub: any) => (
                 <FeatureCard key={sub.id} title={sub.title} desc={sub.desc} Icon={sub.icon} onClick={() => {
                   setSelectedSubject(sub);
                   setStep('summaries_list');
